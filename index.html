@@ -1,0 +1,100 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Review of 2016</title>
+		<link rel = "icon" href = "image/2016.ico"/>
+		<link rel = "stylesheet" href = "css/w3.css"/>
+		<link rel="stylesheet" href="css/navigator.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+		<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+		<script src="js/velocity.js"></script>
+		<script src="js/unslider.js"></script>
+		<link rel="stylesheet" href="css/unslider-dots.css" />
+		<link rel="stylesheet" href="css/unslider.css" />
+		<script src="js/bgcolor.js"></script>
+	</head>
+
+	<body>
+		
+		<ul class = "tab">
+			<li><a href="help.html"  onclick="redirect()">Feedback</a></li>
+			<li><a href="about.html"  onclick="redirect()">About</a></li>
+			<li class = "dropdown"><a href="javascript:void(0)">Category</a>
+				<div class="dropdown-content">
+					<a href="news.html"  onclick="redirect()">News</a>
+					<a href="entertainment.html"  onclick="redirect()">Entertainment</a>
+					<a href="technology.html" onclick="redirect()">Technology</a>
+					<a href="tourism.html"  onclick="redirect()">Tourism</a>
+				</div>
+			</li>
+			<li><a href="index.html"  onclick="redirect()">Home</a></li>
+			<li class="a">Review 2016</li>
+		</ul>
+
+	<div class = "content">
+		<div id="fullpage">
+			<div class="section">
+				<video class="video" data-autoplay muted loop preload="60">
+					<source src="image/index.mp4" type="video/mp4">
+				</video>
+				<h1 class="title">What's up in 2016!?</h1>
+			</div>
+			<div class="section">
+				
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function() {
+		    $('#fullpage').fullpage({
+		        anchors:['firstPage', 'secondPage', 'thirdPage'],
+				navigation: true,
+		        navigationPosition: 'right',
+		        navigationTooltips: ['firstPage', 'Top 1'],
+		        showActiveTooltip: true,
+		        slidesNavigation: true,
+		        slidesNavPosition: 'bottom',
+				slidesNavTooltips: ['firstPage', 'Top 1'],
+				scrollOverflow:true,
+
+				afterLoad: function(anchorLink,index) {
+				$('.video').css('height',parseInt(window.innerHeight) - 2);
+				}
+			});
+			'Initialize unslider jquery plugin'
+			$('.slider').unslider({
+				animation: 'horizontal',
+				autoplay: true,
+				arrow:true,
+				nav:false
+			});
+		});
+		/*
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+	        var i;
+		var x = document.getElementsByClassName("mySlides");
+		if (n > x.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = x.length} ;
+		for (i = 0; i < x.length; i++) {
+ 		x[i].style.display = "none";
+    		}
+ 		x[slideIndex-1].style.display = "block";
+		}*/
+	</script>
+
+	<footer style="position: absolute; bottom: 0px; width: 100%;">
+		<center>Copyright 2017 © NOTHIN</center>
+	</footer>
+	</body>
+
+
+</html>

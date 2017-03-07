@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>Review of 2016 - About</title>
+		<link rel = "icon" href = "image/2016.ico"/>
+		<link rel = "stylesheet" href = "http://www.w3schools.com/lib/w3.css"/>
+		<link rel="stylesheet" type="text/css" href="css/navigator.css" />
+		<link rel="stylesheet" href="css/feedback.css" />
+	</head>
+
+	<body>
+		<ul class = "tab">
+			<li><a href="help.html"  onclick="redirect()">Feedback</a></li>
+			<li><a href="about.html"  onclick="redirect()">About</a></li>
+			<li class = "dropdown"><a href="javascript:void(0)">Category</a>
+				<div class="dropdown-content">
+					<a href="news.html"  onclick="redirect()">News</a>
+					<a href="entertainment.html"  onclick="redirect()">Entertainment</a>
+					<a href="technology.html"  onclick="redirect()">Technology</a>
+					<a href="tourism.html"  onclick="redirect()">Tourism</a>
+				</div>
+			</li>
+			<li><a href="index.html"  onclick="redirect()">Home</a></li>
+			<li class="a">Review 2016</li>
+		</ul>
+
+	<h1>Feedback</h1><br/><br/>
+
+	<center>
+	<div class = "content">
+	<form method = "post" action ="index.html">
+	Name: <input type = "text" name = "name"><br/><br/>
+	Gender: <br/>
+	<input type="radio" name="gender" value="male" checked> Male<br/>
+	<input type="radio" name="gender" value="female"> Female<br/><br/>
+	Age: <br/>
+	<input type="radio" name="age" value="below 12" checked>Below 12<br/>
+	<input type="radio" name="age" value="12 to 17">12 - 17<br/>
+	<input type="radio" name="age" value="18 or above">18 or above<br/><br/>
+	Overall Rating: <br/>
+	Worst<input type="range" name="rating" min="1" max = "6" value="4" >Excellent<br/>
+	<!--<input type="radio" name="rating" value="very-bad">Very Bad<br/>
+	<input type="radio" name="rating" value="bad" >Bad<br/>
+	<input type="radio" name="rating" value="acceptable" checked>Acceptable<br/>
+	<input type="radio" name="rating" value="good">Good<br/>
+	<input type="radio" name="rating" value="Excellent" >Excellent--><br/><br/>
+	Comment: <br/>
+	<textarea rows="4" cols="50">
+	</textarea><br/><br/>
+	<input type="submit" value="Submit">
+	<input type = "reset" value = "Clear">
+	</form>
+	</div>
+	</center>
+	<footer>
+		<center>Copyright</center>
+	</footer>
+	</body>
+
+
+</html>

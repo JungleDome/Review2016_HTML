@@ -1,0 +1,245 @@
+<html>
+	<head>
+		<title>Review of 2016 - Music</title>
+		<link rel = "icon" href = "../image/2016.ico"/>
+		<link rel="stylesheet" href="../css/navigator.css" />
+		<link rel="stylesheet" href="../css/music.css" />
+		<script src="../js/bgcolor.js"></script>
+		<script src="../js/jquery-3.1.1.js"></script>
+		<script src="../js/velocity.js"></script>
+	</head>
+	<body>
+	<div>
+		<ul class = "tab">
+			<li><a href="../help.html"  onclick="redirect()">Feedback</a></li>
+			<li><a href="../about.html"  onclick="redirect()">About</a></li>
+			<li class = "dropdown"><a href="javascript:void(0)">Category</a>
+				<div class="dropdown-content">
+					<a href="../news.html"  onclick="redirect()">News</a>
+					<a href="../entertainment.html"  onclick="redirect()">Entertainment</a>
+					<a href="../technology.html"  onclick="redirect()">Technology</a>
+					<a href="../tourism.html"  onclick="redirect()">Tourism</a>
+				</div>
+			</li>
+			<li><a href="../index.html" onclick="redirect()">Home</a></li>
+			<li class="a">Review 2016</li>
+		</ul>
+	</div>
+	<div class="content">
+	<div class = "title">
+		<p>Music Fever</p>
+	</div>
+
+	<img class="floating-button" src="../image/arrow.png" onclick="playerToggle()">
+	<table class="floating-player">
+		<td style="height:100%;width:70%;">
+		<div class="background">
+			<div class="lyric">
+			</div>
+			<div class="control">
+				<input type="image" src="../image/playerPrevious.png" alt="Previous" onclick="playerPrevious()">
+				<input type="image" src="../image/playerPlay.png" alt="Play" onclick="playerPlayPause()">
+				<input type="image" src="../image/playerNext.png" alt="Next" onclick="playerNext()">
+				<input type="range" alt="seekbar" min="0" max="100" onclick="playerSeek()" style="width:17vw;margin:1vw;" >
+				<input type="image" src="../image/playerPlaylist.png" style="left:40vw;" alt="Playlist" onclick="playlistToggle()">
+			</div>
+		</div>
+	</td>
+	<td style="width:30%;border-left:0;">
+		<ol class="playlist">
+			<li>awdw</li>
+			<li>awda</li>
+		</ol>
+</td>
+</table>
+	<div class = "base">
+		<div class = "report">
+			<ul class = "header">
+				<li><a href="javascript:void(0)" class = "headerlinks" onclick = "playMusic(event, 'Chinese')">Chinese</a></li>
+				<li><a href="javascript:void(0)" class = "headerlinks" onclick = "playMusic(event, 'English')">English</a></li>
+				<li><a href="javascript:void(0)" class = "headerlinks" onclick = "playMusic(event, 'Korean')">Korean</a></li>
+			</ul>
+			<div id = "Chinese" class = "headercontent">
+				<!--type content here-->
+				<div class="music-container">
+					<h1>TOP1(TitleHere)</h1>
+					<img src="" class="album-image"></img>
+				</div>
+			</div>
+			<div id = "English" class = "headercontent">
+				<!--type content here-->
+				<div class="music-container">
+					<h1>TOP1 : Ice Kacang ABC</h1>
+					<table class="music-details">
+						<tr>
+							<td class="music-album" rowspan="4">
+								<div class="container">
+								  <img onclick="" src="../image/a.png" alt="Avatar" class="image">
+								  <div class="overlay">
+								    <div class="text">Play</div>
+								  </div>
+								</div>
+							</td>
+							<td class="music-dt">
+								<table>
+									<tr>
+										<td>Author: ABC</td>
+									<tr>
+										<td>Album: ABC</td>
+									<tr>
+										<td>Released: 3 March 2017</td>
+									</tr></tr></tr>
+								</table>
+							</td>
+							<td><div class="music-lyric">A wiki (Listeni/ˈwɪki/ wik-ee) is a website that provides collaborative modification of its content and structure directly from the web browser. In a typical wiki, text is written using a simplified markup language (known as "wiki markup") and often edited with the help of a rich-text editor.[1] A wiki is run using wiki software, otherwise known as a wiki engine. There are dozens of different wiki engines in use, both standalone and part of other software, such as bug tracking systems. Some wiki engines are open source, whereas others are proprietary. Some permit control over different functions (levels of access); for example, editing rights may permit changing, adding or removing material. Others may permit access without enforcing access control. Other rules may also be imposed to organize content. A wiki engine is a type of content management system, but it differs from most other such systems, including blog software, in that the content is created without any defined owner or leader, and wikis have little implicit structure, allowing structure to emerge according to the needs of the users.[2]The online encyclopedia project Wikipedia is by far the most popular wiki-based website, and is in fact one of the most widely viewed sites of any kind in the world, having been ranked in the top ten since 2007.[3] Wikipedia is not a single wiki but rather a collection of hundreds of wikis, one for each language. There are at least tens of thousands of other wikis in use, both public and private, including wikis functioning as knowledge management resources, notetaking tools, community websites and intranets. The English-language Wikipedia has the largest collection of articles; as of September 2016, it had over five million articles. Ward Cunningham, the developer of the first wiki software, WikiWikiWeb, originally described it as "the simplest online database that could possibly work".[4] "Wiki" (pronounced [ˈwiki][note 1]) is a Hawaiian word meaning "quick".[5][6][7]</div></td>
+						</tr>
+					</table>
+				</div>
+				<div class="music-container">
+					<h1>TOP2 : Ice Kacang ABC</h1>
+					<table class="music-details">
+						<tr>
+							<td class="music-album" rowspan="4">
+								<div class="container">
+								  <img onclick="" src="../image/a.png" alt="Avatar" class="image">
+								  <div class="overlay">
+								    <div class="text">Play</div>
+								  </div>
+								</div>
+							</td>
+							<td class="music-dt">
+								<table>
+									<tr>
+										<td>Author: ABC</td>
+									<tr>
+										<td>Album: ABC</td>
+									<tr>
+										<td>Released: 3 March 2017</td>
+									</tr></tr></tr>
+								</table>
+							</td>
+							<td><div class="music-lyric">A wiki (Listeni/ˈwɪki/ wik-ee) is a website that provides collaborative modification of its content and structure directly from the web browser. In a typical wiki, text is written using a simplified markup language (known as "wiki markup") and often edited with the help of a rich-text editor.[1] A wiki is run using wiki software, otherwise known as a wiki engine. There are dozens of different wiki engines in use, both standalone and part of other software, such as bug tracking systems. Some wiki engines are open source, whereas others are proprietary. Some permit control over different functions (levels of access); for example, editing rights may permit changing, adding or removing material. Others may permit access without enforcing access control. Other rules may also be imposed to organize content. A wiki engine is a type of content management system, but it differs from most other such systems, including blog software, in that the content is created without any defined owner or leader, and wikis have little implicit structure, allowing structure to emerge according to the needs of the users.[2]The online encyclopedia project Wikipedia is by far the most popular wiki-based website, and is in fact one of the most widely viewed sites of any kind in the world, having been ranked in the top ten since 2007.[3] Wikipedia is not a single wiki but rather a collection of hundreds of wikis, one for each language. There are at least tens of thousands of other wikis in use, both public and private, including wikis functioning as knowledge management resources, notetaking tools, community websites and intranets. The English-language Wikipedia has the largest collection of articles; as of September 2016, it had over five million articles. Ward Cunningham, the developer of the first wiki software, WikiWikiWeb, originally described it as "the simplest online database that could possibly work".[4] "Wiki" (pronounced [ˈwiki][note 1]) is a Hawaiian word meaning "quick".[5][6][7]</div></td>
+						</tr>
+					</table>
+				</div>
+				<div class="music-container">
+					<h1>TOP3 : Ice Kacang ABC</h1>
+					<table class="music-details">
+						<tr>
+							<td class="music-album" rowspan="4"><img src="../image/a.png"></img></td>
+							<td class="music-dt">
+								<table>
+									<tr>
+										<td>Author: ABC</td>
+									<tr>
+										<td>Album: ABC</td>
+									<tr>
+										<td>Released: 3 March 2017</td>
+									</tr></tr></tr>
+								</table>
+							</td>
+							<td>Lyrics over here!</td>
+						</tr>
+					</table>
+				</div>
+				<div class="music-container">
+					<h1>TOP4 : Ice Kacang ABC</h1>
+					<table class="music-details">
+						<tr>
+							<td class="music-album" rowspan="4"><img src="../image/a.png"></img></td>
+							<td class="music-dt">
+								<table>
+									<tr>
+										<td>Author: ABC</td>
+									<tr>
+										<td>Album: ABC</td>
+									<tr>
+										<td>Released: 3 March 2017</td>
+									</tr></tr></tr>
+								</table>
+							</td>
+							<td>Lyrics over here!</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id = "Korean" class = "headercontent">
+				<!--type content here-->
+			</div>
+
+		</div>
+	</div>
+	</div>
+	<script>
+	var toggle = false;
+	var playlistToggled = false;
+
+	function playMusic(evt, musicType) {
+			// Declare all variables
+			var i, headercontent, headerlinks;
+
+			// Get all elements with class="headercontent" and hide them
+			headercontent = document.getElementsByClassName("headercontent");
+			for (i = 0; i < headercontent.length; i++) {
+				console.log('a');
+				headercontent[i].style.display = "none";
+			}
+
+			// Get all elements with class="headerlinks" and remove the class "active"
+			headerlinks = document.getElementsByClassName("headerlinks");
+			for (i = 0; i < headerlinks.length; i++) {
+				headerlinks[i].className = headerlinks[i].className.replace(" active", "");
+			}
+
+			// Show the current header, and add an "active" class to the link that opened the header
+			document.getElementById(musicType).style.display = "block";
+			evt.currentTarget.className += " active";
+	}
+
+	function playerToggle() {
+		var fullWidth = window.innerWidth * 0.7;
+		var btnNoPlaylist = fullWidth - (fullWidth * 0.3);
+		var plyNoPlaylist = -fullWidth + (fullWidth * 0.7);
+		if (toggle) {
+			$('.floating-button').velocity({rotateZ: "-=180"},{queue:false},300);
+			$('.floating-button').velocity({right:0},"easeIn",1500);
+			$('.floating-player').velocity({right:-fullWidth},"easeIn",1500);
+			toggle=false;
+		}
+		else {
+			$('.floating-button').velocity({rotateZ: "+=180"},{queue:false},1500);
+			if (playlistToggled) {
+				$('.floating-button').velocity({right:fullWidth},"easeIn",1500);
+				$('.floating-player').velocity({right:0},"easeIn",1500);
+			}
+			else {
+				$('.floating-button').velocity({right:btnNoPlaylist},"easeIn",1500);
+				$('.floating-player').velocity({right:plyNoPlaylist},"easeIn",1500);
+			}
+			toggle=true;
+		}
+	}
+
+	function playlistToggle() {
+		var fullWidth = window.innerWidth * 0.7;
+		var btnNoPlaylist = fullWidth - (fullWidth * 0.3);
+		var plyNoPlaylist = -fullWidth + (fullWidth * 0.7);
+		if(playlistToggled) {
+			$('.floating-button').velocity({right:btnNoPlaylist},"easeIn",1500);
+			$('.floating-player').velocity({right:plyNoPlaylist},"easeIn",1500);
+
+			playlistToggled = false;
+		}
+		else {
+			$('.floating-button').velocity({right:fullWidth},"easeIn",1500);
+			$('.floating-player').velocity({right:0},"easeIn",1500);
+			playlistToggled = true;
+		}
+	}
+
+	</script>
+	<footer>
+		<center>Copyrighted</center>
+	</footer>
+	</body>
+</html>

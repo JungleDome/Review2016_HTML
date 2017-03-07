@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+	<head>
+		<title>Review 2016 - News</title>
+		<link rel = "stylesheet" href = "css/w3.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel = "icon" href = "image/2016.ico"/>
+		<link rel="stylesheet" href="css/navigator.css" />
+		<link rel="stylesheet" href="css/unslider-dots.css" />
+		<link rel="stylesheet" href="css/unslider.css" />
+		<link rel="stylesheet" href="css/news.css" />
+		<script src="js/jquery-3.1.1.js"></script>
+		<script src="js/velocity.js"></script>
+		<script src="js/unslider.js"></script>
+		<script src="js/bgcolor.js"></script>
+		<script src="js/inview.js"></script>
+	</head>
+	<body>
+<ul class = "tab">
+	<li><a href="help.html"  onclick="redirect()">Feedback</a></li>
+	<li><a href="about.html"  onclick="redirect()">About</a></li>
+	<li class = "dropdown"><a href="javascript:void(0)">Category</a>
+		<div class="dropdown-content">
+			<a href="news.html"  onclick="redirect()">News</a>
+			<a href="entertainment.html"  onclick="redirect()">Entertainment</a>
+			<a href="technology.html"  onclick="redirect()">Technology</a>
+			<a href="tourism.html"  onclick="redirect()">Tourism</a>
+		</div>
+	</li>
+	<li><a href="index.html" onclick="redirect()">Home</a></li>
+	<li class="a">Review 2016</li>
+</ul>
+	<div class = "content animated fadeInUp">
+		<div class="slider">
+			<ul>
+				<li>
+					<img src="image/oculus.jpg">
+					<div class="side-text">
+						<h1>This is a sample title</h1>
+						<p>This is a sample paragraph</p>
+					</div>
+				</li>
+				<li>
+					<img src="image/ostrich.png">
+					<div class="side-text">
+						<h1>Ostrich On Highway?</h1>
+						<p>Ostrich Ostrich Ostrich Ostrich Ostrich Ostrich Ostrich Ostrich</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	<div class="item left">
+		<h1 class="rank">TOP 1</h1>
+		<div class="item-real">
+			<img src="image/ostrich.png"></img>
+			<article class="text" >
+				<h1>Ostrich On The ROAD!!</h1>
+				<p>President Trump recently tried to ban anyone from a list of seven Muslim-majority countries from coming into the United States. The Ninth Circuit Court has thwarted those efforts so far, though Trump plans to appeal that decision. Meanwhile, many legal citizens, green-card holders and even those born here have faced scrutiny at the border. And here in Silicon Valley, that ban and other efforts against immigrants have a greater impact on tech and the economy. Immigrants have been instrumental in building some of the world’s largest tech companies and Silicon Valley feeds on a constant flow of brain power and innovation from people coming from all over the world. However, Trump is expected to soon take steps to overhaul the rules for the H-1B visa program, a specialized type of visa given to highly skilled workers, nearly half of which go to those working in Silicon Valley. Both fears of a Muslim ban and the possibility skilled workers may face a denial of entry looms large in the Valley, dashing hopes for those wanting to contribute in the innovation capital.</p>
+				<!--<a class="read" href="" onclick="readmore(0)">Read More &dArr;</a>-->
+			</article>
+		</div>
+	</div>
+	<div class="item right">
+		<div class="item-real">
+			<div class="text" >
+				<h1>President Trump !?!?!?!</h1>
+				<p id="2">President Trump recently tried to ban anyone from a list of seven Muslim-majority countries from coming into the United States. The Ninth Circuit Court has thwarted those efforts so far, though Trump plans to appeal that decision. Meanwhile, many legal citizens, green-card holders and even those born here have faced scrutiny at the border.
+					And here in Silicon Valley, that ban and other efforts against immigrants have a greater impact on tech and the economy. Immigrants have been instrumental in building some of the world’s largest tech companies and Silicon Valley feeds on a constant flow of brain power and innovation from people coming from all over the world.
+					However, Trump is expected to soon take steps to overhaul the rules for the H-1B visa program, a specialized type of visa given to highly skilled workers, nearly half of which go to those working in Silicon Valley. Both fears of a Muslim ban and the possibility skilled workers may face a denial of entry looms large in the Valley, dashing hopes for those wanting to contribute in the innovation capital.
+				</p>
+			</div>
+			<img src="image/ostrich.png"></img>
+		</div>
+		<h1 class="rank">TOP 2</h1>
+	</div>
+	</div>
+	<script>
+	'Initialize unslider jquery plugin'
+	$('.slider').unslider({
+		animation: 'horizontal',
+		autoplay: true,
+		arrow:true,
+		nav:false
+	});
+	
+	var ir = $('.item')[1];
+	
+	$(window).scroll(function() {
+		
+		 if (isElementInViewport(ir)) {
+		 	setTimeout(function(){
+		 	$(ir).css('opacity',1);
+		 	$(ir).addClass("right");
+		 	
+		 	},50);
+
+		 }
+		 else {
+		 	$(ir).removeClass("right");
+		 	$(ir).css('opacity',0);
+		 }
+	});
+
+	function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+
+    return rect.bottom > 0 &&
+        rect.right > 0 &&
+        rect.left < (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */ &&
+        rect.top < (window.innerHeight || document.documentElement.clientHeight) /* or $(window).height() */;
+	}
+	
+	</script>
+	<footer>
+		<center>Copyrighted</center>
+	</footer>
+
+	</body>
+</html>
+

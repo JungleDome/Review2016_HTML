@@ -1,0 +1,254 @@
+body {
+  margin:0;
+  background: url('../image/music2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x:hidden;
+}
+
+.base{
+  background-color: indigo;
+  width: 90%;
+  height: 170%;
+  position: relative;
+  top: 99px;
+  left: 60px;
+}
+
+.report{
+  background-color: mediumslateblue;
+  color: azure;
+  width: 98%;
+  height: 98%;
+  position: relative;
+  top: 15px;
+  left: 12px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  position: absolute;
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.title{
+  position: absolute;
+  width: 100%;
+  height: 65px;
+  top: 52px;
+  left: -2px;
+  text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px darkblue;
+  color: skyblue;
+  text-align: center;
+  font-size: 39;
+}
+
+ul.tab {
+  background-color: midnightblue;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+  background-color: cyan;
+}
+
+ul.header {
+  list-style-type: none;
+  margin: 0;
+  width:cover;
+  padding: 1px 5px 0 0;
+  border: none;
+  background-color: steelblue;
+}
+
+ul.header li {
+  display:inline;
+}
+
+ul.header li a {
+  font-family: "Lato", sans-serif;
+  display: inline-block;
+  color: azure;
+  text-align: center;
+  background-color: royalblue;
+  padding: 14px 16px;
+  margin-left: 3px;
+  text-decoration: none;
+  transition: 0.3s;
+  Font-size: 17px;
+}
+
+.music-container {
+  margin:10px;
+  background: rgba(225,225,225,0.7);
+  height:auto;
+  width:cover;
+}
+
+.music-details {
+  width:100%;
+  height:100px;
+}
+
+.music-details table {
+  margin:0;
+  border-spacing: 0;
+  width:100%;
+  height:cover;
+}
+
+.music-dt {
+  width: 30%;
+}
+
+.music-album {
+  /* Quick hack for sizing the row to img size without knowing the actual size*/
+  width:auto;
+  height:auto;
+  z-index: 88;
+}
+
+.music-lyric {
+  height:100px;
+  overflow-y: scroll;
+}
+
+.base table,td {
+  border:2px solid black;
+}
+
+.floating-player td {
+  border:2px solid gray;
+  padding:0;
+}
+
+.floating-player {
+  position:fixed;
+  width: 70vw;
+  height:80vh;
+  right:-70vw;
+  background:white;
+  z-index: 99;
+  border-spacing: 0;
+}
+
+.floating-button {
+  position:fixed;
+  right:0;
+  height:50px;
+  width:50px;
+  z-index:99;
+}
+
+.background {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-y:hidden;
+  width: 100%;
+  height: 100%;
+  display:inline-block;
+}
+
+.lyric {
+  width:inherit;
+  height: auto;
+}
+
+.control {
+  position:relative;
+  top:calc( 100% - 7vw);
+  background: rgba(225,225,225,0.5);
+  width: 100%;
+  height: 7vw;
+}
+
+.control input[type=image] {
+  height:7vw;
+  width:7vw;
+  image-rendering: crisp-edges;
+}
+
+.playlist {
+  padding: 0;
+  margin:0;
+  width:100%;
+  height: 100%;
+  list-style-position: inside;
+}
+
+.playlist li {
+  padding:20px;
+  margin:0;
+  background:red;
+  border-bottom:1px solid black;
+  width:inherit;
+  line-height:10%;
+  box-sizing: border-box;
+}
+
+.music-container img {
+  display:inline;
+  width:100px;
+}
+
+ul.header li a:hover {
+  background-color: powderblue;
+}
+
+/* Create an active/current tablink class */
+ul.header li a:focus, .active {
+  background-color: mediumslateblue !important;
+}
+
+/* Style the tab content */
+.headercontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+footer {
+  background: darkblue;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  bottom: -102%;
+  left: -3px;
+  color: white;
+}

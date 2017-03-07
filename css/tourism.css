@@ -1,0 +1,50 @@
+html {
+	background: url('../image/tourism/cover.jpeg') center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:100% 100%;
+}
+
+.title {
+	position: absolute;
+	top:40%;
+	left:50%;
+	width:100%;
+	transform: translate(-50%,-50%);
+	font-weight: bold;
+	font-size:5em;
+	text-align:center;
+	word-break:keep-all;
+	background-color: rgba(225,225,225,0.24);
+}
+
+#example {
+	height: 400px;
+	width:400px;
+	background:rgba(225,225,225,0.8);
+}
+
+h2 {
+	position:absolute;
+	top:0%;
+	left:50%;
+	transform: translate(-200%,0%);
+	text-align:center;
+	font-size:3em;
+}
+/*Theming of tab*/
+.tab {
+	background-color: rgba(50,50,50,0.09) !important;
+	position:fixed;
+	z-index:999;
+}
+
+footer {
+	background-color: rgba(50,50,50,0.4) !important;
+}
+
+ul.tab li a:hover {
+	background-color:rgba(43, 140, 253, 0.86) !important;
+	z-index:999;
+}
