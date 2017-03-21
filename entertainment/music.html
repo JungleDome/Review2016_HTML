@@ -4,33 +4,266 @@
 		<link rel = "icon" href = "../image/2016.ico"/>
 		<link rel="stylesheet" href="../css/navigator.css" />
 		<link rel="stylesheet" href="../css/music.css" />
+		<link rel="stylesheet" href="../css/font-awesome.min.css">
 		<script src="../js/bgcolor.js"></script>
 		<script src="../js/jquery-3.1.1.js"></script>
 		<script src="../js/velocity.js"></script>
+	<style>
+		
+		
+		.content-container{
+		height: 190px;
+		width: 98%;
+		position: relative;
+		margin-top: 7px;
+		margin-left: 2px;
+		}
+		
+		.index{
+		height: 120px;
+		width: 4%;
+		background-color: white;
+		color: black;
+		text-align: center;
+		padding-top: 70px;
+		font-size: 28px;
+		}
+		
+		.content{
+		height: 190px;
+		width: 80%;
+		background-color: white;
+		font-size: 16px;
+		color: black;
+		margin-left: 6px;
+		}
+		
+		.button{
+		height: 190px;
+		width: 14%;
+		background-color: white;
+		margin-left: 6px;
+		}
+		
+		.index, .content, .button{
+		float:left;
+		}
+		
+		.love{
+		background-image: url("../image/music/love4.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.how{
+		background-image: url("../image/music/how2.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.party{
+		background-image: url("../image/music/party.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.just{
+		background-image: url("../image/music/just.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.not{
+		background-image: url("../image/music/not.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.should{
+		background-image: url("../image/music/should.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.rings{
+		background-image: url("../image/music/rings3.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.sound{
+		background-image: url("../image/music/sound3.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.blue{
+		background-image: url("../image/music/blue.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.all{
+		background-image: url("../image/music/all.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.this{
+		background-image: url("../image/music/this.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.work{
+		background-image: url("../image/music/work.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.dont{
+		background-image: url("../image/music/dont.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.treat{
+		background-image: url("../image/music/treat.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.we{
+		background-image: url("../image/music/we.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.send{
+		background-image: url("../image/music/send.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.pillowtalk{
+		background-image: url("../image/music/pillowtalk2.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.maroon{
+		background-image: url("../image/music/maroon.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.cant{
+		background-image: url("../image/music/cant3.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.closer{
+		background-image: url("../image/music/closer.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.cheer{
+		background-image: url("../image/music/cheer2.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.whistle{
+		background-image: url("../image/music/whistle2.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.rough{
+		background-image: url("../image/music/rough.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.monster{
+		background-image: url("../image/music/monster4.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.tell{
+		background-image: url("../image/music/tell.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.rain{
+		background-image: url("../image/music/rain.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.very{
+		background-image: url("../image/music/very.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.dream{
+		background-image: url("../image/music/dream2.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.last{
+		background-image: url("../image/music/last2.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+		
+		.you{
+		background-image: url("../image/music/you.jpg");
+		background-size:100% 100%;
+		background-repeat: no repeat;
+		}
+
+		/* Style the tab content */
+		.headercontent {
+			display: none;
+			padding: 6px 12px;
+			border-top: none;
+		}
+		/*Start tab theming*/
+		ul.tab {background-color: midnightblue;}
+		ul.tab li a:hover {background-color: cyan;}
+		ul.header{background-color: steelblue;}
+		ul.header li a {background-color: royalblue;}
+		ul.header li a:hover {background-color: powderblue;}
+		ul.header li a:focus, .active {background-color: midnightblue;}
+		/*End tab theming*/
+	</style>
 	</head>
 	<body>
-	<div>
 		<ul class = "tab">
-			<li><a href="../help.html"  onclick="redirect()">Feedback</a></li>
+			<li><a href="../feedback.html"  onclick="redirect()">Feedback</a></li>
 			<li><a href="../about.html"  onclick="redirect()">About</a></li>
 			<li class = "dropdown"><a href="javascript:void(0)">Category</a>
 				<div class="dropdown-content">
 					<a href="../news.html"  onclick="redirect()">News</a>
 					<a href="../entertainment.html"  onclick="redirect()">Entertainment</a>
-					<a href="../technology.html"  onclick="redirect()">Technology</a>
+					<a href="../technology.html" onclick="redirect()">Technology</a>
 					<a href="../tourism.html"  onclick="redirect()">Tourism</a>
 				</div>
 			</li>
-			<li><a href="../index.html" onclick="redirect()">Home</a></li>
+			<li><a href="index.html"  onclick="redirect()">Home</a></li>
 			<li class="a">Review 2016</li>
 		</ul>
-	</div>
-	<div class="content">
 	<div class = "title">
-		<p>Music Fever</p>
+		<p>Music Fever</p>		
 	</div>
-
-	<img class="floating-button" src="../image/arrow.png" onclick="playerToggle()">
+	<i class="floating-button fa fa-bars" onclick="playerToggle()"></i>
 	<table class="floating-player">
 		<td style="height:100%;width:70%;">
 		<div class="background">
@@ -52,125 +285,1315 @@
 		</ol>
 </td>
 </table>
-	<div class = "base">
 		<div class = "report">
 			<ul class = "header">
-				<li><a href="javascript:void(0)" class = "headerlinks" onclick = "playMusic(event, 'Chinese')">Chinese</a></li>
-				<li><a href="javascript:void(0)" class = "headerlinks" onclick = "playMusic(event, 'English')">English</a></li>
-				<li><a href="javascript:void(0)" class = "headerlinks" onclick = "playMusic(event, 'Korean')">Korean</a></li>
+				<li><a href="javascript:void(0)" class = "headerlinks" onclick = "playMusic(event, 'Chinese')">Chinese</a></li>		
+				<li><a href="javascript:void(0)" class = "headerlinks" onclick = "playMusic(event, 'English')">English</a></li>		
+				<li><a href="javascript:void(0)" class = "headerlinks" onclick = "playMusic(event, 'Korean')">Korean</a></li>	
 			</ul>
 			<div id = "Chinese" class = "headercontent">
-				<!--type content here-->
-				<div class="music-container">
-					<h1>TOP1(TitleHere)</h1>
-					<img src="" class="album-image"></img>
+				<div class = "content-container">
+						<div class = "index">1</div>
+						<div class = "button love"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Love Confession(告白气球)</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Jay Chow(周杰伦)</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>The bedtime story of Jay Chow(周杰伦的床边故事)</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>24/06/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Jay Chow(周杰伦), WenShan Fang(方文山), Michael Lim(林迈可)</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>POP & Popular</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:35</td>
+							</tr>
+						</table>
+						The inspiration of this song is originated from the beautiful landscapes in French. 
+						This song is created with the similar style of ‘simple love’. The purpose of writing 
+						this song is to recall the memories and feelings about the puppy love and freshness 
+						since young. This song had been awarded as one of the annual top 10 golden songs on 
+						Billboard Radio China 2016.
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">2</div>
+						<div class = "button how"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>How Have You Been?(你，好不好？)</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>XingZhe Chow(周兴哲)</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>How Have You Been?(你，好不好？)</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>20/05/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>XingXhe Chow(周兴哲), YiWei Goh(吴易纬), JianQi Chen(陈建骐) </td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Popular</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>04:47</td>
+							</tr>
+						</table>
+						This song is mainly describing the regret feeling of an old man who recalls 
+						the memories and everything done with his past away wife.
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">3</div>
+						<div class = "button party"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Party Animal(派对动物)</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>May Day(五月天)</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>Self Legend(自传)</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>21/07/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>XinHong Chen(陈信宏), AhPu. May Day Member(阿噗)</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Popular & Rock</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>04:44</td>
+							</tr>
+						</table>
+						May Day feel that the world not becomes happier as they though. 
+						They wrote this song to tell all the people to live happier and be positive 
+						to face any challenges. This song has been awarded as one of the twenty golden songs 
+						in the global popular music billboard of the first half year.
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">4</div>
+						<div class = "button just"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Just enough(刚刚好)</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Joker Xue(薛之谦)</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>The Beginner(初学者)</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>02/12/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Joker Xue(薛之谦), Wei Zheng(郑伟)</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Sentimental</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>04:10</td>
+							</tr>
+						</table>
+						This song is written by artist himself as thanks to 
+						all his supportive fans. This song had been awards as one of top 
+						10 hits searching golden songs. 
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">5</div>
+						<div class = "button not"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Not Good Enough(是我不夠好)</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Tia Lee(李毓芬)</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>-</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>17/04/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Kenji Wu(吳克群), Oscar Wu</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Sentimental</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:39</td>
+							</tr>
+						</table>
+						This song mainly discusses the difference of 
+						attitudes among boys and girls towards love relationship. 
+						Artist said that the attitudes among boys and girls are totally 
+						different which the girls will get into the relationship slowly and take serious 
+						for that whereas the boys just treats this relationship as one part of live and not concern 
+						about it compared to jobs, interests, friends and family members. 
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">6</div>
+						<div class = "button should"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Shouldn’t be(不该)</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Jay Chow(周杰伦) & AMei(张惠妹)</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>The bedtime story of Jay Chow(周杰伦的床边故事)</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>24/06/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Jay Chow(周杰伦), WenShan Fang(方文山), YuXun Ong(黄雨勋)</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Popular</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>04:53</td>
+							</tr>
+						</table>
+						To collaborate with AMei, Jay Chow purposely wrote this song. When AMei 
+						receives the invitation from him, she feels honour. She thinks this song will 
+						be very hit when listening to the demo of this song. This song has been awarded 
+						as one of the twenty golden songs in the global popular music billboard of the first 
+						half year.
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">7</div>
+						<div class = "button rings"></div>
+						<div class = "content">
+						<table>
+							<tr>
+								<td>Song Name:</td>
+								<td>Rings(年轮说)</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Rainnie Yang(杨丞琳)</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>Rings(年轮说) </td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>30/09/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Greeny Wu(吴青峰), YuJie Zheng(郑宇界)</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Sentimental</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>04:10</td>
+							</tr>
+						</table>
+						This song describes the growth of Rainnie. All the happy 
+						and unhappy things assist her self-rebirth. This song is 
+						delivered to all people who had experienced the pain of getting 
+						into love and helps them to recover from hurt.
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">8</div>
+						<div class = "button sound"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Sound Of My Heart(我想)</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Jason Zhang(张杰)</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>Sound Of My Heart(我想)</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>22/04/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>LiRen Wang(王笠人), SiHua Leong(梁思桦)</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Popular</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:46</td>
+							</tr>
+						</table>
+						This song delivers the message of Jason Zhang in purchasing 
+						his music dream for 12 years. This is named Sound of My Heart 
+						because Jason Zhang desires to persist his passion in the singing 
+						field and demonstrates his determination of fighting hard in this career.  
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">9</div>
+						<div class = "button blue"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Blue Love Theme(好愛好散)</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Andrew Tan(陳勢安)</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>Dear Paranoia(親愛的偏執狂)</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>14/10/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>JiaJian Tam(覃嘉健), GaoWei Ma(馬嵩惟), Kenn C</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Popular</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>04:43</td>
+							</tr>
+						</table>
+						This song fully describes the determination of Andrew Tan in purchasing 
+						his music dream in the singing career. The main content of this song is about 
+						the love relationship among boys and girls who want to fall in love but afraid 
+						of getting hurt. They are struggling in this confusion in which they desire to break 
+						up with each other in the good ending when they can’t continue the relationship but they 
+						fail to do so because they already had closed relationship between each other.
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">10</div>
+						<div class = "button all"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>All You Did(都是你害的)</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Bii(毕书尽)</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>I'M Bii TO THE DOUBLE i</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>06/06/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>YouQi Chen(陈又齐), Bii(毕书尽), Feby Chow(周菲比)</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Popular</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>05:05</td>
+							</tr>
+						</table>
+						This is a sore lovely song. This song expresses the feeling of exclamation 
+						for the pass by of love. The irreducible soreness and self-murmuring bring 
+						the feeling of hate which is following the screaming and vanished in the soreness. 
+						Heart-breaking but not feeling pain, smiling but not happy, in the moment of tear stop 
+						failing, these all you did. 
+
+						</div>
 				</div>
 			</div>
 			<div id = "English" class = "headercontent">
-				<!--type content here-->
-				<div class="music-container">
-					<h1>TOP1 : Ice Kacang ABC</h1>
-					<table class="music-details">
-						<tr>
-							<td class="music-album" rowspan="4">
-								<div class="container">
-								  <img onclick="" src="../image/a.png" alt="Avatar" class="image">
-								  <div class="overlay">
-								    <div class="text">Play</div>
-								  </div>
-								</div>
-							</td>
-							<td class="music-dt">
-								<table>
-									<tr>
-										<td>Author: ABC</td>
-									<tr>
-										<td>Album: ABC</td>
-									<tr>
-										<td>Released: 3 March 2017</td>
-									</tr></tr></tr>
-								</table>
-							</td>
-							<td><div class="music-lyric">A wiki (Listeni/ˈwɪki/ wik-ee) is a website that provides collaborative modification of its content and structure directly from the web browser. In a typical wiki, text is written using a simplified markup language (known as "wiki markup") and often edited with the help of a rich-text editor.[1] A wiki is run using wiki software, otherwise known as a wiki engine. There are dozens of different wiki engines in use, both standalone and part of other software, such as bug tracking systems. Some wiki engines are open source, whereas others are proprietary. Some permit control over different functions (levels of access); for example, editing rights may permit changing, adding or removing material. Others may permit access without enforcing access control. Other rules may also be imposed to organize content. A wiki engine is a type of content management system, but it differs from most other such systems, including blog software, in that the content is created without any defined owner or leader, and wikis have little implicit structure, allowing structure to emerge according to the needs of the users.[2]The online encyclopedia project Wikipedia is by far the most popular wiki-based website, and is in fact one of the most widely viewed sites of any kind in the world, having been ranked in the top ten since 2007.[3] Wikipedia is not a single wiki but rather a collection of hundreds of wikis, one for each language. There are at least tens of thousands of other wikis in use, both public and private, including wikis functioning as knowledge management resources, notetaking tools, community websites and intranets. The English-language Wikipedia has the largest collection of articles; as of September 2016, it had over five million articles. Ward Cunningham, the developer of the first wiki software, WikiWikiWeb, originally described it as "the simplest online database that could possibly work".[4] "Wiki" (pronounced [ˈwiki][note 1]) is a Hawaiian word meaning "quick".[5][6][7]</div></td>
-						</tr>
-					</table>
+				<div class = "content-container">
+						<div class = "index">1</div>
+						<div class = "button this"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>This Is What You Came For</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Calvin Harris & Rihanna</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>This Is What You Came For </td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>29/04/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Calvin Harris, Taylor Swift</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Electronic Dance </td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:41</td>
+							</tr>
+						</table>
+						Calvin Harris said that he was nervous to play Rihanna the song because there are many 
+						modifications made when she first heard it. The song marks the pair’s third collaboration 
+						which is featured on Rihanna’s sixth studio album.
+
+						</div>
 				</div>
-				<div class="music-container">
-					<h1>TOP2 : Ice Kacang ABC</h1>
-					<table class="music-details">
-						<tr>
-							<td class="music-album" rowspan="4">
-								<div class="container">
-								  <img onclick="" src="../image/a.png" alt="Avatar" class="image">
-								  <div class="overlay">
-								    <div class="text">Play</div>
-								  </div>
-								</div>
-							</td>
-							<td class="music-dt">
-								<table>
-									<tr>
-										<td>Author: ABC</td>
-									<tr>
-										<td>Album: ABC</td>
-									<tr>
-										<td>Released: 3 March 2017</td>
-									</tr></tr></tr>
-								</table>
-							</td>
-							<td><div class="music-lyric">A wiki (Listeni/ˈwɪki/ wik-ee) is a website that provides collaborative modification of its content and structure directly from the web browser. In a typical wiki, text is written using a simplified markup language (known as "wiki markup") and often edited with the help of a rich-text editor.[1] A wiki is run using wiki software, otherwise known as a wiki engine. There are dozens of different wiki engines in use, both standalone and part of other software, such as bug tracking systems. Some wiki engines are open source, whereas others are proprietary. Some permit control over different functions (levels of access); for example, editing rights may permit changing, adding or removing material. Others may permit access without enforcing access control. Other rules may also be imposed to organize content. A wiki engine is a type of content management system, but it differs from most other such systems, including blog software, in that the content is created without any defined owner or leader, and wikis have little implicit structure, allowing structure to emerge according to the needs of the users.[2]The online encyclopedia project Wikipedia is by far the most popular wiki-based website, and is in fact one of the most widely viewed sites of any kind in the world, having been ranked in the top ten since 2007.[3] Wikipedia is not a single wiki but rather a collection of hundreds of wikis, one for each language. There are at least tens of thousands of other wikis in use, both public and private, including wikis functioning as knowledge management resources, notetaking tools, community websites and intranets. The English-language Wikipedia has the largest collection of articles; as of September 2016, it had over five million articles. Ward Cunningham, the developer of the first wiki software, WikiWikiWeb, originally described it as "the simplest online database that could possibly work".[4] "Wiki" (pronounced [ˈwiki][note 1]) is a Hawaiian word meaning "quick".[5][6][7]</div></td>
-						</tr>
-					</table>
+				<div class = "content-container">
+						<div class = "index">2</div>
+						<div class = "button work"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Work From Home </td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Fifth Harmony & Ty Dolla Sign</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>7/27</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>26/02/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Joshua Coleman,  Jude Demorest, Tyrone Griffith, Jr, Alexander Izquierdo, Brian Lee</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Electropop</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:34</td>
+							</tr>
+						</table>
+						Based on the oral of one of the member of Fifth Harmony, Dinah Jane, she was so happy that 
+						Ty Dolla Sign can collaborate with them in making this song and he was absolutely match the 
+						style of this song. In this song, there is something electrifying about it. It is sexy but cool.
+						</div>
 				</div>
-				<div class="music-container">
-					<h1>TOP3 : Ice Kacang ABC</h1>
-					<table class="music-details">
-						<tr>
-							<td class="music-album" rowspan="4"><img src="../image/a.png"></img></td>
-							<td class="music-dt">
-								<table>
-									<tr>
-										<td>Author: ABC</td>
-									<tr>
-										<td>Album: ABC</td>
-									<tr>
-										<td>Released: 3 March 2017</td>
-									</tr></tr></tr>
-								</table>
-							</td>
-							<td>Lyrics over here!</td>
-						</tr>
-					</table>
+				<div class = "content-container">
+						<div class = "index">3</div>
+						<div class = "button dont"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Don’t Let Me Down </td>
+								<td></td>
+								<td>Artist:</td>
+								<td>The Chainsmokers & Daya</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>Collage</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>05/02/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Andrew Taggart, Emily Warren, Scott Harris</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>EMD, trap-pop</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:28</td>
+							</tr>
+						</table>
+						Taggart first created a drop during a flight and added guitar sound to the song which is 
+						inspired by the bands such as xx and Explosions in the Sky. He enlisted Daya to record the vocals 
+						in the studio when he heard ‘Hide Away’ song by Daya.
+
+						</div>
 				</div>
-				<div class="music-container">
-					<h1>TOP4 : Ice Kacang ABC</h1>
-					<table class="music-details">
-						<tr>
-							<td class="music-album" rowspan="4"><img src="../image/a.png"></img></td>
-							<td class="music-dt">
-								<table>
-									<tr>
-										<td>Author: ABC</td>
-									<tr>
-										<td>Album: ABC</td>
-									<tr>
-										<td>Released: 3 March 2017</td>
-									</tr></tr></tr>
-								</table>
-							</td>
-							<td>Lyrics over here!</td>
-						</tr>
-					</table>
+				<div class = "content-container">
+						<div class = "index">4</div>
+						<div class = "button treat"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Treat You Better</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Shawn Mendes</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>Illuminate</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>03/06/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Shawn Mendes, Teddy Geiger, Scott Harris)</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Pop</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:07</td>
+							</tr>
+						</table>
+						On the Us Billboard Hot 100, this song stands a place at number 6 making Mendes’s second top 10 single. 
+						This song also peak at number 7 on the Canadian Hot 100. Moreover, this is ranked place 42 on ‘100 Best 
+						Pop Songs of 2016’ list.
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">5</div>
+						<div class = "button we"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>We Don’t Talk Anymore  </td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Charlie Puth & Selena Gomez</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>Nine Track Mind</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>24/05/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Charlie Puth, Jacob Kasher Hindlin, Selena Gomez</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Tropical House</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:37</td>
+							</tr>
+						</table>
+						During a trip in Japan, Charlie created the guitar line. He also produced beat in Philippines and go to 
+						Los Angeles to record the vocals. He played the song for Selena Gomez a few month later and thought their 
+						voices would complement for each other.
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">6</div>
+						<div class = "button send"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Send My Love(To Your New Lover)</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Adele Adkins</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>25</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>16/05/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Adele Adkins, Max Martin, Shellback</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Pop</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:41</td>
+							</tr>
+						</table>
+						Adele expressed an interest in working with Martin when she heard the song of Taylor Swift, 
+						‘I Knew You Are Trouble’ which is produced by Martin. When she was 13 years old, she had written 
+						after being inspired by ‘Frank’ which is produced by Amy Winehouse. Adele showed Martin the guitar 
+						riff she had and the duo finished the track on the guitar. 
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">7</div>
+						<div class = "button pillowtalk"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Pillowtalk</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Zayn Malik</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>Mind of Mine </td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>29/01/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Zayn Malik, Levi Lennox, Anthony Hannides, Micheal Hannides, Joe Garrett</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Alternative R&B, electronica</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:23</td>
+							</tr>
+						</table>
+						Zany used his experiences that he was been through especially in the last five years to write this song. This song is 
+						Zayn’s debut solo single after he left One Direction in 2015.
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">8</div>
+						<div class = "button maroon"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Don’t Wanna Know</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Maroon 5 & Kendrick Lamar</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>Don’t Wanna Know</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>11/10/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Kendrick Duckworth, Adam Levine, Benjamin Levin, John Ryan, Jacob Kasher, Ammar Malik, Kurtis McKenzie, Jon Mills</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Tropical House</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:34</td>
+							</tr>
+						</table>
+						This song reached the top 10 in 15 countries as well as number 6 in the US. In Brazil, this song reaches 100,000 
+						sales which approaches to platinum certification. 
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">9</div>
+						<div class = "button cant"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Can’t Stop The Feeling!</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Justin Timberlake</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>Trolls:Original Motion Picture Soundtrack</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>06/05/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Justin Timberlake, Max Martin, Shellback</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Disco, soul, pop</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:56</td>
+							</tr>
+						</table>
+						Entertainment Weekly described the song as a ‘funky mix of disco and pop’. With the idea of 
+						having disco element, this song appears in the denouement of movie.
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">10</div>
+						<div class = "button closer"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Closer</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>The Chainsmokers & Halsey</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>Collage</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>29/07/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Andrew Taggart, Ashley Frangipane, Shaun Frank, Frederic Kennett, Isaac Slade, Joe King</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Pop & EDM</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>04:04</td>
+							</tr>
+						</table>
+						Taggart stated that the track is inspired by Blink-182 Song ‘I Miss You’ which the duo were listening to 
+						on repeat and is referenced in the song. This song received a nomination for Best Pop Duo/Group Performance 
+						at the 2017 Grammy Awards.
+						</div>
 				</div>
 			</div>
 			<div id = "Korean" class = "headercontent">
-				<!--type content here-->
-			</div>
+				<div class = "content-container">
+						<div class = "index">1</div>
+						<div class = "button cheer"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Cheer Up</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Twice</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>Page Two</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>25/04/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Sam Lewis, Black Eyed Pilseung</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Dance-pop, hip hop</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:28</td>
+							</tr>
+						</table>
+						This song successfully made the South Korean girl group, Twice won the Hotels Combined 
+						Song of the Year at Mnet Asian Music Awards 2016 Mama in Hong Kong. Moreover, Twice was also rewarded 
+						as Best Female Group in that musical festival. 
 
-		</div>
-	</div>
-	</div>
-	<script>
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">2</div>
+						<div class = "button whistle"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Whistle</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Black Pink</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>Square One</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>08/09/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Teddy, Bekuh Boom, B.I from iKON</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Hip Hop, EDM</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:32</td>
+							</tr>
+						</table>
+						This song was a commercial success which topped the Gaon Digital Chart. The music video for 
+						this song reached 10 million view in five days on YouTube Channel. Moreover, Black Pink won 
+						Best Music Video at Mnet Asian Music Awards 2016 Mama in Hong Kong.
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">3</div>
+						<div class = "button rough"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Rough</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>GFriend</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>Snowflake</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>25/01/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Iggy, Seo Yong-bae</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Dance</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:28</td>
+							</tr>
+						</table>
+						This song was topping Gaon Digital Chart and selling more than one million digital downloads. 
+						This song also made GFriend won the Best Dance Performance-Female Group at Mnet Asian Music 
+						Awards 2016 Mama in Hong Kong. Besides, this song also entered as one of the nominations of 
+						Song of the Year in that musical festival.
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">4</div>
+						<div class = "button monster"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Monster</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Exo)</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>Ex'Act</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>09/06/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Kenzie, LDN Noise</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>K-pop, dance</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:41</td>
+							</tr>
+						</table>
+						‘Dark and Intense’ medium-tempo dance song with lyric about a man’s ‘excessive fixation 
+						on his lover’ are the full description for this song. This song won the first place 9 times 
+						on South Korean weekly music. It was nominated for Song of the Year at the 18th Mnet Asian Music Awards.
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">5</div>
+						<div class = "button tell"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Tell Me What To Do</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>SHINee</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>1 of 1</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>15/11/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Mike Daley, Mitchell Owens</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>K-pop</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>04:10</td>
+							</tr>
+						</table>
+						This song is described as medium-tempo ‘emotional R&B’ track with ‘trendy electronic music’ elements. 
+						The story of this song is about a couple that attempts to spark their fading relationship.
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">6</div>
+						<div class = "button rain"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Rain</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Kim Tae-yeon</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>-</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>03/02/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Bong Eun-yeong, Mafly, Lee Yoo-jin</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Jazz, R&B</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:42</td>
+							</tr>
+						</table>
+						This song debuted atop Gaon Digital Chart. It won the first place on SBS’s music program, Inkigayo. 
+						This song also made Tae-yeon dominated as Best Female Artist at Mnet Asian Music Awards 2016 Mama in 
+						Hong Kong.
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">7</div>
+						<div class = "button very"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Very Very Very</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>I.O.I</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>Miss Me?</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>17/10/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Park Jin-yoong</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Bubblegum pop, electropop</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:23</td>
+							</tr>
+						</table>
+						This song is topping the Gaon Digital Chart and it has sold over approximately 420,000 downloads. 
+						Its music video becomes the third most-viewed video on YouTube channel. Moreover, this song successfully 
+						made I.O.I won the Best New Female Group at Mnet Asian Music Awards 2016 Mama in Hong Kong. 
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">8</div>
+						<div class = "button dream"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Dream</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>Suzy(miss A), Baekhyun (Exo)</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>-</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>07/01/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Kim Eana, Park Geun-tae, Jin Suk Choi</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>K-pop, R&B</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:42</td>
+							</tr>
+						</table>
+						This song made Suzy and Baekhyun won Best Collaboration at Mnet Asian Music Awards 2016 Mama in Hong Kong. 
+						This song also won five times in total on South Korean music television show Music Bank and Inkigayo. 
+						Moreover, it won Best R&B Song at 8th Melon Music Awards.  
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">9</div>
+						<div class = "button last"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>Last Dance</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>BigBang</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>Made</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>12/12/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>G-Dragon, T.O.P, Taeyang</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>R&B, Pop rock, Ballad</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>04:40</td>
+							</tr>
+						</table>
+						The song sold almost 330,000 downloads in three days and its music video reached 1.6 million views in 
+						China QQ. This song debuted second place in Digital and Download charts. It charted number 3 in Gaon 
+						Streaming Chart with over 5.3 million streams.
+
+						</div>
+				</div>
+				<div class = "content-container">
+						<div class = "index">10</div>
+						<div class = "button you"></div>
+						<div class = "content">
+						<table>
+							<col width = "10%">
+							<col width = "40%">
+							<col width = "10%">
+							<col width = "20%">
+							<tr>
+								<td>Song Name:</td>
+								<td>You're So Fine</td>
+								<td></td>
+								<td>Artist:</td>
+								<td>CNBlue</td>
+							</tr>
+							<tr>
+								<td>Album:</td>
+								<td>Blueming</td>
+								<td></td>
+								<td>Published Date:</td>
+								<td>04/04/2016</td>
+							</tr>
+							<tr>
+								<td>Writers:</td>
+								<td>Jung Yong-hwa</td>
+							</tr>
+							<tr>
+								<td>Style:</td>
+								<td>Pop rock</td>
+								
+							</tr>
+							<tr>
+								<td>Length:</td>
+								<td>03:52</td>
+							</tr>
+						</table>
+						This song had two consecutive wins on The Show and Music Bank. This song entered a nomination for 
+						Best Rock Song at the 2016 Melon Music Awards. Further, this song made CNBlue won Best Band Performance 
+						at Mnet Asian Music Awards 2016 Mama in Hong Kong.
+
+						</div>
+				</div>
+			</div>
+			<script>
+			
 	var toggle = false;
 	var playlistToggled = false;
 
@@ -237,9 +1660,11 @@
 		}
 	}
 
-	</script>
-	<footer>
-		<center>Copyrighted</center>
-	</footer>
+	
+			</script>
+		</div>
+		<span class="footer">Copyrighted</span>
 	</body>
+
+
 </html>

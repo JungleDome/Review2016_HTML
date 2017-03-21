@@ -9,7 +9,7 @@ body {
 	overflow-x: hidden;
 }
 
-h1{
+h1 {
 	top:52px;
 	text-shadow: 1px 1px 2px white, 0 0 25px orange, 0 0 10px peachpuff;;
 	color: white;
@@ -119,25 +119,10 @@ input[type=range]:focus::-ms-fill-upper {
 	background-color: azure;
 	bottom:2%;
 }
-
-footer {
-	background:orange;
-}
-
-ul.tab {
-	background-color: orange;
-}
-
-/* Change background color of links on hover */
-ul.tab li a:hover {
-	background-color: #ff7f00;
-}
-
-/* Create an active/current tablink class */
-ul.tab li a:focus, .active {
-	background-color: gold;
-}
-
-ul.tab .dropdown-content a:hover {
-	background-color: sandybrown;
-}
+/*Start tab theming*/
+.footer {background:orange;}
+ul.tab {background-color: orange;}
+ul.tab li a:hover {background-color: #ff7f00;}
+ul.tab li a:focus, .active {background-color: gold;}
+ul.tab .dropdown-content a:hover {background-color: sandybrown;}
+/*End tab theming*/

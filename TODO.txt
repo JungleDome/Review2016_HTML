@@ -1,0 +1,57 @@
+Global
+-Style scrollbar
+-Loading page animation
+-FadeIn for each loaded page
+
+Index
+-Change font to worm-like rainbow style
+-Position Image slider to cover the castle
+-Styling nav bar font
+
+About
+-Styling and positioning nav bar and footer
+-Change container background
+-change font style
+
+Feedback
+-Styling and positioning nav bar and footer
+-Change font family and size
+-Style scrollbar
+-Submit button function
+
+News
+-background coloring
+-positioning image and paragraph
+-add "Read More" using js (should be responsive)
+-Change font family and size
+
+Entertainment
+-Animated container when hover and freeze when exit
+-Styling nav bar and footer
+-Adding animation to all container
+-Styling and positioning font in container
+
+Music
+-change nav bar and footer color
+-add player
+-add lyric
+-follow the fucking draft!!!!
+
+Movie
+-music like design?
+
+Game
+-Tourism-like nav bar
+-gallery for each of the games
+
+Technology
+-add animation on load
+-add animation to expand
+-add animation to background (optional)
+
+Tourism
+-styling nav bullet (vertical and horizontal)
+-styling font?
+-add container for content
+-allow scrollbar for expanded content
+
