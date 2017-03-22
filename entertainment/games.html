@@ -1,31 +1,610 @@
 <html>
 	<head>
 		<title>Review 2016 - Games</title>
-		<link rel = "stylesheet" href = "../css/w3.css" />
-		<link rel = "icon" href = "../image/2016.ico"/>
+		<link rel="stylesheet" href="../css/w3.css" />
+		<link rel="icon" href="../image/2016.ico"/>
 		<link rel="stylesheet" href="../css/navigator.css" />
 		<link rel="stylesheet" href="../css/games.css" />
-		<script src="../js/bgcolor.js"></script>
+		<link rel="stylesheet" href="../css/jquery.fullPage.css" />
+		<script type="text/javascript" src="../js/bgcolor.js"></script>
+		<script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
+		<script type="text/javascript" src="../js/jquery.fullPage.js"></script>
 	</head>
 	<body>
-		<ul class = "tab">
-			<li><a href="../help.html"  onclick="redirect()">Feedback</a></li>
-			<li><a href="../about.html"  onclick="redirect()">About</a></li>
-			<li class = "dropdown"><a href="javascript:void(0)">Category</a>
+	<script>
+	$(document).ready(function() {
+    $('#fullpage').fullpage({
+        anchors:['firstPage', 'secondPage', 'thirdPage'],
+		navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Title', 'Top 1','Top 2','Top 3','Top 4','Top 5','Top 6','Top 7','Top 8','Top 9','Top 10'],
+        showActiveTooltip: true,
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+		slidesNavTooltips: ['Details', 'Synopsis'],
+		scrollOverflow:true,
+
+		afterLoad: function(anchorLink,index) {
+			$('html').css('background-image','url(../image/games/top' + (index -1) + '.jpg)');
+		},
+
+		afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
+		if (slideIndex>0) {
+			$('html').css('background-image','url(../image/games/top' + (index -1) + '-' + slideIndex + '.jpg)');
+		}
+		else {
+			$('html').css('background-image','url(../image/games/top' + (index -1) + '.jpg)');
+		}
+		}
+
+	});});
+	</script>
+		<ul class="tab">
+			<li><a href="../feedback.html" onclick="redirect()">Feedback</a></li>
+			<li><a href="../about.html" onclick="redirect()">About</a></li>
+			<li class="dropdown"><a href="javascript:void(0)">Category</a>
 				<div class="dropdown-content">
-					<a href="../news.html"  onclick="redirect()">News</a>
-					<a href="../entertainment.html"  onclick="redirect()">Entertainment</a>
-					<a href="../technology.html"  onclick="redirect()">Technology</a>
+					<a href="../news.html" onclick="redirect()">News</a>
+					<a href="../entertainment.html" onclick="redirect()">Entertainment</a>
+					<a href="../technology.html" onclick="redirect()">Technology</a>
 					<a href="../tourism.html"  onclick="redirect()">Tourism</a>
 				</div>
 			</li>
-			<li><a href="index.html" onclick="redirect()">Home</a></li>
+			<li><a href="../index.html" onclick="redirect()">Home</a></li>
 			<li class="a">Review 2016</li>
 		</ul>
-	<div class = "content">
-	</div>
+		<div id="fullpage" style="margin-top:53px;">
+			<div class="section">
+			<h1 class="title">TOP 10 BEST GAMES TO PLAY IN 2016</h1>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 1<br/>Uncharted 4: A Thief’s End</h2></center>
+					<table class="games-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Developer:</td>
+							<td>Naughty Dog</td>
+							<td>Publisher:</td>
+							<td>Sony Computer Entertainment</td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Action & Adventure</td>
+							<td>Platform:</td>
+							<td>Play Station 4</td>
+						</tr>
+						<tr>
+							<td>Player Mode:</td>
+							<td>Single player</td>
+							<td>Published Date:</td>
+							<td>10 May 2016</td>
+						</tr>
+					</table>
+					<div class="content">
+					<h2>Plot</h2>
+					<div id="paragraph">
+					Uncharted 4: A Thief’s End is set three years after Uncharted 3: Drake’s Deception. Nathan Drake, Nathan has retired as a 
+					bounty hunter and work at shipping company and married to his wife Elena. One day, Nathan’s brother, Sam Drake come to 
+					visit him. Nathan brother seeking help from his brother because his brother threatens by Hector Alcazar, a drug lords and 
+					an inmate with Sam. The only way to save Sam is find Captain Henry Avery lost treasure, Libertalia, the pirate utopia deep 
+					in the forests of Madagascar.
+					</div>
+					</div>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<div class="gameplay">
+					<h2>Gameplay</h2>
+					Uncharted 4: A Thief’s End is an action adventure video game with stealth element play from third-person view. The player control 
+					Nathan Drake. Nathan has a good physical body to perform sprint, jump, climb, swim, dive and acrobatic movement to climb obstacle.
+					Nathan can use grappling hook to bypass obstacle. Next, the game feature half open world for the player and provided some vehicle 
+					example Jeep and Speedboat for explore the world. Besides that, allies AI also improved, AI will action more effectively when counter 
+					enemy and combat status. The player can combine skill with AI allies to perform a combination skill to defeat enemy. After completed the 
+					story campaign, the game can unlock special mode by using point player such as bullet time mode.
+					</div>
+					<div class="trailer">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/y1Rx-Bbht5E" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 2<br/>Overwatch</h2></center>
+					<table class="games-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Developer:</td>
+							<td>Blizzard Entertainment</td>
+							<td>Publisher:</td>
+							<td>Blizzard Entertainment</td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Shooting</td>
+							<td>Platform:</td>
+							<td>Play Station 4, Xbox One and PC</td>
+						</tr>
+						<tr>
+							<td>Player Mode:</td>
+							<td>Single and multiplayers</td>
+							<td>Published Date:</td>
+							<td>24 May 2016</td>
+						</tr>
+					</table>
+					<div class="content">
+					<h2>Plot</h2>
+					The game is set into the fictionalized version of Earth. Overwatch is an international task force of heroes joins together to restore peace 
+					to a war-torn world. The founder of the Overatch is Jack Morrison, Gabriel Reyes, Ana Amari, Reinhardt Wihelm, and Torbjorn Lindholm. After 
+					they defeated Omnic Crisis. Overwatch were developed Medical department and Science department, Overwatch recruited many professional that 
+					specific in medical and science. After that, Jack Morrison was honored by United Nation for becoming the commander of Overwatch. After a 
+					long time, Overwatch was facing internal corruption, expanding military force illegally and sue by people due to violation of human rights. 
+					In one day, Overwatch HQ happened civil wars. Jack and Gabriel was die during the civil wars. After that, Overwatch was disbanded by United 
+					Nation and release every Overwatch members profile to public.
+					</div>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<div class="gameplay">
+					<h2>Gameplay</h2>
+					Overwatch features team-based combat with six players divided into two teams. The player will choose one of the heroes in. with each player 
+					selecting one of several pre-defined hero characters with unique movement, attributes, and abilities; There are 24 heroes currently in Overwatch.
+					These heroes are divided into four roles, there are Offense, Defense, Tank and Support (Overwatch, 2016). Overwatch have 4 game mode, there are 
+					assault, escort, control and assault/ escort Players will gain Loot Boxes as rewards when gain new levels. Loot Boxes contains character skins, 
+					victory poses, emotes and spray. Overwatch have achievements amd trophies to unlock. When the player accomplish the achiements, the player will 
+					inlock a commemorative badge of honor and spray.
+					</div>
+					<div class="trailer">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/dushZybUYnM" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 3<br/>Gears of Wars 4</h2></center>
+					<table class="games-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Developer:</td>
+							<td>The Coalition</td>
+							<td>Publisher:</td>
+							<td>Microsoft Studio</td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Shooting</td>
+							<td>Platform:</td>
+							<td>Xbox One and PC</td>
+						</tr>
+						<tr>
+							<td>Player Mode:</td>
+							<td>Single player</td>
+							<td>Published Date:</td>
+							<td>11 October 2016</td>
+						</tr>
+					</table>
+					<div class="content">
+					<h2>Plot</h2>
+					Gears of Wars 4 take place 25 years after Gears of Wars 3, the weather climate change badly due to aftermath. Fossil fuel also finished. 
+					Most of the human avoid “Windflare” and migrate to cities with tall study wall. COG invented a robot name Deebees. Deebees function to 
+					carry out those dangerous missions to replace human. Deebees can divided into four categories, there are Shepherd, Guardian, Tracker and 
+					DR-1. COG announced martial law to prevent any people go outside of wall. If people doesn’t follow COG rules will treat as “Outsider”. 
+					The game protagonist is JD Fenix Marcus Fenix son. JD and Delmont decided to leave COG and rely on “Outsider”. One day, a mysterious 
+					species, “Swarm” attacked village and catch away Kait mom, Reyna and the whole villager. Without COG assist, JD decided to find his 
+					father Marcus Fenix for help and rescue Kait mom and the whole villager.
+					</div>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<div class="gameplay">
+					<h2>Gameplay</h2>
+					Gears of Wars 4 is third-person shooter with action with adventure. The game features four different weathers. Thunder storm will be 
+					struck the player and the weather can affect the gunshot. Enemy movement and surrounding obstacle will affect by weather. The player can 
+					hide and pull enemy backward and eliminate enemy. Next, the game also feature new weapon, close combat moves and knife execution when 
+					eliminating enemy.
+					</div>
+					<div class="trailer">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/XrfVfRV0zSg" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 4<br/>Battlefield 1</h2></center>
+					<table class="games-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Developer:</td>
+							<td>EA DICE</td>
+							<td>Publisher:</td>
+							<td>Electronic Arts</td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Shooting</td>
+							<td>Platform:</td>
+							<td>Play Station 4, Xbox One and PC</td>
+						</tr>
+						<tr>
+							<td>Player Mode:</td>
+							<td>Single and multiplayers</td>
+							<td>Published Date:</td>
+							<td>21 October 2016</td>
+						</tr>
+					</table>
+					<div class="content">
+					<h2>Plot</h2>
+					Battlefield 1 come with five story. There are “Though Mud and Blood”, “Friends in High Places”, “Avanti Savoia”, “The Runner” and 
+					“Nothing is Written”. Each story mode will control a soldier who are trying to defend and fight for his or her country. 
+					</div>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<div class="gameplay">
+					<h2>Gameplay</h2>
+					Battlefield 1 is just like previous sequel that highlights cooperation between the player. The game is set in the historical of World War I. 
+					The player can use six categories of weapons, there are Shotguns, Sub Machine Gun, Light Machine Gun, Semi Autos, Sidearm and Sniper Rifle. 
+					World War I weapon like firearms, grenades, flamethrower in the battlefield. The player can control various armored vehicles. 
+					Battlefield 1 multiplayer features 32 vs 32 just like previous sequel Battlefield 4. The game not only allow player drive tank and plane, 
+					also features horse. The player can ride horse to hit enemy and damage enemy when riding horse. Multiplayer contain nine game map include 
+					singleplayer story campaign map. Battlefield 1 contain six game modes, there are conquest, domination, operations, rush, war pigeons and team 
+					deathmatch. Conquest is a large-scale game mode with 64 player control key objective. Next, domination focused combat in specific quarter, the 
+					game mode is more focus around strategic objective. Besides that, operation divided into offense and defense, the game mode offer an epic 
+					experience based on real battle in World War I .
+					</div>
+					<div class="trailer">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/VMW6JpcxNhU" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 5<br/>Titanfall 2</h2></center>
+					<table class="games-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Developer:</td>
+							<td>Respawn Entertainment</td>
+							<td>Publisher:</td>
+							<td>Electronic Arts</td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Shooting</td>
+							<td>Platform:</td>
+							<td>Play Station 4, Xbox One and PC</td>
+						</tr>
+						<tr>
+							<td>Player Mode:</td>
+							<td>Single and multiplayers</td>
+							<td>Published Date:</td>
+							<td>28 October 2016/td>
+						</tr>
+					</table>
+					<div class="content">
+					<h2>Plot</h2>
+					Titanfall 2 is set in future planet, the protagonist Jack Cooper, a class three rifleman from the Frontier Militia. One day, 
+					Jack Cooper was sent to a planet for war but he accidently become a pilot of a Veteran Titan named Bravo Tango BT-7274. BT-7274 is
+					a Vanguard-lass Titan. The titan will obey three protocols to ensure mission complete. Protocol 1 is link to pilot to fight together. 
+					Protocol 2 is upholding the mission as long the titan able to fight. Protocol 3 is protecting the pilot at all cost. Player will fight 
+					against enemies Frontier Militia and Apex Predator with BT. The war of the game takes in "The Frontier", a region of star systems far 
+					removed from the Core Systems. where Earth is located. The IMC seeks to exploit the Frontier's rich resources and try to eliminate 
+					Frontier Militia while the Militia fight to protect evasion from IMC and gain independence for the Frontier.
+					</div>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<div class="gameplay">
+					<h2>Gameplay</h2>
+					Titanfall 2 is same like its predecessor, eliminate your opponent by using futuristic weapon and summon a giant robot titan into the 
+					battlefield and the player can control the titan to eliminate enemy. Titanfall 2 have many different type of titan, example Northstar, 
+					Ronin, Scorch, Ion, Legion and Tone (Respawn Entertainment, 2016). For multiplayer game, there are 7 tactical for pilot, there are 
+					grappling, pulse blade, holo pilot, stim, cloak, phase shift and A-Wall (Respawn Entertainment, 2016). The game provided many complex 
+					map to challenge player agility and response. 
+					</div>
+					<div class="trailer">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/VqeMjHmL9eg" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 6<br/>Call of Duty: Infinite Warfare</h2></center>
+					<table class="games-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Developer:</td>
+							<td>Infinity Ward</td>
+							<td>Publisher:</td>
+							<td>Activision</td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Shooting</td>
+							<td>Platform:</td>
+							<td>Play Station 4 Xbox One and PC</td>
+						</tr>
+						<tr>
+							<td>Player Mode:</td>
+							<td>Single and multiplayers</td>
+							<td>Published Date:</td>
+							<td>4 November 2016</td>
+						</tr>
+					</table>
+					<div class="content">
+					<h2>Plot</h2>
+					Call of Duty: Infinite Warfare is set in the future; the earth natural resources have been stripped due to population growth and 
+					industrial expansion. Most of the people start migrate to other planet, the nations of the world formed United Nation Space Alliance 
+					(UNSA) to support those immigrants. A group of army name Solar Alliance Treaty Organization (SATO) is keeping the peace for UNSA and 
+					the immigrant. When UNSA and SATO is celebrating Independence Day, UNSA got a surprise attack from Settlement Defense Front (SDF). 
+					The game protagonist known as Lieutenant Nick Reyes, he is the commander of Special Combat Air Recon (SCAR) will fight SDF. He has 
+					five allies along the battle. Lieutenant Nora Salter she is the best pilot in SCAR. Ethan, an enhanced tactical humanoid 3rd revision, 
+					Ethan can fight at outer space without gas mask, he is more durable than any soldier at outer space. Sergeant Omar, he is commander of
+					a spaceship name Retribution. Admiral Raines, he is Lieutenant Nick Reyes’s mentor since Reyes training at academy .
+					</div>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<div class="gameplay">
+					<h2>Gameplay</h2>
+					Call of Duty is a first-person shooter. As the game introduces a new environment of battlefield, outer space with zero-gravity 
+					environments. The player is equipped with a boost pack and a grappling hook which allow the player move in the zero-gravity environments 
+					easily and take down enemy easily. Infinite Warfare feature futuristic weapon, like laser gun and railgun. Since the game location is set
+					in space, the player can visit different planet in the solar system to eliminate enemy bases at another planet.
+					</div>
+					<div class="trailer">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/y_RI3bZhU50" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 7<br/>Watch Dogs 2</h2></center>
+					<table class="games-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Developer:</td>
+							<td>Ubisoft</td>
+							<td>Publisher:</td>
+							<td>Ubisoft</td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Action, Adventure & Shooting</td>
+							<td>Platform:</td>
+							<td>Play Station 4 Xbox One and PC</td>
+						</tr>
+						<tr>
+							<td>Player Mode:</td>
+							<td>Single and multiplayers</td>
+							<td>Published Date:</td>
+							<td>28 November 2016</td>
+						</tr>
+					</table>
+					<div class="content">
+					<h2>Plot</h2>
+					The game is set within a fictionalized version of the San Francisco Bay Area, the game is played from a third-person perspective and its 
+					world is navigated on-foot or by vehicle. The player play as Marcus Holloway, he is a genius young hacker living in the origin of the tech 
+					revolution, the America San Francisco.  Marcus will team up with an infamous hacker group name DedSec to take down the city's advanced 
+					surveillance system name ctOS 2.0 that used by criminal masterminds to monitor and manipulate citizens.
+					</div>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<div class="gameplay">
+					<h2>Gameplay</h2>
+					Watch Dogs 2 is an action-adventure game and stealth element. Watch Dogs 2 is like its predecessor, Watch Dogs, by using the phone to turn
+					the city become a weapon. This time the game let the player create his/her own solution to complete the mission. Next, the player will get a 
+					lot more flexibility in how the player hack the enemy. For example, the player can target any person that the player want to hack and can hack 
+					with multiple ways and allowed the player to hack most of the electronics and vehicles. The game feature Quadcopter and RC Jumper that printed 
+					by 3D Printer. The Quadcopter function is spectating the area situation and drop some bomb on top enemy. The RC Jumper contain robotic arm to 
+					interact with any terminal box and reach some place that player cannot reach. There is multiple way to complete the mission. The player can 
+					play with full gun blazing to eliminate enemy by using 3D printed weapon. Next, full stealth without detected by enemy. Besides that, through 
+					hacking only by using Quadcopter, RC Jumper and take control of electronic to influence enemy. Each successful mission will increase the 
+					follower count of DedSec.
+					</div>
+					<div class="trailer">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/7hamZRt3gFE" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 8<br/>Pokemon Sun and Moon</h2></center>
+					<table class="games-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Developer:</td>
+							<td>Game Freak</td>
+							<td>Publisher:</td>
+							<td>Nintendo</td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Role-playing</td>
+							<td>Platform:</td>
+							<td>Nintendo 3DS</td>
+						</tr>
+						<tr>
+							<td>Player Mode:</td>
+							<td>Single player</td>
+							<td>Published Date:</td>
+							<td>18 November 2016</td>
+						</tr>
+					</table>
+					<div class="content">
+					<h2>Plot</h2>
+					Pokemon Sun and Moon is take place on a tropical island of Alola region just like real life Hawaii. Alola is a peaceful and harmony island. 
+					The player moving to one of the Alola region from Kanto region. Professor Kukui requested the player complete the Pokedex. The island has 
+					one evil gang named Team Skull.  Aether Foundation is an organization use to study about Ultra Beasts. Ultra Beasts is a mysterious creature 
+					come from another dimension named Ultra Space (Pokemon, 2016). The Founder of the Anter Foundation, Lusamine seem like have a big conspiracy 
+					with Team Skull leader Guzma.
+					</div>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<div class="gameplay">
+					<h2>Gameplay</h2>
+					Before the game start, the language menu provided nine language for player to select, there are English, French, Spanish, Italian, German, 
+					Japanese, Korean and this is the first time provided Chinese for the game. This generation features Trial Captains to replace previous Gym 
+					Leaders.  The games also feature some new regional variants. When Pokemon growth in Alola region, they will change form because Alola climate 
+					are different with others region. This changes is call Alola form. The game features a new powerful move know as Z-Moves. Z-Moves is a move 
+					combine with their trainer to unleash a powerful move to opponent. The way to activate Z- Moves is by equip Z- Ring with Z-Crystal. The game 
+					also keep Mega Evolution concept from previous sequel Pokemon X & Y and Pokemon Omega Ruby & Alpha Sapphire.
+					</div>
+					<div class="trailer">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/Iylfh-7uQkc" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 9<br/>Final Fantasy XV</h2></center>
+					<table class="games-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Developer:</td>
+							<td>Square Enix</td>
+							<td>Publisher:</td>
+							<td>Square Enix</td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Action & Role-playing</td>
+							<td>Platform:</td>
+							<td>Play Station 4 and Xbox One</td>
+						</tr>
+						<tr>
+							<td>Player Mode:</td>
+							<td>Single player</td>
+							<td>Published Date:</td>
+							<td>29 November 2016</td>
+						</tr>
+					</table>
+					<div class="content">
+					<h2>Plot</h2>
+					Final Fantasy XV is takes place on a world with high tech and magic. The mainland divided into three mainlands, there are Lucis, Accordo and Niflheim.
+					Prince Noctis travel with his best friends, there are Gladiolus, Ignis, and Prompto. During the trip to find his fiancée Luna, they have received a news 
+					that about his homeland had been invaded and take over by enemy. The news also announces that Noctis and his father has been killed by enemy. Noctis will
+					go back Lucis to revenge from enemy. But first, Noctis need to collect the weapon from the ancient’s king of Lucis to take back Lucis.
+
+					</div>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<div class="gameplay">
+					<h2>Gameplay</h2>
+					Final Fanasty XV is an open world action role-playing games. The player can control Noctis to explore the whole map and explore the open world by using Noctis 
+					vehicle named “Regalia” or ridding a lander bird name Chocobos. Final Fantasy XV uses an action based real-time battle system name Active Cross Battle (AXB). 
+					During battle, each character has health point (HP) and only magic points (MP) for Noctis. HP will be deducted when take damage from enemy. Magic point will be 
+					deducted when Noctis casting magic skill. Noctis can use revival items when HP or MP is less. The player can select, Attack, Magic, skill and Items.
+					Thee game also features Ascension tree. The player can up each character skill in Ascension tree by earning experience, player cannot upgrade ascension tree unless 
+					the character is at Inn. Example ofeach character skill is fishing skill for Noctis, cooking skill for Ignis, surviving skill for Gladious and photography skill for Prompto.
+					</div>
+					<div class="trailer">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/SZymd6r4wGg" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 1<br/>Uncharted 4: A Thief’s End</h2></center>
+					<table class="games-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Developer:</td>
+							<td>Naughty Dog</td>
+							<td>Publisher:</td>
+							<td>Sony Computer Entertainment</td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Action & Adventure</td>
+							<td>Platform:</td>
+							<td>Play Station 4</td>
+						</tr>
+						<tr>
+							<td>Player Mode:</td>
+							<td>Single player</td>
+							<td>Published Date:</td>
+							<td>10 May 2016</td>
+						</tr>
+					</table>
+					<div class="content">
+					<h2>Plot</h2>
+					Uncharted 4: A Thief’s End is set three years after Uncharted 3: Drake’s Deception. Nathan Drake, Nathan has retired as a 
+					bounty hunter and work at shipping company and married to his wife Elena. One day, Nathan’s brother, Sam Drake come to 
+					visit him. Nathan brother seeking help from his brother because his brother threatens by Hector Alcazar, a drug lords and 
+					an inmate with Sam. The only way to save Sam is find Captain Henry Avery lost treasure, Libertalia, the pirate utopia deep 
+					in the forests of Madagascar.
+					</div>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<div class="gameplay">
+					<h2>Gameplay</h2>
+					Uncharted 4: A Thief’s End is an action adventure video game with stealth element play from third-person view. The player control 
+					Nathan Drake. Nathan has a good physical body to perform sprint, jump, climb, swim, dive and acrobatic movement to climb obstacle.
+					Nathan can use grappling hook to bypass obstacle. Next, the game feature half open world for the player and provided some vehicle 
+					example Jeep and Speedboat for explore the world. Besides that, allies AI also improved, AI will action more effectively when counter 
+					enemy and combat status. The player can combine skill with AI allies to perform a combination skill to defeat enemy. After completed the 
+					story campaign, the game can unlock special mode by using point player such as bullet time mode.
+					</div>
+					<div class="trailer">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/y1Rx-Bbht5E" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
 	<footer>
+		<!--Put this on the last section!-->
 		<center>Copyrighted</center>
 	</footer>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	</body>
+
+
+
+
+
+
+
+
+
+
 </html>

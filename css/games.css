@@ -1,10 +1,77 @@
+html {
+	background: url('../image/games/top0.jpg') center center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:100% 100%;
+}
+
 body {
   box-shadow: inset 0px 11px 50px -10px black;
+
+}
+
+
+.content{
+	color: white;
+	text-shadow: 2px 3px 2px grey, 2px 2px 1px black;
+	font-size: 20px;
+	max-width: 85%;
+	margin-left: 80px;
+	background:rgba(0,0,0,0.2);
+}
+	
+.gameplay{
+	background:rgba(0,0,0,0.2);
+	color: white;
+	text-shadow: 2px 3px 2px grey, 2px 2px 1px black;
+	font-size: 20px;
+	max-width: 20%;
+	margin-left: 120px;
+	position: absolute;
+
+}
+	
+.trailer{
+	margin-right: 3%;
+	margin-top:5%;
+	vertical-align: middle;
+	position: absolute;
+	right:0;
+}
+
+.title {
+	position: absolute;
+	top:40%;
+	left:50%;
+	width:100%;
+	transform: translate(-50%,-50%);
+	font-weight: bold;
+	font-size:5em;
+	text-align:center;
+	word-break:keep-all;
+	background-color: rgba(225,225,225,0.24);
+}
+h2 {
+	text-align:center;
+	text-shadow: 2px 3px 2px grey, 2px 2px 1px black;
+	font-size:3em;
+}
+
+.games-details {
+	max-width:85%;
+	color: white;
+	font-size: 20;
+}
+
+table{
+	text-shadow: 2px 3px 2px grey, 2px 2px 1px black;
 }
 
 /* Theming of nav bar*/
 .tab {
-  background: transparent !important;
+	background-color: rgba(50,50,50,0.09) !important;
+	position:fixed;
 }
 
 footer {

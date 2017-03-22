@@ -1,0 +1,486 @@
+<html>
+	<head>
+		<title>Review 2016 - Movies</title>
+		<link rel="stylesheet" href="../css/w3.css" />
+		<link rel="icon" href="../image/2016.ico"/>
+		<link rel="stylesheet" href="../css/navigator.css" />
+		<link rel="stylesheet" href="../css/movies.css" />
+		<link rel="stylesheet" href="../css/jquery.fullPage.css" />
+		<script type="text/javascript" src="../js/bgcolor.js"></script>
+		<script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
+		<script type="text/javascript" src="../js/jquery.fullPage.js"></script>
+	</head>
+	<body>
+	<script>
+	$(document).ready(function() {
+    $('#fullpage').fullpage({
+        anchors:['firstPage', 'secondPage', 'thirdPage'],
+		navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Title', 'Top 1','Top 2','Top 3','Top 4','Top 5','Top 6','Top 7','Top 8','Top 9','Top 10'],
+        showActiveTooltip: true,
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+		slidesNavTooltips: ['Details', 'Synopsis'],
+		scrollOverflow:true,
+
+		afterLoad: function(anchorLink,index) {
+			$('html').css('background-image','url(../image/movies/top' + (index -1) + '.jpg)');
+		},
+
+		afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
+		if (slideIndex>0) {
+			$('html').css('background-image','url(../image/movies/top' + (index -1) + '-' + slideIndex + '.jpg)');
+		}
+		else {
+			$('html').css('background-image','url(../image/movies/top' + (index -1) + '.jpg)');
+		}
+		}
+
+	});});
+	</script>
+		<ul class="tab">
+			<li><a href="../feedback.html" onclick="redirect()">Feedback</a></li>
+			<li><a href="../about.html" onclick="redirect()">About</a></li>
+			<li class="dropdown"><a href="javascript:void(0)">Category</a>
+				<div class="dropdown-content">
+					<a href="../news.html" onclick="redirect()">News</a>
+					<a href="../entertainment.html" onclick="redirect()">Entertainment</a>
+					<a href="../technology.html" onclick="redirect()">Technology</a>
+					<a href="../tourism.html"  onclick="redirect()">Tourism</a>
+				</div>
+			</li>
+			<li><a href="../index.html" onclick="redirect()">Home</a></li>
+			<li class="a">Review 2016</li>
+		</ul>
+		<div id="fullpage" style="margin-top:53px;">
+			<div class="section">
+			<h1 class="title">TOP 10 BEST MOVIES TO WATCH IN 2016</h1>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 1<br/>Batman vs Superman: Dawn of Justice</h2></center>
+					<table class="mov-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Actors:</td>
+							<td colspan="3">Ben Affleck(Batman), Henry Cavil(Superman), Amy Adams(Lois Lane), Gal Gadot(Wonder Woman)</td>
+						</tr>
+						<tr>
+							<td>Directors:</td>
+							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+							<td>Writers:</td>
+							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Action & Adventure, Science Fiction & Fantasy</td>
+							<td>Published Date:</td>
+							<td>24 March 2016</td>
+						</tr>
+						<tr>
+							<td>Length:</td>
+							<td>151 minutes</td>
+							<td>Rating:</td>
+							<td>PG 13</td>
+						</tr>
+					</table>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<div id="example">
+					<h2>Synopsis</h2>
+					This action-packed film helmed by director Zack Snyder features two big heroes in the lead, namely Batman and Superman. 
+					Expect to see a gathering of heroes in this continuation to "Man of Steel"
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 2<br/>Captain America Civil Wars</h2></center>
+					<table class="mov-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Actors:</td>
+							<td colspan="3">Chris Evans(Captain America), Robert Downey(Iron Man), Scarlett Johansson(Black Widow), Sebastian Stan(Winter Soldier), Anthony Mackie(Falcon), Don Cheadle(War Machine)</td>
+						</tr>
+						<tr>
+							<td>Directors:</td>
+							<td>Anthony Russo and Joe Russo</td>
+							<td>Writers:</td>
+							<td>Christopher Markus and Stephen McFeely </td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Action & Adventure, Science Fiction & Fantasy</td>
+							<td>Published Date:</td>
+							<td>28 April 2016</td>
+						</tr>
+						<tr>
+							<td>Length:</td>
+							<td>146 minutes</td>
+							<td>Rating:</td>
+							<td>PG 13</td>
+						</tr>
+					</table>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<div id="example">
+					<h2>Synopsis</h2>
+					After the events seen in "Avengers: Age of Ultron" Steve Rogers aka. Captain America faces a new obstacle. As the government seeks to regulate all superhuman activity, two sides emerge; to either side with the Captain, 
+					or Iron Man who both have opposing views on the matter. This brings about an epic civil war between the former allies.
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 3<br/>Detective Conan: The Darkest Nightmare</h2></center>
+					<table class="mov-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Actors:</td>
+							<td colspan="3">Kappei Yamaguchi(Kudo Shinichi), Minami Takayama(Edogawa Conan), Rikiya Koyama(Mori Kogoro), Wakana Yamazaki(Ran Mori)</td>
+						</tr>
+						<tr>
+							<td>Directors:</td>
+							<td>Kobun Shizuno</td>
+							<td>Writers:</td>
+							<td>Gosho Aoyoma</td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Animation, Mystery and Thriller</td>
+							<td>Published Date:</td>
+							<td>7 July 2016</td>
+						</tr>
+						<tr>
+							<td>Length:</td>
+							<td>112 minutes</td>
+							<td>Rating:</td>
+							<td>PG 13</td>
+						</tr>
+					</table>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<h2>Synopsis</h2>
+					<div id="example">
+					A spy infiltrated the Japanese National Police Agency, retrieving secret files of Britain's MI6, Germany's BND and America's CIA and FBI. 
+					Rei Furuya and a group of Tokyo Police PSB intercepted the spy during the getaway, and just before the major car accident, 
+					FBI Agent Shuichi Akai sniped and crashed the spy's vehicle. The next day, at the aquarium in Tokyo with the Ferris wheel, Conan and the 
+					Detective Boys found a woman with heterochromia iris who suffered memory loss and had a broken cell phone. Having decided to stay and help the 
+					woman regain her memory, Conan and the Detective Boys are under the watchful eye of Vermouth.
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 4<br/>Your Name (Kimi No Nawa)</h2></center>
+					<table class="mov-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Actors:</td>
+							<td colspan="3">Ryunosuke Kamiki(Taki Tachibana), Mone Kamishirashi(Mitsuha Miyamizu)</td>
+						</tr>
+						<tr>
+							<td>Directors:</td>
+							<td>Makoto Shinkai</td>
+							<td>Writers:</td>
+							<td>Makoto Shinkai</td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Animation, Drama, Romance</td>
+							<td>Published Date:</td>
+							<td>8 December 2016</td>
+						</tr>
+						<tr>
+							<td>Length:</td>
+							<td>106 minutes</td>
+							<td>Rating:</td>
+							<td>PG 13</td>
+						</tr>
+					</table>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<h2>Synopsis</h2>
+					<div id="example">Your Name (Kimi No Nawa) is saying about the two high school student protagonist, Taki and Mitsuha. 
+					One night, their soul suddenly switch place between each other. This strange phenomenon happened randomly. 
+					They two must adjust their lives around each other. They communicate by leaving note, writing name on each other face and notebook, 
+					then even write about “rules” when using each one body.
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 5<br/>Rogue One: A Star Wars Story</h2></center>
+					<table class="mov-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Actors:</td>
+							<td colspan="3">Felicity Jones(Jyn Erso), Diego Luna(Captain Cassian Andor), Mads Mikkelsen(Galen Erso), Ben Mendelsohn(Director Orson Krennic), Donnie Yen(Chirrut Imwe), Alan Tudyk(K-2SO)</td>
+						</tr>
+						<tr>
+							<td>Directors:</td>
+							<td>Gareth Edwards</td>
+							<td>Writers:</td>
+							<td>George Lucas, Chris Weitz, Tony Gilroy</td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Action & Adventure, Drama, Science Fiction and Fantasy</td>
+							<td>Published Date:</td>
+							<td>15 December 2016</td>
+						</tr>
+						<tr>
+							<td>Length:</td>
+							<td>133 minutes</td>
+							<td>Rating:</td>
+							<td>PG 13</td>
+						</tr>
+					</table>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<h2>Synopsis</h2>
+					<div id="example">The movie is set before the events in "Star Wars: Episode IV A New Hope", during the Age of the Empire. 
+					It revolves around a group of resistance fighters who unite to steal the plans to the Death Star, the Galactic Empire`s deep space 
+					mobile battle station that is capable of destroying entire planets.
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 6<br/>Batman vs Superman: Dawn of Justice</h2></center>
+					<table class="mov-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Actors:</td>
+							<td colspan="3">Ben Affleck(Batman), Henry Cavil(Superman), Amy Adams(Lois Lane), Gal Gadot(Wonder Woman)</td>
+						</tr>
+						<tr>
+							<td>Directors:</td>
+							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+							<td>Writers:</td>
+							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Action & Adventure, Science Fiction & Fantasy</td>
+							<td>Published Date:</td>
+							<td>24 March 2016</td>
+						</tr>
+						<tr>
+							<td>Length:</td>
+							<td>151 minutes</td>
+							<td>Rating:</td>
+							<td>PG 13</td>
+						</tr>
+					</table>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<h2>Synopsis</h2>
+					<div id="example">This action-packed film helmed by director Zack Snyder features two big heroes in the lead, namely Batman and Superman. 
+					Expect to see a gathering of heroes in this continuation to "Man of Steel"</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 7<br/>Batman vs Superman: Dawn of Justice</h2></center>
+					<table class="mov-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Actors:</td>
+							<td colspan="3">Ben Affleck(Batman), Henry Cavil(Superman), Amy Adams(Lois Lane), Gal Gadot(Wonder Woman)</td>
+						</tr>
+						<tr>
+							<td>Directors:</td>
+							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+							<td>Writers:</td>
+							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Action & Adventure, Science Fiction & Fantasy</td>
+							<td>Published Date:</td>
+							<td>24 March 2016</td>
+						</tr>
+						<tr>
+							<td>Length:</td>
+							<td>151 minutes</td>
+							<td>Rating:</td>
+							<td>PG 13</td>
+						</tr>
+					</table>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<h2>Synopsis</h2>
+					<div id="example">This action-packed film helmed by director Zack Snyder features two big heroes in the lead, namely Batman and Superman. 
+					Expect to see a gathering of heroes in this continuation to "Man of Steel"</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 8<br/>Batman vs Superman: Dawn of Justice</h2></center>
+					<table class="mov-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Actors:</td>
+							<td colspan="3">Ben Affleck(Batman), Henry Cavil(Superman), Amy Adams(Lois Lane), Gal Gadot(Wonder Woman)</td>
+						</tr>
+						<tr>
+							<td>Directors:</td>
+							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+							<td>Writers:</td>
+							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Action & Adventure, Science Fiction & Fantasy</td>
+							<td>Published Date:</td>
+							<td>24 March 2016</td>
+						</tr>
+						<tr>
+							<td>Length:</td>
+							<td>151 minutes</td>
+							<td>Rating:</td>
+							<td>PG 13</td>
+						</tr>
+					</table>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<h2>Synopsis</h2>
+					<div id="example">This action-packed film helmed by director Zack Snyder features two big heroes in the lead, namely Batman and Superman. 
+					Expect to see a gathering of heroes in this continuation to "Man of Steel"</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 9<br/>Batman vs Superman: Dawn of Justice</h2></center>
+					<table class="mov-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Actors:</td>
+							<td colspan="3">Ben Affleck(Batman), Henry Cavil(Superman), Amy Adams(Lois Lane), Gal Gadot(Wonder Woman)</td>
+						</tr>
+						<tr>
+							<td>Directors:</td>
+							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+							<td>Writers:</td>
+							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Action & Adventure, Science Fiction & Fantasy</td>
+							<td>Published Date:</td>
+							<td>24 March 2016</td>
+						</tr>
+						<tr>
+							<td>Length:</td>
+							<td>151 minutes</td>
+							<td>Rating:</td>
+							<td>PG 13</td>
+						</tr>
+					</table>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<h2>Synopsis</h2>
+					<div id="example">This action-packed film helmed by director Zack Snyder features two big heroes in the lead, namely Batman and Superman. 
+					Expect to see a gathering of heroes in this continuation to "Man of Steel"</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 10<br/>Batman vs Superman: Dawn of Justice</h2></center>
+					<table class="mov-details" align="center">
+						<col width = "15%">
+						<col width = "35%">
+						<col width = "15%">
+						<col width = "20%">
+						<tr>
+							<td>Actors:</td>
+							<td colspan="3">Ben Affleck(Batman), Henry Cavil(Superman), Amy Adams(Lois Lane), Gal Gadot(Wonder Woman)</td>
+						</tr>
+						<tr>
+							<td>Directors:</td>
+							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+							<td>Writers:</td>
+							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+						</tr>
+						<tr>
+							<td>Genre:</td>
+							<td>Action & Adventure, Science Fiction & Fantasy</td>
+							<td>Published Date:</td>
+							<td>24 March 2016</td>
+						</tr>
+						<tr>
+							<td>Length:</td>
+							<td>151 minutes</td>
+							<td>Rating:</td>
+							<td>PG 13</td>
+						</tr>
+					</table>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<h2>Synopsis</h2>
+					<div id="example">This action-packed film helmed by director Zack Snyder features two big heroes in the lead, namely Batman and Superman. 
+					Expect to see a gathering of heroes in this continuation to "Man of Steel"</div>
+				</div>
+			</div>
+		</div>
+	<footer>
+		<!--Put this on the last section!-->
+		<center>Copyrighted</center>
+	</footer>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+
+
+
+
+
+
+
+
+
+
+</html>
