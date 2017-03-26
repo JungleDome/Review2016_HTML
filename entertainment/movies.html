@@ -1,20 +1,45 @@
 <html>
 	<head>
 		<title>Review 2016 - Movies</title>
-		<link rel="stylesheet" href="../css/w3.css" />
-		<link rel="icon" href="../image/2016.ico"/>
+		<link rel = "icon" href = "../image/2016.ico"/>
+		<link rel = "stylesheet" href = "../css/w3.css" />
 		<link rel="stylesheet" href="../css/navigator.css" />
 		<link rel="stylesheet" href="../css/movies.css" />
-		<link rel="stylesheet" href="../css/jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css" />
 		<script type="text/javascript" src="../js/bgcolor.js"></script>
 		<script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
 		<script type="text/javascript" src="../js/jquery.fullPage.js"></script>
+	
+		<style>
+		.trailer{
+		margin-left: 210px;
+		margin-top: 50px;
+		}
+		
+		h2{
+		color:azure;
+		text-shadow: 2px 3px 2px grey, 2px 2px 1px black;
+		font-size: 26;
+		}
+		
+		table{
+		text-shadow: 2px 3px 2px grey, 2px 2px 1px black;
+		}
+		
+		#synopsis{
+		max-width: 85%;
+		height: auto;
+		margin-left: 90px;
+		font-size: 22;
+		background:rgba(225,225,225,0.8);
+		}
+		
+		</style>
 	</head>
 	<body>
 	<script>
 	$(document).ready(function() {
     $('#fullpage').fullpage({
-        anchors:['firstPage', 'secondPage', 'thirdPage'],
 		navigation: true,
         navigationPosition: 'right',
         navigationTooltips: ['Title', 'Top 1','Top 2','Top 3','Top 4','Top 5','Top 6','Top 7','Top 8','Top 9','Top 10'],
@@ -39,68 +64,75 @@
 
 	});});
 	</script>
-		<ul class="tab">
-			<li><a href="../feedback.html" onclick="redirect()">Feedback</a></li>
-			<li><a href="../about.html" onclick="redirect()">About</a></li>
-			<li class="dropdown"><a href="javascript:void(0)">Category</a>
+		<ul class = "tab">
+			<li><a href="../help.html"  onclick="redirect()">Feedback</a></li>
+			<li><a href="../about.html"  onclick="redirect()">About</a></li>
+			<li class = "dropdown"><a href="javascript:void(0)">Category</a>
 				<div class="dropdown-content">
-					<a href="../news.html" onclick="redirect()">News</a>
-					<a href="../entertainment.html" onclick="redirect()">Entertainment</a>
-					<a href="../technology.html" onclick="redirect()">Technology</a>
+					<a href="../news.html"  onclick="redirect()">News</a>
+					<a href="../entertainment.html"  onclick="redirect()">Entertainment</a>
+					<a href="../technology.html"  onclick="redirect()">Technology</a>
 					<a href="../tourism.html"  onclick="redirect()">Tourism</a>
 				</div>
 			</li>
-			<li><a href="../index.html" onclick="redirect()">Home</a></li>
+			<li><a href="../index.html"  onclick="redirect()">Home</a></li>
 			<li class="a">Review 2016</li>
 		</ul>
-		<div id="fullpage" style="margin-top:53px;">
+		<div id="fullpage" style="margin-top:40px;">
 			<div class="section">
 			<h1 class="title">TOP 10 BEST MOVIES TO WATCH IN 2016</h1>
 			</div>
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
-					<center><h2>TOP 1<br/>Batman vs Superman: Dawn of Justice</h2></center>
-					<table class="mov-details" align="center">
+					<center><h2>TOP 1<br/>Deadpool</h2></center>
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
 						<col width = "20%">
 						<tr>
 							<td>Actors:</td>
-							<td colspan="3">Ben Affleck(Batman), Henry Cavil(Superman), Amy Adams(Lois Lane), Gal Gadot(Wonder Woman)</td>
+							<td colspan="3">Ryan Reynolds(Deadpool), Morena Baccarin(Copycat), Ed Skrein(Ajax), T.J. Miller(Weasel)</td>
 						</tr>
 						<tr>
 							<td>Directors:</td>
-							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+							<td>Tim Miller</td>
 							<td>Writers:</td>
-							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+							<td>Rheet Reese and Paul Wernick</td>
 						</tr>
 						<tr>
 							<td>Genre:</td>
-							<td>Action & Adventure, Science Fiction & Fantasy</td>
+							<td>Action & Adventure, Comedy, Science Fiction & Fantasy</td>
 							<td>Published Date:</td>
-							<td>24 March 2016</td>
+							<td>11 February 2016</td>
 						</tr>
 						<tr>
 							<td>Length:</td>
-							<td>151 minutes</td>
+							<td>108 minutes</td>
 							<td>Rating:</td>
-							<td>PG 13</td>
+							<td>R</td>
 						</tr>
 					</table>
 				</div>
 				<div class="slide" data-anchor="slide2">
-					<div id="example">
+					<div id="synopsis">
 					<h2>Synopsis</h2>
-					This action-packed film helmed by director Zack Snyder features two big heroes in the lead, namely Batman and Superman. 
-					Expect to see a gathering of heroes in this continuation to "Man of Steel"
+					<p>
+					Based on Marvel Comics’ most unlikely anti-hero, this movie tells the origin of a mercenary Wade Wilson, agrees to participate in a top-secret 
+					and illegal experiment after he knew that he has terminal cancer. This illegal experiment left him with uncommon powers such as accelerated 
+					healing powers but a disfigured face. These adopts the alter ego Deadpool. With his new powers and a wicked sense of humor, he started to hunt 
+					down the person who nearly destroyed his life and countenance.
+					</p>
+					</div>
+					<div class="trailer">
+					<iframe width="900" height="315" src="https://www.youtube.com/embed/Xithigfg7dA" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
 					<center><h2>TOP 2<br/>Captain America Civil Wars</h2></center>
-					<table class="mov-details" align="center">
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
@@ -130,17 +162,20 @@
 					</table>
 				</div>
 				<div class="slide" data-anchor="slide2">
-					<div id="example">
+					<div id="synopsis">
 					<h2>Synopsis</h2>
 					After the events seen in "Avengers: Age of Ultron" Steve Rogers aka. Captain America faces a new obstacle. As the government seeks to regulate all superhuman activity, two sides emerge; to either side with the Captain, 
 					or Iron Man who both have opposing views on the matter. This brings about an epic civil war between the former allies.
+					</div>
+					<div class="trailer">
+					<iframe width="900" height="315" src="https://www.youtube.com/embed/h-It14I2W7Q" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
 					<center><h2>TOP 3<br/>Detective Conan: The Darkest Nightmare</h2></center>
-					<table class="mov-details" align="center">
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
@@ -171,19 +206,22 @@
 				</div>
 				<div class="slide" data-anchor="slide2">
 					<h2>Synopsis</h2>
-					<div id="example">
+					<div id="synopsis">
 					A spy infiltrated the Japanese National Police Agency, retrieving secret files of Britain's MI6, Germany's BND and America's CIA and FBI. 
 					Rei Furuya and a group of Tokyo Police PSB intercepted the spy during the getaway, and just before the major car accident, 
 					FBI Agent Shuichi Akai sniped and crashed the spy's vehicle. The next day, at the aquarium in Tokyo with the Ferris wheel, Conan and the 
 					Detective Boys found a woman with heterochromia iris who suffered memory loss and had a broken cell phone. Having decided to stay and help the 
 					woman regain her memory, Conan and the Detective Boys are under the watchful eye of Vermouth.
 					</div>
+					<div class="trailer">
+					<iframe width="900" height="315" src="https://www.youtube.com/embed/hTtJX-4Kh_4" frameborder="0" allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
 					<center><h2>TOP 4<br/>Your Name (Kimi No Nawa)</h2></center>
-					<table class="mov-details" align="center">
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
@@ -214,17 +252,20 @@
 				</div>
 				<div class="slide" data-anchor="slide2">
 					<h2>Synopsis</h2>
-					<div id="example">Your Name (Kimi No Nawa) is saying about the two high school student protagonist, Taki and Mitsuha. 
+					<div id="synopsis">Your Name (Kimi No Nawa) is saying about the two high school student protagonist, Taki and Mitsuha. 
 					One night, their soul suddenly switch place between each other. This strange phenomenon happened randomly. 
 					They two must adjust their lives around each other. They communicate by leaving note, writing name on each other face and notebook, 
 					then even write about “rules” when using each one body.
+					</div>
+					<div class="trailer">
+					<iframe width="900" height="315" src="https://www.youtube.com/embed/hRfHcp2GjVI" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
 					<center><h2>TOP 5<br/>Rogue One: A Star Wars Story</h2></center>
-					<table class="mov-details" align="center">
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
@@ -255,77 +296,87 @@
 				</div>
 				<div class="slide" data-anchor="slide2">
 					<h2>Synopsis</h2>
-					<div id="example">The movie is set before the events in "Star Wars: Episode IV A New Hope", during the Age of the Empire. 
+					<div id="synopsis">The movie is set before the events in "Star Wars: Episode IV A New Hope", during the Age of the Empire. 
 					It revolves around a group of resistance fighters who unite to steal the plans to the Death Star, the Galactic Empire`s deep space 
 					mobile battle station that is capable of destroying entire planets.
+					</div>
+					<div class="trailer">
+					<iframe width="900" height="315" src="https://www.youtube.com/embed/frdj1zb9sMY" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
-					<center><h2>TOP 6<br/>Batman vs Superman: Dawn of Justice</h2></center>
-					<table class="mov-details" align="center">
+					<center><h2>TOP 6<br/>Zootopia</h2></center>
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
 						<col width = "20%">
 						<tr>
 							<td>Actors:</td>
-							<td colspan="3">Ben Affleck(Batman), Henry Cavil(Superman), Amy Adams(Lois Lane), Gal Gadot(Wonder Woman)</td>
+							<td colspan="3">Ginnifer Goodwin(Judy Hopps),Jason Bateman(Nick Wilde), Idris Elda(Chief Bogo), Jenny Slate(Assistant Mayor Bellwether)</td>
 						</tr>
 						<tr>
 							<td>Directors:</td>
-							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+							<td>Bryon Howard, Rich Moore, Jared Bush</td>
 							<td>Writers:</td>
-							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+							<td>Jared Bush, Phil Johnston</td>
 						</tr>
 						<tr>
 							<td>Genre:</td>
-							<td>Action & Adventure, Science Fiction & Fantasy</td>
+							<td>Action & Adventure, Animation, Comedy</td>
 							<td>Published Date:</td>
-							<td>24 March 2016</td>
+							<td>25 February 2016</td>
 						</tr>
 						<tr>
 							<td>Length:</td>
-							<td>151 minutes</td>
+							<td>108 minutes</td>
 							<td>Rating:</td>
-							<td>PG 13</td>
+							<td>PG</td>
 						</tr>
 					</table>
 				</div>
 				<div class="slide" data-anchor="slide2">
 					<h2>Synopsis</h2>
-					<div id="example">This action-packed film helmed by director Zack Snyder features two big heroes in the lead, namely Batman and Superman. 
-					Expect to see a gathering of heroes in this continuation to "Man of Steel"</div>
+					<div id="synopsis">
+					The modern mammal metropolis of Zootopia is a city like no others. This city is a melting pot where animals from herbivores like 
+					elephants and shrews to carnivores like tigers and lions can be anyone and allowed to do anything within the permit of law. An 
+					uptight rabbit police officer, Judy Hopps, that is determined to prove herself partnered with a fast-talking, wicked fox, Nick Wilde 
+					to solve a mystery that involves the city of Zootopia and the conspiracy of the city management.
+					</div>
+					<div class="trailer">
+					<iframe width="900" height="315" src="https://www.youtube.com/embed/jWM0ct-OLsM" frameborder="0" allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
-					<center><h2>TOP 7<br/>Batman vs Superman: Dawn of Justice</h2></center>
-					<table class="mov-details" align="center">
+					<center><h2>TOP 7<br/>Doctor Strange</h2></center>
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
 						<col width = "20%">
 						<tr>
 							<td>Actors:</td>
-							<td colspan="3">Ben Affleck(Batman), Henry Cavil(Superman), Amy Adams(Lois Lane), Gal Gadot(Wonder Woman)</td>
+							<td colspan="3">Benedict Cumberbatch(Stephen Vincent Strange), Tilda Swinton(Ancient One), Rachel McAdams(Christine Palmer), Chiwetel Ejiofor(Baron Mordo),Mads Mikkelsen(Kaecilius)</td>
 						</tr>
 						<tr>
 							<td>Directors:</td>
-							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+							<td>Scott Derrickson</td>
 							<td>Writers:</td>
-							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+							<td>Thomas Dean Donnelly, Joshua Oppenheimer, Jon Sphaits, Scott Derrickson, C.Robert Cargill</td>
 						</tr>
 						<tr>
 							<td>Genre:</td>
 							<td>Action & Adventure, Science Fiction & Fantasy</td>
 							<td>Published Date:</td>
-							<td>24 March 2016</td>
+							<td>27th October 2016</td>
 						</tr>
 						<tr>
 							<td>Length:</td>
-							<td>151 minutes</td>
+							<td>130 minutes</td>
 							<td>Rating:</td>
 							<td>PG 13</td>
 						</tr>
@@ -333,37 +384,44 @@
 				</div>
 				<div class="slide" data-anchor="slide2">
 					<h2>Synopsis</h2>
-					<div id="example">This action-packed film helmed by director Zack Snyder features two big heroes in the lead, namely Batman and Superman. 
-					Expect to see a gathering of heroes in this continuation to "Man of Steel"</div>
+					<div id="synopsis">
+					A famous surgeon, Stephen Strange loses his abilities to operate after a serious accident. While looking ways to heal his ability to 
+					operate, he found out that one of his patients has fully recovered from his heavy wound with the help of a mysterious sorcerer. He then 
+					travelled to Nibel and be accepted by Ancient One. She then introduced him to a new reality and revealed to him that he is the newly 
+					designated Sorceror Supreme. He also take on the responsibility on dealing with his former senior, Kaecilius.
+					</div>
+					<div class="trailer">
+					<iframe width="900" height="315" src="https://www.youtube.com/embed/HSzx-zryEgM" frameborder="0" allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
-					<center><h2>TOP 8<br/>Batman vs Superman: Dawn of Justice</h2></center>
-					<table class="mov-details" align="center">
+					<center><h2>TOP 8<br/>Suicide Squad</h2></center>
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
 						<col width = "20%">
 						<tr>
 							<td>Actors:</td>
-							<td colspan="3">Ben Affleck(Batman), Henry Cavil(Superman), Amy Adams(Lois Lane), Gal Gadot(Wonder Woman)</td>
+							<td colspan="3">Will Smith(Deadshot), Jared Leto(The Joker), Margot Robbie(Harley Quinn), Jai Courtney(Boomerang), Adewale Akinnuoye-Agbaje(Killer Croc), Jay Hernandez(Diablo)</td>
 						</tr>
 						<tr>
 							<td>Directors:</td>
-							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+							<td>David Ayer</td>
 							<td>Writers:</td>
-							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+							<td>David Ayer</td>
 						</tr>
 						<tr>
 							<td>Genre:</td>
-							<td>Action & Adventure, Science Fiction & Fantasy</td>
+							<td>Action & Adventure</td>
 							<td>Published Date:</td>
-							<td>24 March 2016</td>
+							<td>5 August 2016</td>
 						</tr>
 						<tr>
 							<td>Length:</td>
-							<td>151 minutes</td>
+							<td>123 minutes</td>
 							<td>Rating:</td>
 							<td>PG 13</td>
 						</tr>
@@ -371,37 +429,42 @@
 				</div>
 				<div class="slide" data-anchor="slide2">
 					<h2>Synopsis</h2>
-					<div id="example">This action-packed film helmed by director Zack Snyder features two big heroes in the lead, namely Batman and Superman. 
-					Expect to see a gathering of heroes in this continuation to "Man of Steel"</div>
+					<div id="synopsis">
+					A secret government agency recruits some of the dangerous super-villains to form a defensive task force after the incident of Batman and 
+					Superman. The first mission is to save the world from apocalypse and it will most likely mean the death of them all.
+					</div>
+					<div class="trailer">
+					<iframe width="900" height="315" src="https://www.youtube.com/embed/CmRih_VtVAs" frameborder="0" allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
-					<center><h2>TOP 9<br/>Batman vs Superman: Dawn of Justice</h2></center>
-					<table class="mov-details" align="center">
+					<center><h2>TOP 9<br/>Independence Day: Resurgence</h2></center>
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
 						<col width = "20%">
 						<tr>
 							<td>Actors:</td>
-							<td colspan="3">Ben Affleck(Batman), Henry Cavil(Superman), Amy Adams(Lois Lane), Gal Gadot(Wonder Woman)</td>
+							<td colspan="3">Liam Hemsworth(Jake Morrison), Jeff Goldblum(David Levinson), Bill Pullman( Thomas J.Whitemore), Maika Monroe(Patricia Whitmore)</td>
 						</tr>
 						<tr>
 							<td>Directors:</td>
-							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+							<td>Roland Emmerich</td>
 							<td>Writers:</td>
-							<td>Zack Snyder, David S. Goyer, Chris Terrio</td>
+							<td>Nicolas Wright, James A.Woods, Dean Devlin, Roland Emmerich, Jamie Vanderbilt, James Vanderblit</td>
 						</tr>
 						<tr>
 							<td>Genre:</td>
-							<td>Action & Adventure, Science Fiction & Fantasy</td>
+							<td>Action & Adventure, Drama, Science Fiction & Fantasy</td>
 							<td>Published Date:</td>
-							<td>24 March 2016</td>
+							<td>24 June 2016</td>
 						</tr>
 						<tr>
 							<td>Length:</td>
-							<td>151 minutes</td>
+							<td>119 minutes</td>
 							<td>Rating:</td>
 							<td>PG 13</td>
 						</tr>
@@ -409,14 +472,20 @@
 				</div>
 				<div class="slide" data-anchor="slide2">
 					<h2>Synopsis</h2>
-					<div id="example">This action-packed film helmed by director Zack Snyder features two big heroes in the lead, namely Batman and Superman. 
-					Expect to see a gathering of heroes in this continuation to "Man of Steel"</div>
+					<div id="synopsis">
+					People always knew that extraterrestrial beings will be back. Two decades after the freak alien invasion that nearly destroyed 
+					mankind a new threat emerges. This alien mothership is twice the size as the last one, the world’s armies must unite to defeat 
+					the enemy. Only the ingenuity of a few brave men and women can bring the world back from the brink of extinction.
+					</div>
+					<div class="trailer">
+					<iframe width="900" height="315" src="https://www.youtube.com/embed/LbduDRH2m2M" frameborder="0" allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
 					<center><h2>TOP 10<br/>Batman vs Superman: Dawn of Justice</h2></center>
-					<table class="mov-details" align="center">
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
@@ -446,9 +515,14 @@
 					</table>
 				</div>
 				<div class="slide" data-anchor="slide2">
+					<div id="synopsis">
 					<h2>Synopsis</h2>
-					<div id="example">This action-packed film helmed by director Zack Snyder features two big heroes in the lead, namely Batman and Superman. 
-					Expect to see a gathering of heroes in this continuation to "Man of Steel"</div>
+					<p>This action-packed film helmed by director Zack Snyder features two big heroes in the lead, namely Batman and Superman. 
+					Expect to see a gathering of heroes in this continuation to "Man of Steel".</p>
+					</div>
+					<div class="trailer">
+					<iframe width="900" height="315" src="https://www.youtube.com/embed/fis-9Zqu2Ro" frameborder="0" allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 		</div>

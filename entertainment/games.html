@@ -1,27 +1,62 @@
 <html>
 	<head>
 		<title>Review 2016 - Games</title>
-		<link rel="stylesheet" href="../css/w3.css" />
-		<link rel="icon" href="../image/2016.ico"/>
+		<link rel = "stylesheet" href = "../css/w3.css" />
+		<link rel = "icon" href = "../image/2016.ico" />
 		<link rel="stylesheet" href="../css/navigator.css" />
 		<link rel="stylesheet" href="../css/games.css" />
-		<link rel="stylesheet" href="../css/jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css" />
 		<script type="text/javascript" src="../js/bgcolor.js"></script>
 		<script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
 		<script type="text/javascript" src="../js/jquery.fullPage.js"></script>
+
+		<style>
+		.content{
+		color: white;
+		text-shadow: 2px 3px 2px grey, 2px 2px 1px black;
+		font-size: 20px;
+		max-width: 85%;
+		margin-left: 80px;
+		}
+		
+		.gameplay{
+		color: white;
+		text-shadow: 2px 3px 2px grey, 2px 2px 1px black;
+		font-size: 20px;
+		max-width: 20%;
+		margin-left: 120px;
+		margin-top: 50px;
+		float: left;
+		}
+		
+		.trailer{
+		margin-right: 100px;
+		margin-top: 150px;
+		float: right;
+		}
+		
+		h2{
+		color:azure;
+		text-shadow: 2px 3px 2px grey, 2px 2px 1px black;
+		font-size: 26;
+		}
+		
+		table{
+		text-shadow: 2px 3px 2px grey, 2px 2px 1px black;
+		}
+		</style>
 	</head>
 	<body>
 	<script>
 	$(document).ready(function() {
     $('#fullpage').fullpage({
-        anchors:['firstPage', 'secondPage', 'thirdPage'],
 		navigation: true,
         navigationPosition: 'right',
         navigationTooltips: ['Title', 'Top 1','Top 2','Top 3','Top 4','Top 5','Top 6','Top 7','Top 8','Top 9','Top 10'],
         showActiveTooltip: true,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
-		slidesNavTooltips: ['Details', 'Synopsis'],
+		slidesNavTooltips: ['', ''],
 		scrollOverflow:true,
 
 		afterLoad: function(anchorLink,index) {
@@ -39,28 +74,28 @@
 
 	});});
 	</script>
-		<ul class="tab">
-			<li><a href="../feedback.html" onclick="redirect()">Feedback</a></li>
-			<li><a href="../about.html" onclick="redirect()">About</a></li>
-			<li class="dropdown"><a href="javascript:void(0)">Category</a>
+		<ul class = "tab">
+			<li><a href="../help.html"  onclick="redirect()">Feedback</a></li>
+			<li><a href="../about.html"  onclick="redirect()">About</a></li>
+			<li class = "dropdown"><a href="javascript:void(0)">Category</a>
 				<div class="dropdown-content">
-					<a href="../news.html" onclick="redirect()">News</a>
-					<a href="../entertainment.html" onclick="redirect()">Entertainment</a>
-					<a href="../technology.html" onclick="redirect()">Technology</a>
+					<a href="../news.html"  onclick="redirect()">News</a>
+					<a href="../entertainment.html"  onclick="redirect()">Entertainment</a>
+					<a href="../technology.html"  onclick="redirect()">Technology</a>
 					<a href="../tourism.html"  onclick="redirect()">Tourism</a>
 				</div>
 			</li>
-			<li><a href="../index.html" onclick="redirect()">Home</a></li>
+			<li><a href="../index.html"  onclick="redirect()">Home</a></li>
 			<li class="a">Review 2016</li>
 		</ul>
-		<div id="fullpage" style="margin-top:53px;">
+		<div id="fullpage" style="margin-top:40px;">
 			<div class="section">
 			<h1 class="title">TOP 10 BEST GAMES TO PLAY IN 2016</h1>
 			</div>
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
 					<center><h2>TOP 1<br/>Uncharted 4: A Thief’s End</h2></center>
-					<table class="games-details" align="center">
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
@@ -86,13 +121,11 @@
 					</table>
 					<div class="content">
 					<h2>Plot</h2>
-					<div id="paragraph">
 					Uncharted 4: A Thief’s End is set three years after Uncharted 3: Drake’s Deception. Nathan Drake, Nathan has retired as a 
 					bounty hunter and work at shipping company and married to his wife Elena. One day, Nathan’s brother, Sam Drake come to 
 					visit him. Nathan brother seeking help from his brother because his brother threatens by Hector Alcazar, a drug lords and 
 					an inmate with Sam. The only way to save Sam is find Captain Henry Avery lost treasure, Libertalia, the pirate utopia deep 
 					in the forests of Madagascar.
-					</div>
 					</div>
 				</div>
 				<div class="slide" data-anchor="slide2">
@@ -113,7 +146,7 @@
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
 					<center><h2>TOP 2<br/>Overwatch</h2></center>
-					<table class="games-details" align="center">
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
@@ -166,7 +199,7 @@
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
 					<center><h2>TOP 3<br/>Gears of Wars 4</h2></center>
-					<table class="games-details" align="center">
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
@@ -217,7 +250,7 @@
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
 					<center><h2>TOP 4<br/>Battlefield 1</h2></center>
-					<table class="games-details" align="center">
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
@@ -256,9 +289,7 @@
 					Battlefield 1 multiplayer features 32 vs 32 just like previous sequel Battlefield 4. The game not only allow player drive tank and plane, 
 					also features horse. The player can ride horse to hit enemy and damage enemy when riding horse. Multiplayer contain nine game map include 
 					singleplayer story campaign map. Battlefield 1 contain six game modes, there are conquest, domination, operations, rush, war pigeons and team 
-					deathmatch. Conquest is a large-scale game mode with 64 player control key objective. Next, domination focused combat in specific quarter, the 
-					game mode is more focus around strategic objective. Besides that, operation divided into offense and defense, the game mode offer an epic 
-					experience based on real battle in World War I .
+					deathmatch. Conquest is a large-scale game mode with 64 player control key objective.
 					</div>
 					<div class="trailer">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/VMW6JpcxNhU" frameborder="0" allowfullscreen></iframe>
@@ -268,7 +299,7 @@
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
 					<center><h2>TOP 5<br/>Titanfall 2</h2></center>
-					<table class="games-details" align="center">
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
@@ -320,7 +351,7 @@
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
 					<center><h2>TOP 6<br/>Call of Duty: Infinite Warfare</h2></center>
-					<table class="games-details" align="center">
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
@@ -372,7 +403,7 @@
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
 					<center><h2>TOP 7<br/>Watch Dogs 2</h2></center>
-					<table class="games-details" align="center">
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
@@ -413,9 +444,7 @@
 					with multiple ways and allowed the player to hack most of the electronics and vehicles. The game feature Quadcopter and RC Jumper that printed 
 					by 3D Printer. The Quadcopter function is spectating the area situation and drop some bomb on top enemy. The RC Jumper contain robotic arm to 
 					interact with any terminal box and reach some place that player cannot reach. There is multiple way to complete the mission. The player can 
-					play with full gun blazing to eliminate enemy by using 3D printed weapon. Next, full stealth without detected by enemy. Besides that, through 
-					hacking only by using Quadcopter, RC Jumper and take control of electronic to influence enemy. Each successful mission will increase the 
-					follower count of DedSec.
+					play with full gun blazing to eliminate enemy by using 3D printed weapon.
 					</div>
 					<div class="trailer">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/7hamZRt3gFE" frameborder="0" allowfullscreen></iframe>
@@ -425,7 +454,7 @@
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
 					<center><h2>TOP 8<br/>Pokemon Sun and Moon</h2></center>
-					<table class="games-details" align="center">
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
@@ -476,7 +505,7 @@
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
 					<center><h2>TOP 9<br/>Final Fantasy XV</h2></center>
-					<table class="games-details" align="center">
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
@@ -526,52 +555,52 @@
 			</div>
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
-					<center><h2>TOP 1<br/>Uncharted 4: A Thief’s End</h2></center>
-					<table class="games-details" align="center">
+					<center><h2>TOP 10<br/>Tom Clancy's The Division</h2></center>
+					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
 						<col width = "35%">
 						<col width = "15%">
 						<col width = "20%">
 						<tr>
 							<td>Developer:</td>
-							<td>Naughty Dog</td>
+							<td>Ubisoft</td>
 							<td>Publisher:</td>
-							<td>Sony Computer Entertainment</td>
+							<td>Ubisoft</td>
 						</tr>
 						<tr>
 							<td>Genre:</td>
-							<td>Action & Adventure</td>
+							<td>Shooting & Survival</td>
 							<td>Platform:</td>
-							<td>Play Station 4</td>
+							<td>Play Station 4, Xbox One and PC</td>
 						</tr>
 						<tr>
 							<td>Player Mode:</td>
-							<td>Single player</td>
+							<td>Single and multiplayers</td>
 							<td>Published Date:</td>
-							<td>10 May 2016</td>
+							<td>8 March 2016</td>
 						</tr>
 					</table>
 					<div class="content">
 					<h2>Plot</h2>
-					Uncharted 4: A Thief’s End is set three years after Uncharted 3: Drake’s Deception. Nathan Drake, Nathan has retired as a 
-					bounty hunter and work at shipping company and married to his wife Elena. One day, Nathan’s brother, Sam Drake come to 
-					visit him. Nathan brother seeking help from his brother because his brother threatens by Hector Alcazar, a drug lords and 
-					an inmate with Sam. The only way to save Sam is find Captain Henry Avery lost treasure, Libertalia, the pirate utopia deep 
-					in the forests of Madagascar.
+					The game is set in New York City, Manhattan. When everyone was enjoying shopping on Black Friday, an evil organization use banknotes to 
+					transmit a virus through New York City. The virus also known as “Green Poison” and “The Dollar Flu”. The virus spread causes Manhattan is 
+					under quarantine so the US government activate a secret agent in US name The Division to save the remain citizen from the chaos and find out 
+					the mastermind of this apocalypse.
 					</div>
 				</div>
 				<div class="slide" data-anchor="slide2">
 					<div class="gameplay">
 					<h2>Gameplay</h2>
-					Uncharted 4: A Thief’s End is an action adventure video game with stealth element play from third-person view. The player control 
-					Nathan Drake. Nathan has a good physical body to perform sprint, jump, climb, swim, dive and acrobatic movement to climb obstacle.
-					Nathan can use grappling hook to bypass obstacle. Next, the game feature half open world for the player and provided some vehicle 
-					example Jeep and Speedboat for explore the world. Besides that, allies AI also improved, AI will action more effectively when counter 
-					enemy and combat status. The player can combine skill with AI allies to perform a combination skill to defeat enemy. After completed the 
-					story campaign, the game can unlock special mode by using point player such as bullet time mode.
+					The player play as an agent of division and will team up with AI allies to defeat the enemy. The game allowed to team up with four players to 
+					defeat enemies. When defeated an enemy, the player can earn XP and get new weapons, mod and gear sets to become more powerful as the game 
+					keep progress. Earning XP will allow the player to unlock special skills and abilities, example the player can deploy a small auto turret 
+					to eliminate enemies. The game will meet up four different enemy, there are Rioter, Cleaners, Rikers and Last Man Battalion. Rioters is a 
+					group of people who roam the city in a group and loot resources from weak citizen to survive. Next, Cleaners is a group of people who 
+					have taken to rid any citizen by using a flamethrower to burn anything that they suspect may affected by virus. Besides that, Rikers 
+					previously is a gang of convicts from a jail. Now they trying to get whatever they want and get revenge on those police put them in jail.
 					</div>
 					<div class="trailer">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/y1Rx-Bbht5E" frameborder="0" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/8Bc2fv0jcgg" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
