@@ -5,11 +5,12 @@
 		<link rel = "icon" href = "../image/2016.ico" />
 		<link rel="stylesheet" href="../css/navigator.css" />
 		<link rel="stylesheet" href="../css/games.css" />
-		<link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css" />
+		<link rel="stylesheet" href="../css/jquery.fullPage.css" />
+		<link rel="stylesheet" href="../css/lazyYT.css" />
 		<script type="text/javascript" src="../js/bgcolor.js"></script>
 		<script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
 		<script type="text/javascript" src="../js/jquery.fullPage.js"></script>
-
+		<script type="text/javascript" src="../js/lazyYT.js"></script>
 		<style>
 		.content{
 		color: white;
@@ -56,11 +57,13 @@
         showActiveTooltip: true,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
-		slidesNavTooltips: ['', ''],
+		slidesNavTooltips: ['Details', 'Gameplay'],
 		scrollOverflow:true,
+		lazyLoading:true,
 
 		afterLoad: function(anchorLink,index) {
 			$('html').css('background-image','url(../image/games/top' + (index -1) + '.jpg)');
+			$('.lazyYT').lazyYT();
 		},
 
 		afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
@@ -93,7 +96,7 @@
 			<h1 class="title">TOP 10 BEST GAMES TO PLAY IN 2016</h1>
 			</div>
 			<div class="section">
-				<div class="slide" data-anchor="slide1">
+				<div class="slide">
 					<center><h2>TOP 1<br/>Uncharted 4: A Thief’s End</h2></center>
 					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
@@ -128,7 +131,7 @@
 					in the forests of Madagascar.
 					</div>
 				</div>
-				<div class="slide" data-anchor="slide2">
+				<div class="slide">
 					<div class="gameplay">
 					<h2>Gameplay</h2>
 					Uncharted 4: A Thief’s End is an action adventure video game with stealth element play from third-person view. The player control 
@@ -139,12 +142,12 @@
 					story campaign, the game can unlock special mode by using point player such as bullet time mode.
 					</div>
 					<div class="trailer">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/y1Rx-Bbht5E" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="y1Rx-Bbht5E" data-width="560" data-height="315"></div>
 					</div>
 				</div>
 			</div>
 			<div class="section">
-				<div class="slide" data-anchor="slide1">
+				<div class="slide">
 					<center><h2>TOP 2<br/>Overwatch</h2></center>
 					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
@@ -181,7 +184,7 @@
 					Nation and release every Overwatch members profile to public.
 					</div>
 				</div>
-				<div class="slide" data-anchor="slide2">
+				<div class="slide">
 					<div class="gameplay">
 					<h2>Gameplay</h2>
 					Overwatch features team-based combat with six players divided into two teams. The player will choose one of the heroes in. with each player 
@@ -192,12 +195,12 @@
 					inlock a commemorative badge of honor and spray.
 					</div>
 					<div class="trailer">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/dushZybUYnM" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="dushZybUYnM" data-width="560" data-height="315"></div>
 					</div>
 				</div>
 			</div>
 			<div class="section">
-				<div class="slide" data-anchor="slide1">
+				<div class="slide">
 					<center><h2>TOP 3<br/>Gears of Wars 4</h2></center>
 					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
@@ -234,7 +237,7 @@
 					father Marcus Fenix for help and rescue Kait mom and the whole villager.
 					</div>
 				</div>
-				<div class="slide" data-anchor="slide2">
+				<div class="slide">
 					<div class="gameplay">
 					<h2>Gameplay</h2>
 					Gears of Wars 4 is third-person shooter with action with adventure. The game features four different weathers. Thunder storm will be 
@@ -243,7 +246,7 @@
 					eliminating enemy.
 					</div>
 					<div class="trailer">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/XrfVfRV0zSg" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="XrfVfRV0zSg" data-width="560" data-height="315"></div>
 					</div>
 				</div>
 			</div>
@@ -292,7 +295,7 @@
 					deathmatch. Conquest is a large-scale game mode with 64 player control key objective.
 					</div>
 					<div class="trailer">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/VMW6JpcxNhU" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="VMW6JpcxNhU" data-width="560" data-height="315"></div>
 					</div>
 				</div>
 			</div>
@@ -344,7 +347,7 @@
 					map to challenge player agility and response. 
 					</div>
 					<div class="trailer">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/VqeMjHmL9eg" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="VqeMjHmL9eg" data-width="560" data-height="315"></div>
 					</div>
 				</div>
 			</div>
@@ -396,7 +399,7 @@
 					in space, the player can visit different planet in the solar system to eliminate enemy bases at another planet.
 					</div>
 					<div class="trailer">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/y_RI3bZhU50" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="y_RI3bZhU50" data-width="560" data-height="315"></div>
 					</div>
 				</div>
 			</div>
@@ -447,12 +450,12 @@
 					play with full gun blazing to eliminate enemy by using 3D printed weapon.
 					</div>
 					<div class="trailer">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/7hamZRt3gFE" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="7hamZRt3gFE" data-width="560" data-height="315"></div>
 					</div>
 				</div>
 			</div>
 			<div class="section">
-				<div class="slide" data-anchor="slide1">
+				<div class="slide">
 					<center><h2>TOP 8<br/>Pokemon Sun and Moon</h2></center>
 					<table style="max-width:85%; color: white; font-size: 20" align="center">
 						<col width = "15%">
@@ -487,7 +490,7 @@
 					with Team Skull leader Guzma.
 					</div>
 				</div>
-				<div class="slide" data-anchor="slide2">
+				<div class="slide">
 					<div class="gameplay">
 					<h2>Gameplay</h2>
 					Before the game start, the language menu provided nine language for player to select, there are English, French, Spanish, Italian, German, 
@@ -498,7 +501,7 @@
 					also keep Mega Evolution concept from previous sequel Pokemon X & Y and Pokemon Omega Ruby & Alpha Sapphire.
 					</div>
 					<div class="trailer">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/Iylfh-7uQkc" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="Iylfh-7uQkc" data-width="560" data-height="315"></div>
 					</div>
 				</div>
 			</div>
@@ -549,7 +552,7 @@
 					the character is at Inn. Example ofeach character skill is fishing skill for Noctis, cooking skill for Ignis, surviving skill for Gladious and photography skill for Prompto.
 					</div>
 					<div class="trailer">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/SZymd6r4wGg" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="SZymd6r4wGg" data-width="560" data-height="315"></div>
 					</div>
 				</div>
 			</div>
@@ -600,7 +603,7 @@
 					previously is a gang of convicts from a jail. Now they trying to get whatever they want and get revenge on those police put them in jail.
 					</div>
 					<div class="trailer">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/8Bc2fv0jcgg" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="8Bc2fv0jcgg" data-width="560" data-height="315"></div>
 					</div>
 				</div>
 			</div>
