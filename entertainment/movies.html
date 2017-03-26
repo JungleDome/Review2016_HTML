@@ -5,11 +5,12 @@
 		<link rel = "stylesheet" href = "../css/w3.css" />
 		<link rel="stylesheet" href="../css/navigator.css" />
 		<link rel="stylesheet" href="../css/movies.css" />
+		<link rel="stylesheet" href="../css/lazyYT.css" />
 		<link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css" />
 		<script type="text/javascript" src="../js/bgcolor.js"></script>
 		<script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
 		<script type="text/javascript" src="../js/jquery.fullPage.js"></script>
-	
+		<script type="text/javascript" src="../js/lazyYT.js"></script>
 		<style>
 		.trailer{
 		margin-left: 210px;
@@ -51,6 +52,7 @@
 
 		afterLoad: function(anchorLink,index) {
 			$('html').css('background-image','url(../image/movies/top' + (index -1) + '.jpg)');
+			$('.lazyYT').lazyYT();
 		},
 
 		afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
@@ -125,7 +127,7 @@
 					</p>
 					</div>
 					<div class="trailer">
-					<iframe width="900" height="315" src="https://www.youtube.com/embed/Xithigfg7dA" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="Xithigfg7dA" data-width="900" data-height="315"></div>
 					</div>
 				</div>
 			</div>
@@ -168,7 +170,7 @@
 					or Iron Man who both have opposing views on the matter. This brings about an epic civil war between the former allies.
 					</div>
 					<div class="trailer">
-					<iframe width="900" height="315" src="https://www.youtube.com/embed/h-It14I2W7Q" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="h-It14I2W7Q" data-width="900" data-height="315"></div>
 					</div>
 				</div>
 			</div>
@@ -214,7 +216,7 @@
 					woman regain her memory, Conan and the Detective Boys are under the watchful eye of Vermouth.
 					</div>
 					<div class="trailer">
-					<iframe width="900" height="315" src="https://www.youtube.com/embed/hTtJX-4Kh_4" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="hTtJX-4Kh_4" data-width="900" data-height="315"></div>
 					</div>
 				</div>
 			</div>
@@ -258,7 +260,7 @@
 					then even write about “rules” when using each one body.
 					</div>
 					<div class="trailer">
-					<iframe width="900" height="315" src="https://www.youtube.com/embed/hRfHcp2GjVI" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="hRfHcp2GjVI" data-width="900" data-height="315"></div>
 					</div>
 				</div>
 			</div>
@@ -301,7 +303,7 @@
 					mobile battle station that is capable of destroying entire planets.
 					</div>
 					<div class="trailer">
-					<iframe width="900" height="315" src="https://www.youtube.com/embed/frdj1zb9sMY" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="frdj1zb9sMY" data-width="900" data-height="315"></div>
 					</div>
 				</div>
 			</div>
@@ -346,7 +348,7 @@
 					to solve a mystery that involves the city of Zootopia and the conspiracy of the city management.
 					</div>
 					<div class="trailer">
-					<iframe width="900" height="315" src="https://www.youtube.com/embed/jWM0ct-OLsM" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="jWM0ct-OLsM" data-width="900" data-height="315"></div>
 					</div>
 				</div>
 			</div>
@@ -391,7 +393,7 @@
 					designated Sorceror Supreme. He also take on the responsibility on dealing with his former senior, Kaecilius.
 					</div>
 					<div class="trailer">
-					<iframe width="900" height="315" src="https://www.youtube.com/embed/HSzx-zryEgM" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="HSzx-zryEgM" data-width="900" data-height="315"></div>
 					</div>
 				</div>
 			</div>
@@ -434,7 +436,7 @@
 					Superman. The first mission is to save the world from apocalypse and it will most likely mean the death of them all.
 					</div>
 					<div class="trailer">
-					<iframe width="900" height="315" src="https://www.youtube.com/embed/CmRih_VtVAs" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="CmRih_VtVAs" data-width="900" data-height="315"></div>
 					</div>
 				</div>
 			</div>
@@ -478,7 +480,7 @@
 					the enemy. Only the ingenuity of a few brave men and women can bring the world back from the brink of extinction.
 					</div>
 					<div class="trailer">
-					<iframe width="900" height="315" src="https://www.youtube.com/embed/LbduDRH2m2M" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="LbduDRH2m2M" data-width="900" data-height="315"></div>
 					</div>
 				</div>
 			</div>
@@ -521,7 +523,7 @@
 					Expect to see a gathering of heroes in this continuation to "Man of Steel".</p>
 					</div>
 					<div class="trailer">
-					<iframe width="900" height="315" src="https://www.youtube.com/embed/fis-9Zqu2Ro" frameborder="0" allowfullscreen></iframe>
+					<div class="lazyYT" data-youtube-id="fis-9Zqu2Ro" data-width="900" data-height="315"></div>
 					</div>
 				</div>
 			</div>
