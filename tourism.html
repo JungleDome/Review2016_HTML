@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 	<head>
-		<title>Test</title>
-		<link rel="stylesheet" href="css/w3.css" />
-		<link rel="icon" href="image/2016.ico"/>
+		<title>Review 2016 - Tourism</title>
+		<link rel = "stylesheet" href = "css/w3.css" />
+		<link rel = "icon" href = "image/2016.ico"/>
 		<link rel="stylesheet" href="css/navigator.css" />
 		<link rel="stylesheet" href="css/tourism.css" />
-		<link rel="stylesheet" href="css/jquery.fullPage.css" />
 		<script type="text/javascript" src="js/bgcolor.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 		<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+		
+		<style>
+		.content{
+		color: white;
+		text-shadow: 2px 3px 2px grey, 2px 2px 1px black;
+		font-size: 20px;
+		max-width: 85%;
+		margin-left: 80px;
+		}
+		
+		h2{
+		color:azure;
+		text-shadow: 2px 3px 2px grey, 2px 2px 1px black;
+		margin-bottom: 100px;
+		}
+		
+		table{
+		text-shadow: 2px 3px 2px grey, 2px 2px 1px black;
+		}
+		
+		
+		</style>
 	</head>
 	<body>
 	<script>
 	$(document).ready(function() {
     $('#fullpage').fullpage({
-        anchors:['firstPage', 'secondPage', 'thirdPage'],
 		navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['firstPage', 'Top 1'],
+        navigationTooltips: ['firstPage', 'Top 1','Top 2','Top 3','Top 4','Top 5','Top 6','Top 7','Top 8','Top 9','Top 10'],
         showActiveTooltip: true,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
-		slidesNavTooltips: ['firstPage', 'Top 1'],
+		slidesNavTooltips: ['firstPage', 'secondPage'],
 		scrollOverflow:true,
 
 		afterLoad: function(anchorLink,index) {
@@ -39,18 +60,18 @@
 
 	});});
 	</script>
-		<ul class="tab">
-			<li><a href="feedback.html" onclick="redirect()">Feedback</a></li>
-			<li><a href="about.html" onclick="redirect()">About</a></li>
-			<li class="dropdown"><a href="javascript:void(0)">Category</a>
+		<ul class = "tab">
+			<li><a href="help.html"  onclick="redirect()">Feedback</a></li>
+			<li><a href="about.html"  onclick="redirect()">About</a></li>
+			<li class = "dropdown"><a href="javascript:void(0)">Category</a>
 				<div class="dropdown-content">
-					<a href="news.html" onclick="redirect()">News</a>
-					<a href="entertainment.html" onclick="redirect()">Entertainment</a>
-					<a href="technology.html" onclick="redirect()">Technology</a>
-					<a href="tourism.html" onclick="redirect()">Tourism</a>
+					<a href="news.html"  onclick="redirect()">News</a>
+					<a href="entertainment.html"  onclick="redirect()">Entertainment</a>
+					<a href="technology.html"  onclick="redirect()">Technology</a>
+					<a href="tourism.html"  onclick="redirect()">Tourism</a>
 				</div>
 			</li>
-			<li><a href="index.html" onclick="redirect()">Home</a></li>
+			<li><a href="index.html"  onclick="redirect()">Home</a></li>
 			<li class="a">Review 2016</li>
 		</ul>
 		<div id="fullpage" style="margin-top:40px;">
@@ -60,15 +81,445 @@
 			<div class="section">
 				<div class="slide" data-anchor="slide1">
 					<center><h2>TOP 1 <br />Bocas del Toro,Panama</h2></center>
+					<div class="content">
+					Bocas del Toro is in Panama comprising an island chain off the Caribbean coast, and an addition of the biodiverse rainforest 
+					nearby the mainland. The area of Bocas del Toro is 1789 square miles.  It contains seven islands, including Isla Colon, Isla 
+					Carenero, Isla Bastimentos. Its main island, Isla Colon is home to the capital, Bocas Town. The place is favorited by 
+					English-speaking and other tourists that travel to this Central American country. For those tourists that like adventure, the 
+					people at there has provided many activities to keep the busy, such as scuba diving, snorkeling, sailing, surfing and hiking 
+					are strongly suggested. There are places to visit and what to do list in Bocas del Toro.
+					</div>
 				</div>
 				<div class="slide" data-anchor="slide2">
-					<div id="example"></div>
+					<center><h2>Places to visit</h2></center>
+					<table style="max-width:85%; color: white; font-size: 20px;" align="center">
+						<col width = "45%">
+						<col width = "40%">
+						<tr>
+							<td>Isla Zapatillas</td>
+							<td>Red Frog Beach (a.k.a. Isla Bastimentos)</td>
+						</tr>
+						<tr>
+							<td>Finca Los Monos Botanical Garden (a.k.a. Isla Colon)</td>
+							<td>Playa Estrella(Bocas Town)</td>
+						</tr>
+						<tr>
+							<td>Playa Bluff</td>
+							<td>Parque National Marino Isla Bastimentos</td>
+						</tr>
+						<tr>
+							<td>Dolphin Bay Preserve</td>
+							<td>Bastimentos National Park</td>
+						</tr>
+						<tr>
+							<td>Crawl Cay</td>
+							<td>Smithsonian Tropical Research Institute</td>
+						</tr>
+						<tr>
+							<td>Observation Centre Canal Expansion</td>
+							<td>Zipline & Aerial Adventure Parks</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+						<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 2<br />Guadalajara, Mexico</h2></center>
+					<div class="content">
+					Guadalajara is Mexico’s second biggest city. It is the capital of the state of Jalisco. (Board, 2012)This Mexican city is more about 
+					architecture, music and art scene. Not only cultural heritage, the historical aura is also exist in this inland city. Museums, parks and 
+					churches flourish alongside bullfights, rodeos and football. (TripAdvisor, 2017) Jazz music flows in the area while nearby area there are 
+					towns of Tequila, the famous drink that shares the same name is produced. It sometimes referred as Mexico’s Silicon Valley. Besides that, 
+					Tlaquepaque and Tonala contains Mexican artisans that create a selection of handcrafted items.  Its famous places included Guadalajara 
+					Aquarium, Tapalpa, Mazamilta and more.
+					</div>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<center><h2>Places to visit</h2></center>
+					<table style="max-width:85%; color: white; font-size: 20px" align="center">
+						<col width = "45%">
+						<col width = "40%">
+						<tr>
+							<td>Guadalajara Aquarium</td>
+							<td>Guadalajara Cathedral</td>
+						</tr>
+						<tr>
+							<td>The Degollado Theater</td>
+							<td>Cabanas Cultural Institute</td>
+						</tr>
+						<tr>
+							<td>Tequila</td>
+							<td>The lake of Chapala</td>
+						</tr>
+						<tr>
+							<td>El Parian</td>
+							<td>Plaza de Armas</td>
+						</tr>
+						<tr>
+							<td>Arena Coliseo</td>
+							<td>Plaza Tapatia</td>
+						</tr>
+						</table>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 3<br />Richmond, Virginia</h2></center>
+					<div class="content">
+					Richmond is the capital of the Commonwealth of Virginia in the United states. It was also the seat of America’s first African-American 
+					governor and the site of the first commercial electric streetcar system. (TripAdvisor, 2017) It is located at the fall line of the James 
+					River. This Southern city has been drawing history buffs for years, but nowadays with the addition of more art galleries and shopping 
+					destinations such as Carytown.
+					</div>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<center><h2>Places to visit</h2></center>
+					<table style="max-width:85%; color: white; font-size: 20px" align="center">
+						<col width = "45%">
+						<col width = "40%">
+						<tr>
+							<td>Isla Zapatillas</td>
+							<td>Red Frog Beach (a.k.a. Isla Bastimentos)</td>
+						</tr>
+						<tr>
+							<td>Finca Los Monos Botanical Garden (a.k.a. Isla Colon)</td>
+							<td>Playa Estrella(Bocas Town)</td>
+						</tr>
+						<tr>
+							<td>Playa Bluff</td>
+							<td>Parque National Marino Isla Bastimentos</td>
+						</tr>
+						<tr>
+							<td>Dolphin Bay Preserve</td>
+							<td>Bastimentos National Park</td>
+						</tr>
+						<tr>
+							<td>Crawl Cay</td>
+							<td>Smithsonian Tropical Research Institute</td>
+						</tr>
+						<tr>
+							<td>Observation Centre Canal Expansion</td>
+							<td>Zipline & Aerial Adventure Parks</td>
+						</tr>
+						</table>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 4<br />Lille, France</h2></center>
+					<div class="content">
+					As everyone know, Paris is about fashion and design, but there is a charming town is making its mark on the map and society. This place is 
+					an architectural feast with strong Flemish influences: from the Grand Place to the basilica of Norte-Dame-de-la-Treille to the quiet 
+					streets of row houses and gardens. It may be France’s most underrated major city and home to the Musee d’Art Moderne and the Palais des 
+					Beax Arts. Kids will like the Parc de Zoologique. In addition, savvy travelers know that this place has a fine public transport system, 
+					making this location a pleasure to visit.
+					</div>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<center><h2>Places to visit</h2></center>
+					<table style="max-width:85%; color: white; font-size: 20px" align="center">
+						<col width = "45%">
+						<col width = "40%">
+						<tr>
+							<td>Palais des Beaux Arts</td>
+							<td>La Piscine Musee d’Art et d’Industrie</td>
+						</tr>
+						<tr>
+							<td>Musee d’Art Moderne, d’Art Contemporain et d’Art Brut – LaM</td>
+							<td>Vieille Bourse</td>
+						</tr>
+						<tr>
+							<td>Wazemmes</td>
+							<td>Musee de l’Hospice Comtesse</td>
+						</tr>
+						<tr>
+							<td>Citadelle</td>
+							<td>Maison Natale de Charles de Gaulle</td>
+						</tr>
+						<tr>
+							<td>Cathedrale Notre-Dame-de-la-Treille</td>
+							<td>Chambre de Commerce</td>
+						</tr>
+						<tr>
+							<td>Porte de Paris</td>
+							<td>Opera</td>
+						</tr>
+						<tr>
+							<td>Hotel de Ville</td>
+						</tr>
+						</table>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 5<br />Iran</h2></center>
+					<div class="content">
+					While people mentioned on the list are cities in the major countries such as New Zealand, United States, and United Kingdom, the 
+					publication decided to highlight the entire area of Iran. The landscapes of Iran are wonderful, from high mountains to deep deserts 
+					where the soulful presence of Asiatic cheetah still roams. Iran is also a treasure house for some of the beautiful architecture on the 
+					planet. Its historical commitment to aesthetic beauty and exquisite architecture resign supreme.
+					</div>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<center><h2>Places to visit</h2></center>
+					<table style="max-width:85%; color: white; font-size: 20px" align="center">
+						<col width = "45%">
+						<col width = "40%">
+						<tr>
+							<td>Masjed-e Shah</td>
+							<td>Masjed-e Jameh</td>
+						</tr>
+						<tr>
+							<td>Naqsh-e Jahan Square</td>
+							<td>Bagh-e Naranjestan</td>
+						</tr>
+						<tr>
+							<td>Apadana Staircase</td>
+							<td>Tabriz Bazaar</td>
+						</tr>
+						<tr>
+							<td>Bazar-e Bozorge</td>
+							<td>Amir Chakhmaq Mosque Complex</td>
+						</tr>
+						<tr>
+							<td>Xerxes’ Gateway</td>
+							<td>Persepolis</td>
+						</tr>
+						<tr>
+							<td>Old City</td>
+							<td>Bagh-e Nazar</td>
+						</tr>
+						<tr>
+							<td>Pars museum</td>
+							<td>Golestan Palace</td>
+						</tr>
+						</table>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 6<br />Lanai, Hawaii</h2></center>
+					<div class="content">
+					It is almost a given fact that a Hawaiian destination would make the list, but this place, Lanai is truly an escape even in paradise. 
+					Its red-dirt island is an oasis of calm and peaceful. Among Hawaii’s six main islands, Lanai is one of the smallest populations and the 
+					least number of visitors. Reaching Lanai is difficult since there are no direct flights from the mainland to there. However, once people 
+					arrive, they will find the tropical surroundings are perfect for outdoor activities such as snorkeling and scuba diving.
+					</div>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<center><h2>Places to visit</h2></center>
+					<table style="max-width:85%; color: white; font-size: 20px" align="center">
+						<col width = "45%">
+						<col width = "40%">
+						<tr>
+							<td>Papohaku Beach</td>
+							<td>Kalaupapa Overlook</td>
+						</tr>
+						<tr>
+							<td>Moa’ula Falls</td>
+							<td>Hipuapua Falls</td>
+						</tr>
+						<tr>
+							<td>Halawa Beach Park</td>
+							<td>Kepuchi Beach</td>
+						</tr>
+						<tr>
+							<td>Waikolu Lookout</td>
+							<td>St Joseph’s Church</td>
+						</tr>
+						<tr>
+							<td>Purdy’s Macadamia Nut Farm</td>
+							<td>Keomuku</td>
+						</tr>
+						<tr>
+							<td>Lapua’iwa Coconut Grove</td>
+							<td>Kakahai’a National Wildlife Refuges</td>
+						</tr>
+						<tr>
+							<td>Pu’u o Kaiaka</td>
+						</tr>
+						</table>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 7<br />Hangzhou, China</h2></center>
+					<div class="content">
+					Hangzhou is the capital of Zhejiang Province and one of the seven ancient capitals of China. It has described by Italian traveler Marco Polo 
+					as the finest and most luxurious city in the world. Nowadays, it is one of the wealthiest cities in China. Hangzhou’s dreamy West Lake 
+					panoramas and beautiful green hills can easily tempt the tourists into long sojourns.  Besides that, Hangzhou’s charm are by no means 
+					limited to West Lake scenery, it has further ancient pagodas and blissfully quiet temples at there. 
+					</div>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<center><h2>Places to visit</h2></center>
+					<table style="max-width:85%; color: white; font-size: 20px" align="center">
+						<col width = "45%">
+						<col width = "40%">
+						<tr>
+							<td>West Lake</td>
+							<td>Lingyin Temple</td>
+						</tr>
+						<tr>
+							<td>Dragon Well Tea Village</td>
+							<td>Jingci Temple</td>
+						</tr>
+						<tr>
+							<td>Sunrise Terrace</td>
+							<td>Six Harmonies Pagoda</td>
+						</tr>
+						<tr>
+							<td>Qinghefang Old Street</td>
+							<td>Huqingyu Tang Chinese Medicine Museum</td>
+						</tr>
+						<tr>
+							<td>China National Silk Museum</td>
+							<td>Baopu Taoist Temple</td>
+						</tr>
+						<tr>
+							<td>Confucius Temple</td>
+							<td>Baoshi Shan</td>
+						</tr>
+						<tr>
+							<td>Hangzhou Botanical Garden</td>
+							<td>Mid-Lake Pavilion</td>
+						</tr>
+						<tr>
+							<td>Hangzhou Old City Wall Exhibition Hall</td>
+						</tr>
+						</table>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 8<br />Douro Valley, Portugal</h2></center>
+					<div class="content">
+					Douro Valley is the world’s first officially designated wine region. A visit here is filled with rolling hills and number of wineries 
+					serving up some sensational sips. Tourists are suggested to come for the ports and wines, winding scenic roads, postcard-pretty villages 
+					and excellent regional restaurants.
+					</div>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<center><h2>Places to visit</h2></center>
+					<table style="max-width:85%; color: white; font-size: 20px" align="center">
+						<col width = "45%">
+						<col width = "40%">
+						<tr>
+							<td>Parque Arqueologico do Vale do Coa</td>
+							<td>Museu de Lamego</td>
+						</tr>
+						<tr>
+							<td>Igreja de Nossa Senhora dos Remedios</td>
+							<td>Museu Amadeo de Souza-Cardoso</td>
+						</tr>
+						<tr>
+							<td>Old Town</td>
+							<td>Ponte de Sao Goncalo</td>
+						</tr>
+						<tr>
+							<td>Capela de Sao Pedro de Balsemao</td>
+							<td>Moisterio de Sao Goncalo</td>
+						</tr>
+						<tr>
+							<td>Mosteiro de Salzedas</td>
+							<td>Castelo</td>
+						</tr>
+						<tr>
+							<td>Alfandega Reiga Museu da Construcao Naval</td>
+							<td>Casa de Jose Regio</td>
+						</tr>
+						<tr>
+							<td>Igreja Santa Maria de Almacave</td>
+						</tr>
+						</table>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 9<br />Frankfurt, Germany</h2></center>
+					<div class="content">
+					It is an unexpectedly traditional and charming city, with half-timbered buildings huddled in its quaint medieval Altstadt, cozy apple 
+					wine taverns serving hearty regional food, village-like neighborhoods filled with outdoor cafes, boutiques and street art, and beautiful 
+					parks, gardens and riverside paths. This city is expanding its horizons with the openings of foodie-worthy restaurants.
+					</div>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<center><h2>Places to visit</h2></center>
+					<table style="max-width:85%; color: white; font-size: 20px" align="center">
+						<col width = "45%">
+						<col width = "40%">
+						<tr>
+							<td>Kaiserdom</td>
+							<td>Senckenberg Museum</td>
+						</tr>
+						<tr>
+							<td>Romerberg</td>
+							<td>Stadel Museum</td>
+						</tr>
+						<tr>
+							<td>Old Jewish Cemetry</td>
+							<td>Main Tower</td>
+						</tr>
+						<tr>
+							<td>Frankfurt Stock Exchange</td>
+							<td>Wolheim Memorial</td>
+						</tr>
+						<tr>
+							<td>Explora</td>
+							<td>Schirn Kunsthalle</td>
+						</tr>
+						<tr>
+							<td>Museum for Moderne Kunst</td>
+							<td>Museumsufer Frankfurt</td>
+						</tr>
+						</table>
+				</div>
+			</div>
+			<div class="section">
+				<div class="slide" data-anchor="slide1">
+					<center><h2>TOP 10<br />Asbury Park, New Jersey</h2></center>
+					<div class="content">
+					During decades of economic stagnation, the town of Asbury Park had nothing more to its name than the fact that state troubadour Bruce 
+					Springsteen got his start at the Stone Pony nightclub here in the mid-1970s. But since 2000, blocks of previously abandoned Victorian 
+					homes have seen such a revival that Asbury is sometimes called the Brooklyn of New Jersey. The downtown, several blocks of Cookman and 
+					Bangs Aves, has antiques shops, hip restaurants (from vegan to French bistro) and bars, and an art-house cinema.
+					</div>
+				</div>
+				<div class="slide" data-anchor="slide2">
+					<center><h2>Places to visit</h2></center>
+					<table style="max-width:85%; color: white; font-size: 20px" align="center">
+						<col width = "45%">
+						<col width = "40%">
+						<tr>
+							<td>Isla Zapatillas</td>
+							<td>Red Frog Beach (a.k.a. Isla Bastimentos)</td>
+						</tr>
+						<tr>
+							<td>Finca Los Monos Botanical Garden (a.k.a. Isla Colon)</td>
+							<td>Playa Estrella(Bocas Town)</td>
+						</tr>
+						<tr>
+							<td>Playa Bluff</td>
+							<td>Parque National Marino Isla Bastimentos</td>
+						</tr>
+						<tr>
+							<td>Dolphin Bay Preserve</td>
+							<td>Bastimentos National Park</td>
+						</tr>
+						<tr>
+							<td>Crawl Cay</td>
+							<td>Smithsonian Tropical Research Institute</td>
+						</tr>
+						<tr>
+							<td>Observation Centre Canal Expansion</td>
+							<td>Zipline & Aerial Adventure Parks</td>
+						</tr>
+						</table>
 				</div>
 			</div>
 		</div>
-	<footer>
-		<!--Put this on the last section!-->
-		<center>Copyrighted</center>
-	</footer>
+	<div class = "footer">
+		© Project 2016.All Rights Reserved
+	</div>
 	</body>
 </html>

@@ -27,31 +27,65 @@
 	<div class = "content ">
 		<center><h1 class="title">Entertainment</h1></center>
 		<div class="large-container">
-			<div class = "container animated fadeInLeft" onmouseover="Play(0)" onmouseout="Pause(0)" onclick="location.href='entertainment/music.html';" >
-			<div style="height:100vh;z-index:0;"><video src="image/music.mp4" muted loop preload="3">Music</video></div>
+			<div class = "container" onmouseover="Play()" onmouseout="Pause()" onclick="location.href='entertainment/music.html';" >
+			<div style="height:100vh;z-index:0;"><video id="0" style="height:100vh;width:33vw;object-fit: fill;" src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/SAKGwKC/music-notes-loop-background_ea9oxnoye__PM.mp4" muted loop preload="3">Music</video></div>
 			<div style="position:relative;top:-65vh;text-align: center;"><h1>Music</h1></div>
 			
 			</div>
-			<div class = "container animated fadeInUp" onmouseover="HoverFunc(1)" onclick="location.href = 'entertainment/movies.html';">
-				<center><h1>Movies</h1></center>
+			<div class = "container" onmouseover="PlaySecond()" onmouseout="PauseSecond()" onclick="location.href = 'entertainment/movies.html';">
+				<div style="height:100vh;z-index:0;"><iframe id="v1" style="height:100vh;width:33vw;" src="https://www.youtube.com/embed/CmRih_VtVAs?&loop=1&controls=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe></div>
+				<div style="position:relative;top:-65vh;text-align: center;"><h1>Movies</h1></div>
 			</div>
-			<div class = "container animated fadeInRight" onmouseover="HoverFunc(2)" onclick="location.href = 'entertainment/games.html';">
-				<center><h1>Games</h1></center>
+			<div class = "container" onmouseover="PlayThird()" onmouseout="PauseThird()" onclick="location.href = 'entertainment/games.html';">
+				<div style="height:100vh;z-index:0;"><div id="v2"></div><div style="position:relative;top:-65vh;text-align: center;"><h1>Games</h1></div>
 			</div>
 		</div>
 	</div>
-	<footer>
-		<center>Copyrighted</center>
-	</footer>
+	<div class = "footer">
+		© Project 2016.All Rights Reserved
+	</div>
 	<script>
-	function Play(e) {
-		var vid = document.getElementsByTagName('video')[e];
+
+		var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player3 = new YT.Player('v2', {
+        	height: window.innerHeight,
+        	width: window.innerWidth / 3,
+        	videoId: 'dushZybUYnM'
+      	});
+        player2 = new YT.Player('v1', {
+        	height: window.innerHeight,
+        	width: window.innerWidth / 3,
+        	videoId: 'dushZybUYnM'});
+      }
+
+	function Play() {
+		var vid = document.getElementsByTagName('video')[0];
 		vid.play();
 	}
-
-	function Pause(e) {
-		var vid = document.getElementsByTagName('video')[e];
-		vid.pause();
+	function PlaySecond() {
+		player2.playVideo();
+	}
+	function PlayThird() {
+		player3.playVideo();
+	}
+	function Pause() {
+			var vid = document.getElementsByTagName('video')[0];
+			vid.pause();
+	}
+	function PauseSecond() {
+		player2.pauseVideo();
+	}
+	function PauseThird() {
+		player3.pauseVideo();
 	}
 	</script>
 	</body>

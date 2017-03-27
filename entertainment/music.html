@@ -1597,33 +1597,31 @@
 						</div>
 				</div>
 			</div>
-			<script>
-			
+		</div>
+		<div class = "footer">
+		© Project 2016.All Rights Reserved
+		</div>
+	<script>
 	var toggle = false;
 	var playlistToggled = false;
-
 	function playMusic(evt, musicType) {
 			// Declare all variables
 			var i, headercontent, headerlinks;
-
 			// Get all elements with class="headercontent" and hide them
 			headercontent = document.getElementsByClassName("headercontent");
 			for (i = 0; i < headercontent.length; i++) {
 				console.log('a');
 				headercontent[i].style.display = "none";
 			}
-
 			// Get all elements with class="headerlinks" and remove the class "active"
 			headerlinks = document.getElementsByClassName("headerlinks");
 			for (i = 0; i < headerlinks.length; i++) {
 				headerlinks[i].className = headerlinks[i].className.replace(" active", "");
 			}
-
 			// Show the current header, and add an "active" class to the link that opened the header
 			document.getElementById(musicType).style.display = "block";
 			evt.currentTarget.className += " active";
 	}
-
 	function playerToggle() {
 		var fullWidth = window.innerWidth * 0.7;
 		var btnNoPlaylist = fullWidth - (fullWidth * 0.3);
@@ -1647,7 +1645,6 @@
 			toggle=true;
 		}
 	}
-
 	function playlistToggle() {
 		var fullWidth = window.innerWidth * 0.7;
 		var btnNoPlaylist = fullWidth - (fullWidth * 0.3);
@@ -1655,7 +1652,6 @@
 		if(playlistToggled) {
 			$('.floating-button').velocity({right:btnNoPlaylist},"easeIn",1500);
 			$('.floating-player').velocity({right:plyNoPlaylist},"easeIn",1500);
-
 			playlistToggled = false;
 		}
 		else {
@@ -1664,12 +1660,6 @@
 			playlistToggled = true;
 		}
 	}
-
-	
-			</script>
-		</div>
-		<span class="footer">Copyrighted</span>
+	</script>	
 	</body>
-
-
 </html>
