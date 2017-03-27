@@ -622,17 +622,6 @@
 			//Load youtube iframe
 			$('.lazyYT').lazyYT();
 			var element = $(".overlay")[e];
-			/*var img = $(".image")[e];
-			var fakeobject = $('<img src="' + img.src + '"></img>');
-			fakeobject.css({"border":"1px solid black","position":"absolute","width":img.width,"height":img.height,"left":img.x,"top":img.y});
-			fakeobject.appendTo("body");
-			
-			var overlaying = $(".overlay-img")[e];
-			var destY = overlaying.y;
-			var destX = overlaying.x;
-			overlaying.src = img.src;
-			$(fakeobject).velocity({left: destX, top:destY}, 1000);
-			setTimeout(function(){$(fakeobject).remove();},1000);*/
 			$(element).attr("style","display: initial;");
 			$(element).velocity({opacity: 1 }, 1000);
 			
@@ -640,17 +629,8 @@
 
 		function hide(e) {
 			var element = $(".overlay")[e];
-			/*var img = $(".image")[e];
-			var overlaying = $(".overlay-img")[e];
-			var fakeobject = $('<img src="' + overlaying.src + '"></img>');
-			var destY = img.y;
-			var destX = img.x;
-			fakeobject.css({"border":"1px solid black","position":"absolute","width":overlaying.width,"height":overlaying.height,"left":overlaying.x,"top":overlaying.y});
-			fakeobject.appendTo("body");
-			$(fakeobject).velocity({left: destX, top:destY}, 1000);
-			setTimeout(function(){$(fakeobject).remove();},1000);*/
 			$(element).velocity({opacity: 0 }, 1000);
-			$(element).attr("style","display: none;",1000);
+			setTimeout(function(){$(element).attr("style","display: none;");},1000);
 		}
 	</script>
 	<footer>

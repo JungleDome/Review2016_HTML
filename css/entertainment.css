@@ -35,7 +35,10 @@ html {
 }
 .container h1 {
 	font-size:50px;
-	opacity:0;v
+	opacity:0;
+	font-weight: bold;
+	color:white;
+	background-color: rgba(0,0,0,0.4);
 	transition: opacity 1.5s;
 }
 /* Theming of nav bar */

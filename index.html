@@ -6,11 +6,9 @@
 		<link rel="stylesheet" href = "css/w3.css"/>
 		<link rel="stylesheet" href="css/navigator.css" />
 		<link rel="stylesheet" href="css/index.css" />
-		<link rel="stylesheet" href="css/jquery.fullPage.css" />
 		<link rel="stylesheet" href="css/unslider-dots.css" />
 		<link rel="stylesheet" href="css/unslider.css" />
 		<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
-		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 		<script src="js/velocity.js"></script>
 		<script src="js/unslider.js"></script>
 		<script src="js/bgcolor.js"></script>
@@ -41,39 +39,11 @@
 				</video>
 				<h1 class="title">What's up in 2016!?</h1>
 			</div>
-			<div class="section">
-				<footer style="position:absolute;bottom:0;width:100vw;">
-					<center>Copyright 2017 © NOTHIN</center>
-				</footer>
-			</div>
+			<footer style="position:absolute;bottom:0;width:100vw;">
+				<center>Copyright 2017 © NOTHIN</center>
+			</footer>
 		</div>
 	</div>
-	<script>
-		$(document).ready(function() {
-		    $('#fullpage').fullpage({
-		        anchors:['firstPage', 'secondPage', 'thirdPage'],
-				navigation: true,
-		        navigationPosition: 'right',
-		        navigationTooltips: ['firstPage', 'Top 1'],
-		        showActiveTooltip: true,
-		        slidesNavigation: true,
-		        slidesNavPosition: 'bottom',
-				slidesNavTooltips: ['firstPage', 'Top 1'],
-				scrollOverflow:true,
-
-				afterLoad: function(anchorLink,index) {
-				$('.video').css('height',parseInt(window.innerHeight) - 2);
-				}
-			});
-			'Initialize unslider jquery plugin'
-			$('.slider').unslider({
-				animation: 'horizontal',
-				autoplay: true,
-				arrow:true,
-				nav:false
-			});
-		});
-	</script>
 	</body>
 
 

@@ -64,6 +64,10 @@
 	height:100%;
 }
 
+#content img {
+	
+}
+
 /*.overlay-img {
 	height:calc((100vh - 64px) / 2);;
 	width:20%;

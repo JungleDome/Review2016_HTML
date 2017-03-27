@@ -27,8 +27,10 @@
 	<div class = "content ">
 		<center><h1 class="title">Entertainment</h1></center>
 		<div class="large-container">
-			<div class = "container animated fadeInLeft" onmouseover="HoverFunc(0)" onclick="location.href = 'entertainment/music.html';" >
-				<center><h1>Music</h1></center>
+			<div class = "container animated fadeInLeft" onmouseover="Play(0)" onmouseout="Pause(0)" onclick="location.href='entertainment/music.html';" >
+			<div style="height:100vh;z-index:0;"><video src="image/music.mp4" muted loop preload="3">Music</video></div>
+			<div style="position:relative;top:-65vh;text-align: center;"><h1>Music</h1></div>
+			
 			</div>
 			<div class = "container animated fadeInUp" onmouseover="HoverFunc(1)" onclick="location.href = 'entertainment/movies.html';">
 				<center><h1>Movies</h1></center>
@@ -42,7 +44,15 @@
 		<center>Copyrighted</center>
 	</footer>
 	<script>
-	function HoverFunc(e) {}
+	function Play(e) {
+		var vid = document.getElementsByTagName('video')[e];
+		vid.play();
+	}
+
+	function Pause(e) {
+		var vid = document.getElementsByTagName('video')[e];
+		vid.pause();
+	}
 	</script>
 	</body>
 </div>

@@ -4,13 +4,15 @@
 		<link rel="icon" href="../image/2016.ico"/>
 		<link rel="stylesheet" href="../css/navigator.css" />
 		<link rel="stylesheet" href="../css/music.css" />
+		<link rel="stylesheet" href="../css/ableplayer.min.css" />
 		<link rel="stylesheet" href="../css/font-awesome.min.css">
 		<script src="../js/bgcolor.js"></script>
 		<script src="../js/jquery-3.1.1.js"></script>
 		<script src="../js/velocity.js"></script>
+		<script type="text/javascript" src="../js/ableplayer.min.js"></script>
+		<script type="text/javascript" src="../js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="../js/js-cookie.js"></script>
 	<style>
-		
-		
 		.content-container{
 		height: 190px;
 		width: 98%;
@@ -269,6 +271,9 @@
 		<div class="background">
 			<div class="lyric">
 			</div>
+			<audio id="player1" data-able-player preload="auto">
+				<source type="audio/mpeg" src="../image/music/chinese/五月天 派對動物.mp3"/>
+			</audio>
 			<div class="control">
 				<input type="image" src="../image/playerPrevious.png" alt="Previous" onclick="playerPrevious()">
 				<input type="image" src="../image/playerPlay.png" alt="Play" onclick="playerPlayPause()">
@@ -279,9 +284,9 @@
 		</div>
 	</td>
 	<td style="width:30%;border-left:0;">
-		<ol class="playlist">
-			<li>awdw</li>
-			<li>awda</li>
+		<ol class="playlist able-playlist" data-player="player1">
+			<li data-mp3="../music/english/Adele Send My Love (To your New Lover).mp3">Sample MP3_1</li>
+			<li data-mp3="../music/english/Don't Let Me Down The Chainsmokers ft. Daya.mp3">Sample MP3_2</li>
 		</ol>
 </td>
 </table>
