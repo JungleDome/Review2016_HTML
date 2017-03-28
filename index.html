@@ -28,16 +28,54 @@
 			<li><a href="index.html"  onclick="redirect()">Home</a></li>
 			<li class="a"><img src="image/review2016logo.png" alt="logo"></li>
 		</ul>
-
 	<div class = "content">
-		<div id="fullpage">
-			<div class="section">
-				<iframe style="width:100vw;height:100vh;object-fit: fill;" src="https://www.youtube.com/embed/w3VWKqLVkpg?autoplay=1&loop=1&controls=0" frameborder="0" allowfullscreen></iframe>
+		<div class="section">
+			<div id="player" style="width:100vw;height:100vh;z-index:0;"></div>
+			<div style="position:relative;top:-95vh;text-align: center;">
 				<h1 class="title">What's up in 2016!?</h1>
+			</div>
+			<div style="position:relative;top:-105vh;text-align: center;max-width:40px;height:auto;object-fit: fill;overflow: hidden;" class="slider">
+				<ul>
+					<li>
+						<img src="image/technology/dromeMain.jpg" alt="Drone">
+					</li>
+					<li>
+						<img src="image/news/ppap.jpg" alt="Pen Pineapple-Apple-Pen">
+					</li>
+					<li>
+						<img src="image/movies/top1.jpg" alt="DeadPool">
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
+	<script>
+	var tag = document.createElement('script');  
+  
+tag.src = "https://www.youtube.com/iframe_api";  
+var firstScriptTag = document.getElementsByTagName('script')[0];  
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);  
+  
+// 2. This function creates an <iframe> (and YouTube player) after the API code downloads.  
+var player;  
+function onYouTubeIframeAPIReady() {  
+    player = new YT.Player('player', {  
+        height: '1280',  
+        width: '720',  
+        videoId: 'w3VWKqLVkpg',  
+        playerVars: {'controls':0,'loop':1},
+        events: {  
+            'onReady': onPlayerReady  
+        }  
+    });  
+}  
+  
+// 3. The API will call this function when the video player is ready.  
+function onPlayerReady(event) {  
+    player.setPlaybackQuality('hd1080');
+    event.target.mute(); // Here we set the quality (yay!)  
+    event.target.playVideo(); // Optional. Means video autoplays  
+}  
+	</script>
 	</body>
-
-
 </html>

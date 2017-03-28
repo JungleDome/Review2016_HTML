@@ -13,6 +13,23 @@
 		<script type="text/javascript" src="../js/modernizr.custom.js"></script>
 		<script type="text/javascript" src="../js/js-cookie.js"></script>
 	<style>
+		@font-face {
+			font-family: fontawesome-webfont;
+			src:url(../fonts/fontawesome-webfont.woff2);
+			src:url(../s/fontawesome-webfont.woff) format('woff'),url(../fonts/fontawesome-webfont.ttf) format('truetype');
+		}
+
+		@font-face {
+			font-family: able;
+			src:url(../fonts/able.eot);
+			src:url(../fonts/able.svg) format('svg'), url(../fonts/able.ttf) format('truetype'),url(../fonts/able.woff) format('woff');
+		}
+
+		.able-wrapper {
+			top:44vh;
+			height:26vh;
+		}
+
 		.content-container{
 		height: 190px;
 		width: 98%;
@@ -20,7 +37,7 @@
 		margin-top: 7px;
 		margin-left: 2px;
 		}
-		
+
 		.index{
 		height: 120px;
 		width: 4%;
@@ -267,22 +284,14 @@
 	</div>
 	<i class="floating-button fa fa-bars" onclick="playerToggle()"></i>
 	<table class="floating-player">
-		<td style="height:100%;width:70%;">
-		<div class="background">
-			<div class="lyric">
-			</div>
-			<audio id="player1" data-able-player preload="auto">
-				<source type="audio/mpeg" src="../image/music/chinese/五月天 派對動物.mp3"/>
-			</audio>
-			<div class="control">
-				<input type="image" src="../image/playerPrevious.png" alt="Previous" onclick="playerPrevious()">
-				<input type="image" src="../image/playerPlay.png" alt="Play" onclick="playerPlayPause()">
-				<input type="image" src="../image/playerNext.png" alt="Next" onclick="playerNext()">
-				<input type="range" alt="seekbar" min="0" max="100" onclick="playerSeek()" style="width:17vw;margin:1vw;" >
+		<td style="height:100%;width:80%;">
+			<div class="background">
+				<div class="lyric">
+				</div>
+				<audio id="player1" style="position:absolute;bottom:0;" data-able-player preload="auto"></audio>
 				<input type="image" src="../image/playerPlaylist.png" style="left:40vw;" alt="Playlist" onclick="playlistToggle()">
 			</div>
-		</div>
-	</td>
+		</td>
 	<td style="width:30%;border-left:0;">
 		<ol class="playlist able-playlist" data-player="player1">
 			<li data-mp3="../music/english/Adele Send My Love (To your New Lover).mp3">Sample MP3_1</li>
@@ -1623,9 +1632,9 @@
 			evt.currentTarget.className += " active";
 	}
 	function playerToggle() {
-		var fullWidth = window.innerWidth * 0.7;
-		var btnNoPlaylist = fullWidth - (fullWidth * 0.3);
-		var plyNoPlaylist = -fullWidth + (fullWidth * 0.7);
+		var fullWidth = window.innerWidth * 0.5;
+		var btnNoPlaylist = fullWidth - (fullWidth * 0.2);
+		var plyNoPlaylist = -fullWidth + (fullWidth * 0.8);
 		if (toggle) {
 			$('.floating-button').velocity({rotateZ: "-=180"},{queue:false},300);
 			$('.floating-button').velocity({right:0},"easeIn",1500);
@@ -1646,9 +1655,9 @@
 		}
 	}
 	function playlistToggle() {
-		var fullWidth = window.innerWidth * 0.7;
-		var btnNoPlaylist = fullWidth - (fullWidth * 0.3);
-		var plyNoPlaylist = -fullWidth + (fullWidth * 0.7);
+		var fullWidth = window.innerWidth * 0.5;
+		var btnNoPlaylist = fullWidth - (fullWidth * 0.2);
+		var plyNoPlaylist = -fullWidth + (fullWidth * 0.8);
 		if(playlistToggled) {
 			$('.floating-button').velocity({right:btnNoPlaylist},"easeIn",1500);
 			$('.floating-player').velocity({right:plyNoPlaylist},"easeIn",1500);

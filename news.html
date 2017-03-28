@@ -32,14 +32,21 @@
 		<div class="slider">
 			<ul>
 				<li>
-					<img src="image/oculus.jpg">
+					<img src="image/news/ppap.jpg">
 					<div class="side-text">
 						<h1>This is a sample title</h1>
 						<p>This is a sample paragraph</p>
 					</div>
 				</li>
 				<li>
-					<img src="image/ostrich.png">
+					<img src="image/news/alpha go.jpg">
+					<div class="side-text">
+						<h1>Ostrich On Highway?</h1>
+						<p>Ostrich Ostrich Ostrich Ostrich Ostrich Ostrich Ostrich Ostrich</p>
+					</div>
+				</li>
+				<li>
+					<img src="image/news/note 7.jpg">
 					<div class="side-text">
 						<h1>Ostrich On Highway?</h1>
 						<p>Ostrich Ostrich Ostrich Ostrich Ostrich Ostrich Ostrich Ostrich</p>
@@ -161,10 +168,21 @@
 		arrow:true,
 		nav:false
 	});
-	
-	var ir = $('.item')[1];
-	
+	/*
 	$(window).scroll(function() {
+		Scrooll($('.item')[0]);
+		Scrooll2($('.item')[1]);
+		Scrooll($('.item')[2]);
+		Scrooll($('.item')[3]);
+		Scrooll($('.item')[4]);
+		Scrooll($('.item')[5]);
+		Scrooll($('.item')[6]);
+		Scrooll($('.item')[7]);
+		Scrooll($('.item')[8]);
+		Scrooll($('.item')[9]);
+		});
+
+	function Scrooll(ir) {
 		'Javascript Animation for each news'
 			if (isElementInViewport(ir)) {
 		 	setTimeout(function(){
@@ -176,7 +194,7 @@
 		 	$(ir).removeClass("right");
 		 	$(ir).css('opacity',0);
 		 }
-		});
+	}*/
 
 	function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();

@@ -1,5 +1,4 @@
 Global
--Style scrollbar
 -Loading page animation
 -FadeIn for each loaded page
 
@@ -9,15 +8,11 @@ Index
 -Styling nav bar font
 
 About
--Styling and positioning nav bar and footer
 -Change container background
 -change font style
 
 Feedback
--Styling and positioning nav bar and footer
 -Change font family and size
--Style scrollbar
--Submit button function
 
 News
 -background coloring
@@ -32,25 +27,20 @@ Entertainment
 -Styling and positioning font in container
 
 Music
--change nav bar and footer color
 -add player
 -add lyric
 -follow the fucking draft!!!!
 
 Movie
--music like design?
+-Add background color and opacity to the words
 
 Game
--Tourism-like nav bar
--gallery for each of the games
+-Refer to movie
 
 Technology
--add animation on load
--add animation to expand
 -add animation to background (optional)
 
 Tourism
--styling nav bullet (vertical and horizontal)
 -styling font?
 -add container for content
 -allow scrollbar for expanded content

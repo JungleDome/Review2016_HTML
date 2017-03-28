@@ -35,6 +35,11 @@ body {
   transition: .5s ease;
 }
 
+
+.content-container .content {
+  overflow-y: scroll;
+}
+
 .container:hover .overlay {
   bottom: 0;
   height: 100%;
@@ -113,9 +118,9 @@ ul.header li a {
 }
 .floating-player {
   position:fixed;
-  width: 70vw;
-  height:80vh;
-  right:-70vw;
+  width: 50vw;
+  height:70vh;
+  right:-50vw;
   top:73px;
   background:white;
   z-index: 99;
@@ -151,20 +156,6 @@ ul.header li a {
   height: auto;
 }
 
-.control {
-  position:relative;
-  top:calc( 100% - 7vw);
-  background: rgba(225,225,225,0.5);
-  width: 100%;
-  height: 7vw;
-}
-
-.control input[type=image] {
-  height:7vw;
-  width:7vw;
-  image-rendering: crisp-edges;
-}
-
 .playlist {
   padding: 0;
   margin:0;
@@ -174,12 +165,13 @@ ul.header li a {
 }
 
 .playlist li {
-  padding:20px;
+  padding:10px;
   margin:0;
-  background:red;
+  background:indigo;
   border-bottom:1px solid black;
   width:inherit;
-  line-height:10%;
+  font-size:0.8em;
+  /*line-height:10%;*/
   box-sizing: border-box;
 }
 

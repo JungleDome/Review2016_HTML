@@ -17,8 +17,13 @@ body {
 	object-fit: cover;
 }
 
+.slider > img {
+	width:20vw !important;
+	height: 40vh !important;
+}
+
 h1{
-	color: #676767;
+	color: rgba(255,255,255,0.5);
 	text-align: center;
 	font-size: 5vw;
 }
