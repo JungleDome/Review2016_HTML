@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Review 2016 - Techonology</title>
 		<link rel="icon" href="image/2016.ico"/>
 		<link rel="stylesheet" href="css/w3.css" />
@@ -19,15 +20,23 @@
 	background-repeat: no repeat;
 	}
 	
+	.overlay-content img {
+		margin:20px;
+	}
+
 	#heading{
 	height: 60px;
 	width: 100%;
 	background-color: royalblue;
 	font-size: 34px;
 	}
-	
+
+	p {margin:0;}
+	h1 {margin-top:0;}
+
 	#content{
 	background-color: skyblue;
+	padding-top:20px;
 	}
 	
 	.virtual{
@@ -119,8 +128,8 @@
 				technology, people are able to have wonderful experiences in the virtual 3D spaces which are the world that people dreamt 
 				to live in. In the virtual world, that we are experiencing are seem similar in real world, just like we are exactly doing 
 				the things in that place. 
-				</p><br/>
-				<center><img src="image/technology/minecraft.jpg" style="height:300px; width:800px" alt="minecraft"/></center><br/>
+				</p>
+				<center><img src="image/technology/minecraft.jpg" style="height:300px; width:800px" alt="minecraft"/></center>
 				<p>
 				For minecraft players, Oculus Rift launches minecraft in VR version in August 2016 which allows players to create their own world 
 				with their creativity and ideas. This gives players real experiences in building their own dreaming world.
@@ -133,8 +142,8 @@
 				cognitive behaviour therapy to treat patients with social anxieties or phobias of things such as flying, public speaking, or heights. 
 				Patients are going to confront their phobias in the computerized virtual environment which is full under control. The controlled 
 				environment exposes patients to stimulations and patients are coached on overcoming their fears instead of avoiding fears.
-				</p><br/>
-				<center><img src="image/technology/phobia.jpg" style="height:300px; width:800px" alt="therapy"/></center><br/>
+				</p>
+				<center><img src="image/technology/phobia.jpg" style="height:300px; width:800px" alt="therapy"/></center>
 				<p>
 				Spiders phobia is one of the common phobia treated by virtual reality. By using the VR technology, patients are able to see virtualized 
 				spider is in front of them, psychiatrists will use spider model to let patients to touch it in order to enhance the real feelings of patients. 
@@ -397,7 +406,7 @@
 				<p style="color:white; text-align:center">
 					The most intelligence charger in the world which double up charging speed and prolong your battery life.
 				</p>
-				</div><br/>
+				</div>
 				<div id="content">
 				<center>
 				<div class="lazyYT" data-youtube-id="PZzIAAqm96o" data-width="560" data-height="315">
@@ -426,10 +435,10 @@
 				<p style="color:white; text-align:center">
 				Feeling tired after working or studying and have to drive? Tesla’s Model P90D will solve the problem for you. 
 				</p>
-				</div><br/>
+				</div>
 				<div id="content">
 				<center>
-				<div class="lazyYT" data-youtube-id="bkKSWPc_yuE" data-height="560" data-width="315">
+				<div class="lazyYT" data-youtube-id="bkKSWPc_yuE" data-width="560" data-height="315">
 				<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/bkKSWPc_yuE" frameborder="0" allowfullscreen></iframe>-->
 				</div>
 				</center>
@@ -632,6 +641,10 @@
 			$(element).velocity({opacity: 0 }, 1000);
 			setTimeout(function(){$(element).attr("style","display: none;");},1000);
 		}
+
+		$(document).keydown(function(e) {
+     if (e.keyCode == 27) { // escape key maps to keycode `27`
+        for (i=0;i<11;i++) {hide(i);}}});
 	</script>
 	<div class = "footer">
 		© Project 2016.All Rights Reserved
