@@ -4,28 +4,34 @@ body {
 
 .section {
 	height:100%;
+	width:100vw;
 	overflow:hidden;
 }
 
-.video {
+.player {
 	z-index: -99;
 	position:absolute;
 	top:0;
 	left:0;
 	width:100%;
 	height:100%;
-	object-fit: cover;
-}
-
-.slider > img {
-	width:20vw !important;
-	height: 40vh !important;
+	object-fit: fill;
 }
 
 h1{
 	color: rgba(255,255,255,0.5);
 	text-align: center;
 	font-size: 5vw;
+	font-family: 'Gloria Hallelujah', cursive;'
+}
+
+.slider {
+	opacity:0.3;
+	transition:opacity 2s;
+}
+
+.slider:hover {
+	opacity: 1;
 }
 
 /* Theming for tab*/
@@ -37,11 +43,11 @@ h1{
 }
 
 ul.tab .dropdown-content a:hover {
-	background-color: rgba(225,225,225,0.14) !important;
+	background-color: rgba(155,155,155,0.34) !important;
 	color:black !important;
 }
 
 ul.tab li a:hover {
 	background-color: rgba(225,225,225,0.14) !important;
-	color:black;
+	color:white;
 }

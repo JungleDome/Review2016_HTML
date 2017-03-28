@@ -17,12 +17,12 @@ body {
 }
 .side-text {
 	background: rgba(255, 255, 255, 0.5);
-	position: absolute;
-	top: 0%;
-	width:10%;
+	position: relative;
+	top: -350px;
+	right:-70%;
+	width:20%;
 	height:inherit;
-	margin-top:30px;
-	margin-left:30%;
+	
 	white-space: normal;
 }
 .side-text h1 {

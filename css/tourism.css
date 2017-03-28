@@ -7,6 +7,7 @@ html {
 }
 
 .title {
+	font-family: 'Indie Flower', cursive;
 	position: absolute;
 	top:40%;
 	left:50%;
@@ -19,10 +20,12 @@ html {
 	background-color: rgba(225,225,225,0.24);
 }
 
-#example {
-	height: 400px;
-	width:400px;
-	background:rgba(225,225,225,0.8);
+.slide .content {
+	background-color: rgba(50,50,50,0.7);
+}
+
+.slide table {
+	background-color:rgba(50,50,50,0.5);
 }
 
 h2 {

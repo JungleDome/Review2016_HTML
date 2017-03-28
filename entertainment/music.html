@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="../css/music.css" />
 		<link rel="stylesheet" href="../css/ableplayer.min.css" />
 		<link rel="stylesheet" href="../css/font-awesome.min.css">
+
 		<script src="../js/bgcolor.js"></script>
 		<script src="../js/jquery-3.1.1.js"></script>
 		<script src="../js/velocity.js"></script>
@@ -29,7 +30,7 @@
 			position:absolute;
 			left:0;
 			right:0;
-			bottom:0;
+			bottom:-20;
 			width:40vw;
 		}
 
@@ -44,17 +45,22 @@
 		.index{
 		height: 120px;
 		width: 4%;
-		background-color: white;
+		background-color: #d7d1f9;
 		color: black;
 		text-align: center;
 		padding-top: 70px;
 		font-size: 28px;
 		}
 		
+		.content table {
+			width:100%;
+			border-bottom: 2px solid black;
+		}
+
 		.content{
 		height: 190px;
 		width: 80%;
-		background-color: white;
+		background-color: #d7d1f9;
 		font-size: 16px;
 		color: black;
 		margin-left: 6px;
@@ -259,7 +265,8 @@
 		}
 		/*Start tab theming*/
 		ul.tab {background-color: midnightblue;}
-		ul.tab li a:hover {background-color: cyan;}
+		ul.tab li a:hover {background-color: #5f74d2;}
+		ul.tab .dropdown-content a:hover {background-color:#8797dd;}
 		ul.header{background-color: steelblue;}
 		ul.header li a {background-color: royalblue;}
 		ul.header li a:hover {background-color: powderblue;}
@@ -282,17 +289,15 @@
 			<li><a href="../index.html" onclick="redirect()">Home</a></li>
 			<li class="a">Review 2016</li>
 		</ul>
-	<div class = "title">
-		<p>Music Fever</p>		
-	</div>
+		<p class="title">Music Fever</p>
 	<i class="floating-button fa fa-bars" onclick="playerToggle()"></i>
 	<table class="floating-player">
 		<td style="height:100%;width:80%;">
 			<div class="background">
 				<div class="lyric">
 				</div>
-				<audio id="player1" style="position:absolute;bottom:0;" data-able-player preload="auto"></audio>
-				<input type="image" src="../image/playerPlaylist.png" style="left:40vw;" alt="Playlist" onclick="playlistToggle()">
+				<i class="fa fa-bars" aria-hidden="true" style="bottom:0;left:40vw;" alt="Playlist" onclick="playlistToggle()""></i>
+				<audio id="player1" data-able-player preload="auto"></audio>
 			</div>
 		</td>
 	<td style="width:30%;border-left:0;">
@@ -351,7 +356,6 @@
 						this song is to recall the memories and feelings about the puppy love and freshness 
 						since young. This song had been awarded as one of the annual top 10 golden songs on 
 						Billboard Radio China 2016.
-
 						</div>
 				</div>
 				<div class = "content-container">

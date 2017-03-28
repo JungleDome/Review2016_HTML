@@ -31,11 +31,22 @@
 			
 			</div>
 			<div class = "container" onmouseover="PlaySecond()" onmouseout="PauseSecond()" onclick="location.href = 'entertainment/movies.html';">
-				<div style="height:100vh;z-index:0;"><iframe id="v1" style="height:100vh;width:33vw;" src="https://www.youtube.com/embed/CmRih_VtVAs?&loop=1&controls=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe></div>
-				<div style="position:relative;top:-65vh;text-align: center;"><h1>Movies</h1></div>
+				<div class="overlay-fix" style="position:absolute;height:inherit;width:inherit;z-index:999;background-color: transparent;"></div>
+				<div style="height:100vh;z-index:0;">
+					<div id="v1"></div>
+				</div>
+				<div style="position:relative;top:-65vh;text-align: center;">
+					<h1>Movies</h1>
+				</div>
 			</div>
 			<div class = "container" onmouseover="PlayThird()" onmouseout="PauseThird()" onclick="location.href = 'entertainment/games.html';">
-				<div style="height:100vh;z-index:0;"><div id="v2"></div><div style="position:relative;top:-65vh;text-align: center;"><h1>Games</h1></div>
+			<div class="overlay-fix" style="position:absolute;height:inherit;width:inherit;z-index:999;background-color: transparent;"></div>
+				<div style="height:100vh;z-index:0;">
+					<div id="v2"></div>
+				</div>
+				<div style="position:relative;top:-65vh;text-align: center;">
+					<h1>Games</h1>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -62,7 +73,7 @@
         player2 = new YT.Player('v1', {
         	height: window.innerHeight,
         	width: window.innerWidth / 3,
-        	videoId: 'dushZybUYnM'});
+        	videoId: 'CmRih_VtVAs'});
       }
 
 	function Play() {

@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/unslider-dots.css" />
 		<link rel="stylesheet" href="css/unslider.css" />
+		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 		<script src="js/jquery-3.1.1.js"></script>
 		<script src="js/velocity.js"></script>
 		<script src="js/unslider.js"></script>
@@ -30,14 +31,15 @@
 		</ul>
 	<div class = "content">
 		<div class="section">
+			<div class="overlay-fix" style="position:absolute;height:inherit;width:inherit;z-index:98;background-color: transparent;"></div>
 			<div id="player" style="width:100vw;height:100vh;z-index:0;"></div>
 			<div style="position:relative;top:-95vh;text-align: center;">
 				<h1 class="title">What's up in 2016!?</h1>
 			</div>
-			<div style="position:relative;top:-105vh;text-align: center;max-width:40px;height:auto;object-fit: fill;overflow: hidden;" class="slider">
+			<div style="position:absolute;top:40vh;z-index:99;left:20vw;max-width:64vw;height:50vh;object-fit:cover ;overflow: hidden;" class="slider">
 				<ul>
 					<li>
-						<img src="image/technology/dromeMain.jpg" alt="Drone">
+						<img src="image/technology/droneMain.jpg" alt="Drone">
 					</li>
 					<li>
 						<img src="image/news/ppap.jpg" alt="Pen Pineapple-Apple-Pen">
@@ -50,6 +52,14 @@
 		</div>
 	</div>
 	<script>
+'Initialize unslider jquery plugin'
+	$('.slider').unslider({
+		animation: 'horizontal',
+		autoplay: true,
+		arrow:true,
+		nav:false
+	});
+
 	var tag = document.createElement('script');  
   
 tag.src = "https://www.youtube.com/iframe_api";  
