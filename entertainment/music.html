@@ -159,14 +159,12 @@
 				</div>
 				<i class="fa fa-bars playlist-btn" aria-hidden="true" alt="Playlist" onclick="playlistToggle()""></i>
 				<audio id="player1" data-able-player data-lyrics-mode data-transcript-div="lyric" preload="auto">
-					
 				</audio>
 			</div>
 		</td>
 	<td style="width:30%;border-left:0;">
 		<ol class="playlist able-playlist" data-player="player1">
-			<li data-mp3="../music/english/Adele Send My Love (To your New Lover).mp3">Sample MP3_1</li>
-			<li data-mp3="../music/english/Don't Let Me Down The Chainsmokers ft. Daya.mp3">Sample MP3_2</li>
+			
 		</ol>
 </td>
 </table>
@@ -1543,11 +1541,13 @@
 		var index = ($(this).prev().text());
 		var songname = ($(this).siblings('.content').children('table').children('tbody').children('tr').children('td').eq(1).text());
 		var type = ($(this).parent().parent().index('.headercontent'));
+		var amountofsong = $('.able-playlist').children().length;
+
 		/*<li data-mp3="../music/english/Don't Let Me Down The Chainsmokers ft. Daya.mp3">Sample MP3_2</li>*/
 		/*<track kind="captions" src="../music/chinese/1-1.vtt" srclang="cn" label="Chinese"/>*/
+		$('#lyric').children().remove();
 		$('.able-playlist').append("<li data-mp3='../music/" + type + "/" + index + ".mp3'>" + songname + "</li>");
-		$('#lyric').append("<track kind='captions' src='../music/" + type + "/" + index + ".vtt' srclang='cn' label='Chinese'/>");
-		$('.able-wrapper').parent().append("<audio id='player1' data-able-player data-lyrics-mode data-transcript-div='lyric' preload='auto'></audio>");
+		$('.able-wrapper').parent().append("<audio id='player1' autoplay data-able-player data-lyrics-mode data-transcript-div='lyric' preload='auto'><track kind='captions' src='../music/" + type + "/" + index + ".vtt' srclang='cn' label='Chinese'/></audio>");
 		$('.able-wrapper').remove();
 		$('.able-prefs-form').remove();
 		function load_js()
