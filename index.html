@@ -40,13 +40,13 @@
 			<div style="position:absolute;top:40vh;z-index:99;left:20vw;max-width:64vw;height:50vh;object-fit:cover ;overflow: hidden;" class="slider">
 				<ul>
 					<li>
-						<img src="image/technology/droneMain.jpg" alt="Drone">
+						<img width="600" height="400" src="image/technology/droneMain.jpg" alt="Drone">
 					</li>
 					<li>
-						<img src="image/news/ppap.jpg" alt="Pen Pineapple-Apple-Pen">
+						<img width="600" height="400" src="image/news/ppap.jpg" alt="Pen Pineapple-Apple-Pen">
 					</li>
 					<li>
-						<img src="image/movies/top1.jpg" alt="DeadPool">
+						<img  width="600" height="400" src="image/movies/top1.jpg" alt="DeadPool">
 					</li>
 				</ul>
 			</div>
@@ -74,7 +74,14 @@ function onYouTubeIframeAPIReady() {
         height: '1280',  
         width: '720',  
         videoId: 'w3VWKqLVkpg',  
-        playerVars: {'controls':0,'loop':1,'start':20},
+        playerVars: {'autoplay' : 1,
+                  'rel' : 0,
+                  'showinfo' : 0,
+                  'showsearch' : 0,
+                  'controls' : 0,
+                  'loop' : 1,
+                  'enablejsapi' : 1
+              },
         events: {  
             'onReady': onPlayerReady  
         }  
@@ -85,7 +92,6 @@ function onYouTubeIframeAPIReady() {
 function onPlayerReady(event) {  
     player.setPlaybackQuality('hd1080');
     event.target.mute(); // Here we set the quality (yay!)  
-    event.target.playVideo(); // Optional. Means video autoplays  
 }  
 	</script>
 	</body>

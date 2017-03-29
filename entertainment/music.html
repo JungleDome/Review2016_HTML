@@ -11,7 +11,8 @@
 		<script src="../js/bgcolor.js"></script>
 		<script src="../js/jquery-3.1.1.js"></script>
 		<script src="../js/velocity.js"></script>
-		<script type="text/javascript" src="../js/ableplayer.min.js"></script>
+		<script src="../js/velocity.ui.js"></script>
+		<script type="text/javascript" src="../js/ableplayer.js"></script>
 		<script type="text/javascript" src="../js/modernizr.custom.js"></script>
 		<script type="text/javascript" src="../js/js-cookie.js"></script>
 	<style>
@@ -33,6 +34,45 @@
 			right:0;
 			bottom:-20;
 			width:40vw;
+		}
+
+		.overlay {
+			position:relative;
+			background:rgba(0,0,0,0.5);
+			opacity:0;
+			height:100%;
+			width:100%;
+			top:0;
+			transition: opacity 1s;
+			z-index: 1;
+		}
+
+		.fa-play {
+			position:absolute;
+			font-size:3em;
+			top: 50%;
+		    left: 50%;
+    		transform: translate(-50%,-50%);
+		}
+
+		.button > img {
+			position: absolute;
+			width:inherit;
+			height:inherit;
+			z-index: 0;
+			top:0;
+		}
+
+		.button:hover .overlay {
+			opacity: 1;
+		}
+
+		.playlist-btn {
+			position: absolute;
+			z-index:9999;
+			right:44vw;
+			top:61.5vh;
+			color:white;
 		}
 
 		.content-container{
@@ -77,186 +117,6 @@
 		.index, .content, .button{
 		float:left;
 		}
-		
-		.love{
-		background-image: url("../image/music/love4.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.how{
-		background-image: url("../image/music/how2.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.party{
-		background-image: url("../image/music/party.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.just{
-		background-image: url("../image/music/just.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.not{
-		background-image: url("../image/music/not.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.should{
-		background-image: url("../image/music/should.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.rings{
-		background-image: url("../image/music/rings3.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.sound{
-		background-image: url("../image/music/sound3.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.blue{
-		background-image: url("../image/music/blue.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.all{
-		background-image: url("../image/music/all.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.this{
-		background-image: url("../image/music/this.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.work{
-		background-image: url("../image/music/work.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.dont{
-		background-image: url("../image/music/dont.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.treat{
-		background-image: url("../image/music/treat.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.we{
-		background-image: url("../image/music/we.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.send{
-		background-image: url("../image/music/send.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.pillowtalk{
-		background-image: url("../image/music/pillowtalk2.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.maroon{
-		background-image: url("../image/music/maroon.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.cant{
-		background-image: url("../image/music/cant3.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.closer{
-		background-image: url("../image/music/closer.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.cheer{
-		background-image: url("../image/music/cheer2.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.whistle{
-		background-image: url("../image/music/whistle2.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.rough{
-		background-image: url("../image/music/rough.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.monster{
-		background-image: url("../image/music/monster4.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.tell{
-		background-image: url("../image/music/tell.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.rain{
-		background-image: url("../image/music/rain.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.very{
-		background-image: url("../image/music/very.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.dream{
-		background-image: url("../image/music/dream2.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.last{
-		background-image: url("../image/music/last2.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
-		
-		.you{
-		background-image: url("../image/music/you.jpg");
-		background-size:100% 100%;
-		background-repeat: no repeat;
-		}
 
 		/* Style the tab content */
 		.headercontent {
@@ -295,10 +155,12 @@
 	<table class="floating-player">
 		<td style="height:100%;width:80%;">
 			<div class="background">
-				<div class="lyric">
+				<div id="lyric">
 				</div>
-				<i class="fa fa-bars" aria-hidden="true" style="bottom:0;left:40vw;" alt="Playlist" onclick="playlistToggle()""></i>
-				<audio id="player1" data-able-player preload="auto"></audio>
+				<i class="fa fa-bars playlist-btn" aria-hidden="true" alt="Playlist" onclick="playlistToggle()""></i>
+				<audio id="player1" data-able-player data-lyrics-mode data-transcript-div="lyric" preload="auto">
+					
+				</audio>
 			</div>
 		</td>
 	<td style="width:30%;border-left:0;">
@@ -317,7 +179,7 @@
 			<div id = "Chinese" class = "headercontent">
 				<div class = "content-container">
 						<div class = "index">1</div>
-						<div class = "button love"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/love4.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -361,7 +223,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">2</div>
-						<div class = "button how"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/how2.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -403,7 +265,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">3</div>
-						<div class = "button party"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/party.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -447,7 +309,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">4</div>
-						<div class = "button just"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/just.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -490,7 +352,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">5</div>
-						<div class = "button not"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/not.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -536,7 +398,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">6</div>
-						<div class = "button should"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/should.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -581,7 +443,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">7</div>
-						<div class = "button rings"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/rings3.jpg"></div>
 						<div class = "content">
 						<table>
 							<tr>
@@ -621,7 +483,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">8</div>
-						<div class = "button sound"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/sound3.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -665,7 +527,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">9</div>
-						<div class = "button blue"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/blue.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -711,7 +573,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">10</div>
-						<div class = "button all"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/all.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -758,7 +620,7 @@
 			<div id = "English" class = "headercontent">
 				<div class = "content-container">
 						<div class = "index">1</div>
-						<div class = "button this"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/this.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -801,7 +663,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">2</div>
-						<div class = "button work"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/work.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -843,7 +705,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">3</div>
-						<div class = "button dont"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/dont.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -886,7 +748,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">4</div>
-						<div class = "button treat"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/treat.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -929,7 +791,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">5</div>
-						<div class = "button we"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/we.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -971,7 +833,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">6</div>
-						<div class = "button send"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/send.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -1015,7 +877,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">7</div>
-						<div class = "button pillowtalk"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/pillowtalk2.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -1057,7 +919,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">8</div>
-						<div class = "button maroon"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/maroon.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -1099,7 +961,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">9</div>
-						<div class = "button cant"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/cant3.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -1141,7 +1003,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">10</div>
-						<div class = "button closer"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/closer.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -1185,7 +1047,7 @@
 			<div id = "Korean" class = "headercontent">
 				<div class = "content-container">
 						<div class = "index">1</div>
-						<div class = "button cheer"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/cheer2.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -1228,7 +1090,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">2</div>
-						<div class = "button whistle"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/whistle.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -1271,7 +1133,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">3</div>
-						<div class = "button rough"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/rough.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -1315,7 +1177,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">4</div>
-						<div class = "button monster"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/monster4.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -1358,7 +1220,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">5</div>
-						<div class = "button tell"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/tell.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -1400,7 +1262,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">6</div>
-						<div class = "button rain"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/rain.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -1443,7 +1305,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">7</div>
-						<div class = "button very"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/very.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -1486,7 +1348,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">8</div>
-						<div class = "button dream"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/dream.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -1529,7 +1391,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">9</div>
-						<div class = "button last"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/last2.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -1572,7 +1434,7 @@
 				</div>
 				<div class = "content-container">
 						<div class = "index">10</div>
-						<div class = "button you"></div>
+						<div class = "button"><div class="overlay"><i class="fa fa-play" aria-hidden="true"></i></div><img src="../image/music/you.jpg"></div>
 						<div class = "content">
 						<table>
 							<col width = "10%">
@@ -1677,6 +1539,27 @@
 			playlistToggled = true;
 		}
 	}
+	$('.button').click(function(){
+		var index = ($(this).prev().text());
+		var songname = ($(this).siblings('.content').children('table').children('tbody').children('tr').children('td').eq(1).text());
+		var type = ($(this).parent().parent().index('.headercontent'));
+		/*<li data-mp3="../music/english/Don't Let Me Down The Chainsmokers ft. Daya.mp3">Sample MP3_2</li>*/
+		/*<track kind="captions" src="../music/chinese/1-1.vtt" srclang="cn" label="Chinese"/>*/
+		$('.able-playlist').append("<li data-mp3='../music/" + type + "/" + index + ".mp3'>" + songname + "</li>");
+		$('#lyric').append("<track kind='captions' src='../music/" + type + "/" + index + ".vtt' srclang='cn' label='Chinese'/>");
+		$('.able-wrapper').parent().append("<audio id='player1' data-able-player data-lyrics-mode data-transcript-div='lyric' preload='auto'></audio>");
+		$('.able-wrapper').remove();
+		$('.able-prefs-form').remove();
+		function load_js()
+   		{
+	      var head= document.getElementsByTagName('head')[0];
+	      var script= document.createElement('script');
+	      script.type= 'text/javascript';
+	      script.src= '../js/ableplayer.js';
+	      head.appendChild(script);
+   		}
+   load_js();
+	});
 	</script>	
 	</body>
 </html>
